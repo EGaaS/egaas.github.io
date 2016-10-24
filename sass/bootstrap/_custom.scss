@@ -1,0 +1,22 @@
+// Bootstrap overrides
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: $bmobile,
+  md: $btablet,
+  lg: $btablet,
+  xl: $bdesktop
+) !default;
+$container-max-widths: (
+  sm: $mobile,
+  md: $tablet,
+  lg: $tablet,
+  xl: $desktop
+) !default;
+$grid-gutter-width: 20px !default;
+
+$brand-primary: $blue;
+$brand-danger: $red;

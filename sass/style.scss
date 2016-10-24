@@ -1,0 +1,1043 @@
+@import "breakpoints";
+@import "fonts";
+@import "colors";
+@import "mixins";
+@import "bootstrap/bootstrap";
+@import "font-awesome/font-awesome";
+
+/* Main tags
+----------------------------------------- */
+* {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	text-size-adjust: none;
+}
+html, body {
+	height:100vh;
+}
+body {
+	position:relative;
+	min-width:320px;
+	min-height:600px;
+	background-color:$bg;
+	@include max($bmobile) {
+		min-height:480px;
+	}
+}
+h1 {
+	@include text($reg, 48px, $white, 58px, none);
+	font-weight:normal;
+	text-transform:uppercase;
+	text-align:center;
+	margin-top:0px;
+	margin-bottom:0px;
+	@include max($bmobile) {
+		font-size:24px;
+		line-height:29px;
+	}
+}
+h2 {
+	@include text($reg, 48px, $black, 48px, none);
+	font-weight:normal;
+	padding-bottom:30px;
+	margin-top:0px;
+	margin-bottom:0px;
+	@include max($bmobile) {
+		font-size:24px;
+		line-height:24px;
+		padding-bottom:10px;
+	}
+}
+h3 {
+	@include text($med, 30px, $white, 36px, none);
+	font-weight:normal;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+p {
+	@include text($light, 16px, $black, 24px, none);
+	padding-bottom:24px;
+	margin-bottom:0px;
+	@include max($bmobile) {
+		font-size:12px;
+		line-height:14px;
+		padding-bottom:14px;
+	}
+	strong {
+		font-family:$bold;
+		font-weight:normal;
+	}
+}
+a {
+	color:$blue;
+	outline:none !important;
+	text-decoration:none !important;
+	transition: {
+		property:border, background-color, color;
+		duration:.2s;
+	}
+	&:hover, &.active {
+		color:$blue !important;
+	}
+}
+.btn {
+	transition: {
+		property:border, background-color, color;
+		duration:.2s;
+	}
+}
+input, textarea, button {
+	outline:none !important;
+}
+.page {
+	position:relative;
+	width:100%;
+	height:0px;
+	overflow:hidden;
+	background-color:$red;
+	&#about {
+		@include min($bmobile) {
+			top:-72px;
+		}
+	}
+	@include max($bmobile) {
+		margin-top:-50px;
+		margin-bottom:50px;
+	}
+}
+.spam {
+	position:relative;
+	width:285px;
+	.head {
+		@include text($reg, 20px, $white, 30px, uppercase);
+		@include max($bmobile) {
+			font-size:12px;
+			line-height:18px;
+		}
+	}
+	.form-control {
+		height:60px;
+		border-color:rgba(255, 255, 255, 0.2);
+		background-color:transparent;
+		font-family:$reg;
+		font-size:14px;
+		color:$white;
+		transition: {
+			property:border, background-color, color;
+			duration:.2s;
+		}
+		&:focus {
+			border-color:rgba(255, 255, 255, 1);
+			border-right-color:transparent;
+		}
+		&.form-control-danger {
+			border-color:$blue;
+			background-color:$white;
+			color:$red;
+		}
+	}
+	.input-group-btn {
+		.btn {
+			width:60px;
+			height:60px;
+			font-size:30px;
+			padding:0px;
+			transition: {
+				property:border, background-color, color;
+				duration:.2s;
+			}
+		}
+	}
+}
+/* Header
+----------------------------------------- */
+header {
+	position:fixed !important;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:72px;
+	border-bottom:1px solid rgba(255, 255, 255, 0.2);
+	z-index:10;
+	transition: {
+		property:border, box-shadow;
+		duration:.2s;
+	}
+	@include max($bmobile) {
+		height:50px;
+	}
+	&.border {
+		border-color:rgba(155, 156, 156, 0.2);
+		box-shadow:0px 2px 2px rgba(0, 0, 0, 0.15);
+		@include min($bmobile) {
+			.nav {
+				a {
+					color:#676969;
+				}
+			}
+		}
+	}
+	.white {
+		position:absolute;
+		left:0px;
+		bottom:0px;
+		width:100%;
+		height:0px;
+		overflow:hidden;
+		background-color:$white;
+	}
+	.container {
+		@include min($bmobile) {
+			position:relative;
+		}
+	}
+	.logo {
+		position:absolute;
+		top:11px;
+		width:238px;
+		height:49px;
+		overflow:hidden;
+		background-repeat:no-repeat;
+		background-position:0px 0px;
+		background-size:100% 100%;
+		z-index:11;
+		.before {
+			position:absolute;
+			left:0px;
+			bottom:0px;
+			width:100%;
+			height:0px;
+			background-image:url(../images/logo.svg);
+			background-repeat:no-repeat;
+			background-position:0px bottom;
+			background-size:100% 49px;
+		}
+		.after {
+			position:absolute;
+			left:0px;
+			top:0px;
+			width:100%;
+			height:100%;
+			background-image:url(../images/logo_white.svg);
+			background-repeat:no-repeat;
+			background-position:0px top;
+			background-size:100% 49px;
+		}
+		@include max($bmobile) {
+			top:5px;
+			width:189px;
+			height:39px;
+			.before {
+				background-size:100% 39px;
+			}
+			.after {
+				background-size:100% 39px;
+			}
+		}
+	}
+	@include max($btablet) {
+		&.on {
+			nav {
+				bottom:0px;
+			}
+		}
+	}
+	nav {
+		div {
+			.nav {
+				position:relative;
+				font-size:0px;
+				text-align:center;
+				padding-top:26px;
+				padding-left:240px;
+				padding-right:75px;
+				z-index:1;
+				.nav-item {
+					display:inline-block;
+				}
+				a {
+					display:inline-block;
+					@include text($reg, 18px, $white, 20px, none);
+					margin-left:15px;
+					margin-right:15px;
+				}
+				.soc {
+					position:absolute;
+					right:0px;
+					top:26px;
+					a {
+						margin-left:0px;
+						margin-right:0px;
+						& + a {
+							margin-left:14px;
+						}
+					}
+					@include max($bmobile) {
+						display:flex;
+						justify-content:space-around;
+						top:auto;
+						bottom:0px;
+						width:100%;
+						height:50px;
+						a {
+							font-size:26px;
+						}
+					}
+				}
+			}
+		}
+		@include max($bmobile) {
+			display:table;
+			position:fixed;
+			left:0px;
+			top:auto;
+			bottom:-100%;
+			width:100%;
+			height:100%;
+			background-color:$dblue;
+			line-height:50px;
+			text-align:center;
+			padding-top:72px;
+			z-index:10;
+			transition: {
+				property:all;
+				duration:.3s;
+			}
+			div {
+				display:table-row;
+				.nav {
+					display:table-cell;
+					width:100%;
+					height:100%;
+					vertical-align:middle;
+					padding:0px;
+					.nav-item {
+						display:block !important;
+						height:50px;
+						margin:0px;
+						.nav-link {
+							display:block;
+							float:none;
+							color:$white !important;
+							line-height:50px;
+							padding:0px;
+							margin:0px;
+							&:hover {
+								background-color:$blue;
+							}
+							&.active {
+								background-color:$blue;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.menu {
+		cursor:pointer;
+		display:none;
+		position:absolute;
+		right:0px;
+		top:0px;
+		width:52px;
+		height:49px;
+		z-index:11;
+		transition: {
+			property:all;
+			duration:.3s;
+		}
+		@include max($bmobile) {
+			display:block;
+			margin-right:0px;
+		}
+		.patty {
+			width:22px;
+			height:3px;
+			margin:23px auto;
+			background-color:$blue;
+			transition:all 0.3s;
+			&:before, &:after {
+				content:'';
+				position:absolute;
+				display:block;
+				width:22px;
+				height:3px;
+				background-color:$blue;
+				transition:all 0.3s;
+			}
+			&:before {
+				top:16px;
+			}
+			&:after {
+				top:30px;
+			}
+		}
+	}
+	&.on {
+		.menu {
+			.patty {
+				background:none !important;
+				&:after {
+					top:25px !important;
+					background:$white !important;
+					transform:rotate(45deg);
+				}
+				&:before {
+					top:25px !important;
+					background:$white !important;
+					transform:rotate(-45deg);
+				}
+			}
+		}
+	}
+}
+/* Banner
+----------------------------------------- */
+.banner {
+	position:relative;
+	width:100%;
+	height:100vh;
+	min-height:600px;
+	overflow:hidden;
+	background-color:$dblue;
+	background-image:url(../images/bg.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	background-size:cover;
+	z-index:1;
+	@include max($bmobile) {
+		min-height:480px;
+	}
+	.triangles {
+		position:fixed;
+		left:0px;
+		top:0px;
+		width:100%;
+		height:100%;
+		.controls {
+			visibility:hidden;
+			position:absolute;
+			left:-100000px;
+			top:-100000px;
+		}
+	}
+	.inner {
+		position:fixed;
+		left:0px;
+		top:72px;
+		bottom:0px;
+		width:100%;
+		.container {
+			display:flex;
+			flex-flow:row wrap;
+			align-items:center;
+			align-content:space-around;
+			justify-content:center;
+			height:100%;
+			min-height:528px;
+			overflow:hidden;
+			@include max($bmobile) {
+				min-height:408px;
+			}
+			.slogan {
+				position:relative;
+				flex:1 100%;
+				h1 {
+					animation:showSlogan 0.3s forwards;
+					animation-delay:0.3s;
+					margin-bottom:10px;
+					opacity:0;
+					transform:translate3d(0, 200%, 0);
+				}
+				p {
+					animation:showSlogan 0.3s forwards;
+					animation-delay:0.6s;
+					opacity:0;
+					transform:translate3d(0, 200%, 0);
+				}
+			}
+			.spam {
+				.head {
+					position:absolute;
+					left:50%;
+					top:-52px;
+					white-space:nowrap;
+					padding-left:45px;
+					@include max($bmobile) {
+						left:40%;
+						top:-30px;
+						padding-left:25px;
+					}
+					i {
+						position:absolute;
+						right:100%;
+						top:8px;
+						width:34px;
+						height:31px;
+						background-image:url(../images/arrow.png);
+						background-repeat:no-repeat;
+						background-position:left bottom;
+						background-size:100% auto;
+						margin-right:-17px;
+						@include min($bmobile) {
+							top:15px;
+							margin-right:-34px;
+							animation:showArrow 0.2s forwards;
+						}
+						@include max($bmobile) {
+							width:17px;
+							height:16px;
+						}
+					}
+				}
+				.note {
+					position:absolute;
+					left:0px;
+					top:100%;
+					width:100%;
+					@include text($light, 14px, $white, 34px, none);
+					white-space:nowrap;
+					text-align:center;
+					opacity:0.5;
+					@include max($bmobile) {
+						font-size:12px;
+						line-height:26px;
+					}
+				}
+			}
+		}
+	}
+	p {
+		color:$white;
+		text-align:center;
+		padding-bottom:0px;
+		margin-left:90px;
+		margin-right:90px;
+		@include max($bmobile) {
+			margin-left:0px;
+			margin-right:0px;
+		}
+	}
+}
+/* Content
+----------------------------------------- */
+.main {
+	position:relative;
+	width:100%;
+	overflow:hidden;
+	background-color:$white;
+	z-index:2;
+	@include max($bmobile) {
+		height:auto;
+		min-height:480px;
+	}
+}
+.mission {
+	display:flex;
+	flex-direction:column;
+	align-items:stretch;
+	align-content:stretch;
+	height:100vh;
+	min-height:768px;
+	background-color:$white;
+	@include max($bmobile) {
+		height:auto;
+	}
+	.container {
+		flex:1;
+		display:flex;
+		flex-direction:row;
+		align-items:center;
+		align-content:center;
+		padding-top:100px;
+		@include max($bmobile) {
+			padding-top:0px;
+		}
+		.inner {
+			flex:1;
+		}
+	}
+	.row {
+		& + .row {
+			padding-top:58px;
+			@include max($bmobile) {
+				padding-top:0px;
+			}
+		}
+	}
+}
+.zebra {
+	background: $lgray;
+	background: linear-gradient(to right, $lgray 0%, $lgray 50%, $dgray 50%, $dgray 100%);
+	overflow:hidden;
+	&:nth-of-type(2n) {
+		background: $dgray;
+		background: linear-gradient(to right, $dgray 0%, $dgray 50%, $lgray 50%, $lgray 100%);
+	}
+	&:nth-of-type(2n + 1) {
+		.container {
+			.article {
+				.head {
+					background-image:url(../images/cobweb_dark.svg);
+					.icon {
+						background-color:$dgray;
+					}
+				}
+				&:last-of-type {
+					.head {
+						background-image:url(../images/cobweb_dark.svg);
+						.icon {
+							background-color:$white;
+						}
+					}
+				}
+			}
+		}
+	}
+	.container {
+		.head {
+			position:relative;
+			width:220px;
+			height:160px;
+			background-image:url(../images/cobweb_light.svg);
+			background-repeat:no-repeat;
+			background-position:center center;
+			background-size:100% 100%;
+			margin:0px auto;
+			&:nth-of-type(2) {
+				background-image:url(../images/cobweb_dark.svg);
+			}
+			.icon {
+				display:flex;
+				align-content:center;
+				justify-content:center;
+				position:absolute;
+				left:50%;
+				top:50%;
+				width:90px;
+				height:90px;
+				border-radius:50%;
+				background-color:$white;
+				margin-left:-45px;
+				margin-top:-45px;
+				&:nth-of-type(2) {
+					background-color:$dgray;
+				}
+				img {
+					width:60%;
+				}
+			}
+		}
+		h2 {
+			text-align:center;
+		}
+		.article {
+			padding-top:15px;
+			&:nth-of-type(2) {
+				.head {
+					background-image:url(../images/cobweb_dark.svg);
+					.icon {
+						background-color:$dgray;
+					}
+				}
+			}
+			@include min($bmobile) {
+				padding-left:30px;
+				padding-right:30px;
+			}
+			@include max($btablet) {
+				background-color:$dgray;
+				padding-left:210px;
+				padding-right:210px;
+				margin-left:-200px;
+				margin-right:-200px;
+				&:nth-of-type(2) {
+					background-color:$lgray;
+				}
+			}
+		}
+		@include max($btablet) {
+			.article {
+				.head {
+					background-image:url(../images/cobweb_light.svg) !important;
+					.icon {
+						background-color:$white !important;
+					}
+				}
+				&:last-of-type {
+					.head {
+						background-image:url(../images/cobweb_dark.svg) !important;
+						.icon {
+							background-color:$dgray !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	&:nth-last-of-type(2) {
+		background:none;
+		background-color:$gray;
+		.container {
+			@include max($btablet) {
+				.article {
+					.head {
+						background-image:url(../images/cobweb_light.svg) !important;
+						.icon {
+							background-color:$white !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.team {
+	position:relative;
+	clear:both;
+	min-height:100vh;
+	@include min($bmobile) {
+		display:flex;
+		flex-flow:row wrap;
+		align-items:stretch;
+		align-content:stretch;
+		justify-content:flex-start;
+	}
+	.container {
+		@include min($bmobile) {
+			flex:1 100%;
+			display:flex;
+			flex-direction:row;
+			align-items:center;
+			align-content:center;
+			justify-content:flex-start;
+		}
+		.inner {
+			flex:1;
+			padding-top:90px;
+			padding-bottom:90px;
+			@include max($bmobile) {
+				padding-top:15px;
+				padding-bottom:0px;
+			}
+		}
+	}
+	.row {
+		background-color:$dgray;
+	}
+	article {
+		@include min($bmobile) {
+			position:relative;
+			left:0px;
+			float:left;
+			width:33.33%;
+			perspective:640px;
+			background-color:$dgray;
+			z-index:2;
+			transition: {
+				property:left;
+				duration:0.8s;
+			}
+			@include max($btablet) {
+				perspective:480px;
+			}
+		}
+		img {
+			display:block;
+			width:100%;
+			@include min($bmobile) {
+				cursor:pointer;
+				position:relative;
+				filter:grayscale(100%);
+				z-index:1;
+				transition: {
+					property:all;
+					duration:.2s;
+				}
+			}
+		}
+		div {
+			background-color:$blue;
+			@include min($bmobile) {
+				position:absolute;
+				right:-200%;
+				top:0px;
+				width:200%;
+				height:100%;
+				background-color:darken($blue, 100%);
+				transform-style:preserve-3d;
+				transform: rotateY(76deg) translateX(0px) translateZ(0px);
+				backface-visibility:hidden;
+				transform-origin:0px 0px;
+				transition: {
+					property:all;
+					duration:0.5s;
+				}
+			}
+			h3 {
+				display:flex;
+				flex-flow:row wrap;
+				align-items:center;
+				align-content:center;
+				position:relative;
+				height:123px;
+				border-bottom:1px solid rgba(255, 255, 255, 0.2);
+				padding-left:25px;
+				padding-right:170px;
+				margin-bottom:12px;
+				@include min($bmobile) {
+					opacity:0;
+					transition: {
+						property:opacity;
+						duration:0.5s;
+					}
+				}
+				@include max($btablet) {
+					height:100px;
+					font-size:26px;
+					line-height:30px;
+				}
+				@include max($bmobile) {
+					height:80px;
+					background-image:url(../images/cobweb_light.svg);
+					background-repeat:no-repeat;
+					background-position:center right;
+					background-size:auto 100%;
+					font-size:20px;
+					line-height:24px;
+					padding-left:10px;
+					padding-right:100px;
+				}
+				span {
+					display:block;
+					width:100%;
+					@include text($light, 14px, $white, 30px, none);
+					font-weight:normal;
+				}
+				aside {
+					position:absolute;
+					right:0px;
+					top:0px;
+					width:170px;
+					height:100%;
+					@include max($bmobile) {
+						display:none;
+					}
+				}
+			}
+			p {
+				color:$white;
+				padding-left:25px;
+				padding-right:25px;
+				@include min($bmobile) {
+					opacity:0;
+					transition: {
+						property:opacity;
+						duration:0.5s;
+					}
+				}
+				@include max($btablet) {
+					font-size:14px;
+					line-height:16px;
+				}
+				@include max($bmobile) {
+					padding-left:10px;
+					padding-right:10px;
+				}
+			}
+		}
+		@include min($bmobile) {
+			&:nth-of-type(3n+3) {
+				div {
+					right:100%;
+					transform: rotateY(-76deg) translateX(0px) translateZ(0px);
+					transform-origin:640px 0px;
+					@include max($btablet) {
+						transform-origin:480px 0px;
+					}
+				}
+			}
+			&.hover {
+				&:nth-of-type(3n+2) {
+					left:-320px;
+					@include max($btablet) {
+						left:-240px;
+					}
+				}
+				img {
+					filter:grayscale(0%);
+				}
+				div {
+					background-color:$blue;
+					transform: rotateY(0) translateX(0px) translateZ(0px);
+					h3 {
+						opacity:1;
+					}
+					p {
+						opacity:1;
+					}
+				}
+			}
+		}
+	}
+}
+/* Animations
+----------------------------------------- */
+@keyframes showSlogan {
+	from {
+		transform:translate3d(0, 200%, 0);
+		opacity:0;
+	}
+	to {
+		transform:translate3d(0, 0, 0);
+		opacity:1;
+	}
+}
+@keyframes showArrow {
+	from {
+		right:90%;
+		width:0px;
+		height:0px;
+	}
+	to {
+		right:100%;
+		width:34px;
+		height:31px;
+	}
+}
+/* Subscription
+----------------------------------------- */
+.subscription {
+	position:relative;
+	height:180px;
+	background-color:$dblue;
+	z-index:2;
+	@include max($bmobile) {
+		height:auto;
+		padding-top:20px;
+		padding-bottom:20px;
+	}
+	.logo {
+		float:left;
+		display:block;
+		width:238px;
+		height:49px;
+		overflow:hidden;
+		background-image:url(../images/logo_white.svg);
+		background-repeat:no-repeat;
+		background-position:0px 0px;
+		background-size:100% 100%;
+		margin-top:64px;
+		@include max($bmobile) {
+			float:none;
+			margin:0px auto;
+		}
+	}
+	.spam {
+		padding-top:18px;
+		margin:0px auto;
+		.head {
+			padding-bottom:12px;
+			@include max($bmobile) {
+				text-align:center;
+			}
+		}
+	}
+}
+/* Footer
+----------------------------------------- */
+footer {
+	position:relative;
+	height:88px;
+	background-color:$black;
+	font-size:0px;
+	z-index:2;
+	.copyright {
+		float:left;
+		@include text($arial, 14px, $white, 14px, none);
+		padding-top:30px;
+		span {
+			position:relative;
+			top:7px;
+			display:inline-block;
+			font-size:36px;
+			padding-right:5px;
+		}
+	}
+	.soc {
+		float:right;
+		padding-top:39px;
+		@include max($bmobile) {
+			padding-top:34px;
+		}
+		a {
+			display:inline-block;
+			@include text($reg, 18px, $white, 20px, none);
+			& + a {
+				margin-left:14px;
+			}
+			@include max($bmobile) {
+				font-size:26px;
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

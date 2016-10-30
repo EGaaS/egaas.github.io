@@ -96,11 +96,11 @@ input, textarea, button {
 	overflow:hidden;
 	background-color:$red;
 	&#about {
-		@include min($bmobile) {
-			top:-72px;
+		@include min($btablet) {
+			top:-50px;
 		}
 	}
-	@include max($bmobile) {
+	@include max($btablet) {
 		margin-top:-50px;
 		margin-bottom:50px;
 	}
@@ -163,17 +163,37 @@ header {
 		property:border, box-shadow;
 		duration:.2s;
 	}
-	@include max($bmobile) {
+	@include max($btablet) {
 		height:50px;
 	}
 	&.border {
 		border-color:rgba(155, 156, 156, 0.2);
 		box-shadow:0px 2px 2px rgba(0, 0, 0, 0.15);
-		@include min($bmobile) {
+		@include min($btablet) {
 			.nav {
 				a {
-					color:#676969;
+					color:#939598;
 				}
+			}
+		}
+	}
+	&.subpage {
+		border-color:rgba(155, 156, 156, 0.2);
+		box-shadow:0px 2px 2px rgba(0, 0, 0, 0.15);
+		background-color:$white;
+		@include min($btablet) {
+			.nav {
+				a {
+					color:#939598;
+				}
+			}
+		}
+		.logo {
+			.before {
+				height:100% !important;
+			}
+			.after {
+				display:none;
 			}
 		}
 	}
@@ -187,7 +207,7 @@ header {
 		background-color:$white;
 	}
 	.container {
-		@include min($bmobile) {
+		@include min($btablet) {
 			position:relative;
 		}
 	}
@@ -223,8 +243,9 @@ header {
 			background-position:0px top;
 			background-size:100% 49px;
 		}
-		@include max($bmobile) {
+		@include max($btablet) {
 			top:5px;
+			left:10px;
 			width:189px;
 			height:39px;
 			.before {
@@ -272,7 +293,7 @@ header {
 							margin-left:14px;
 						}
 					}
-					@include max($bmobile) {
+					@include max($btablet) {
 						display:flex;
 						justify-content:space-around;
 						top:auto;
@@ -286,7 +307,7 @@ header {
 				}
 			}
 		}
-		@include max($bmobile) {
+		@include max($btablet) {
 			display:table;
 			position:fixed;
 			left:0px;
@@ -347,7 +368,7 @@ header {
 			property:all;
 			duration:.3s;
 		}
-		@include max($bmobile) {
+		@include max($btablet) {
 			display:block;
 			margin-right:0px;
 		}
@@ -550,7 +571,7 @@ header {
 		flex-direction:row;
 		align-items:center;
 		align-content:center;
-		padding-top:100px;
+		padding-top:72px;
 		@include max($bmobile) {
 			padding-top:0px;
 		}
@@ -878,6 +899,345 @@ header {
 						opacity:1;
 					}
 				}
+			}
+		}
+	}
+}
+/* Download page
+----------------------------------------- */
+.stars {
+	position:fixed;
+	left:0px;
+	top:0px;
+	width:100%;
+	height:100%;
+	z-index:1 !important;
+	@include max($btablet) {
+		display:none !important;
+	}
+}
+.version {
+	overflow:hidden;
+	&.nano {
+		background-color:$lgray;
+	}
+	&.node {
+		min-height:1px;
+		background-color:$dgray;
+		z-index:2;
+		@include min($bmobile) {
+			height:450px;
+			min-height:450px;
+		}
+		.container {
+			padding-top:0px;
+			@include max($btablet) {
+				padding-top:15px;
+			}
+		}
+	}
+	&.private {
+		min-height:650px;
+		background-color:$white;
+		@include max($bmobile) {
+			min-height:1px;
+		}
+		.container {
+			padding-top:15px;
+			@include max($btablet) {
+				padding-top:15px;
+			}
+		}
+	}
+	@include min($bmobile) {
+		display:flex;
+		flex-direction:column;
+		align-items:stretch;
+		align-content:stretch;
+		position:relative;
+		width:100%;
+		height:100vh;
+		min-height:600px;
+	}
+	.container {
+		flex:1;
+		display:flex;
+		flex-direction:row;
+		flex-flow:row wrap;
+		justify-content:center;
+		align-items:center;
+		align-content:space-around;
+		padding-top:87px;
+		z-index:2;
+		@include max($btablet) {
+			padding-top:65px;
+			padding-bottom:15px;
+		}
+		& > * {
+			flex:1 100%;
+			z-index:2;
+		}
+	}
+	h2 {
+		text-align:center;
+		text-transform:uppercase;
+		span {
+			font-size:35px;
+			text-transform:lowercase;
+			@include max($bmobile) {
+				font-size:18px;
+			}
+		}
+	}
+	p {
+		@include min($bmobile) {
+			text-align:center;
+		}
+		@include min($btablet) {
+			padding-left:80px;
+			padding-right:80px;
+		}
+	}
+	.icon {
+		text-align:center;
+		@include max($bmobile) {
+			margin-top:15px;
+			& + .icon {
+				margin-top:30px;
+			}
+		}
+		span {
+			display:flex;
+			align-content:center;
+			justify-content:center;
+			width:90px;
+			height:90px;
+			border-radius:50%;
+			background-color:$white;
+			margin:0px auto;
+			img {
+				width:70%;
+			}
+		}
+		p {
+			font-size:18px;
+			padding:0px;
+			padding-top:15px;
+		}
+	}
+}
+.google_and_app {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	align-content:center;
+	padding-top:20px;
+	padding-bottom:20px;
+	a {
+		position:relative;
+		display:inline-block;
+		height:60px;
+		@include max($bmobile) {
+			margin-top:30px;
+		}
+		&:before {
+			content:'';
+			position:absolute;
+			left:0px;
+			top:0px;
+			width:100%;
+			height:100%;
+			background-repeat:no-repeat;
+			background-position:0px 0px;
+		}
+		&:after {
+			content:'';
+			position:absolute;
+			left:0px;
+			top:0px;
+			width:100%;
+			height:100%;
+			background-repeat:no-repeat;
+			opacity:0;
+			transition: {
+				property:opacity;
+				duration:.2s;
+			}
+		}
+		&.google_play {
+			width:210px;
+			&:before {
+				background-image:url(../images/google_play.png);
+				background-size:210px 120px;
+				background-position:0px 0px;
+			}
+			&:after {
+				background-image:url(../images/google_play.png);
+				background-size:210px 120px;
+				background-position:0px -60px;
+			}
+		}
+		&.app_store {
+			width:218px;
+			&:before {
+				background-image:url(../images/app_store.png);
+				background-size:218px 120px;
+				background-position:0px 0px;
+			}
+			&:after {
+				background-image:url(../images/app_store.png);
+				background-size:218px 120px;
+				background-position:0px -60px;
+			}
+		}
+		&:hover {
+			&:after {
+				opacity:1;
+			}
+		}
+	}
+}
+.links {
+	text-align:center;
+	@include max($bmobile) {
+		margin-top:30px;
+	}
+	&:hover {
+		strong {
+			color:$blue;
+		}
+	}
+	strong {
+		display:block;
+		@include text($reg, 20px, #939598, 24px, none);
+		font-weight:normal;
+		padding-bottom:14px;
+		transition: {
+			property:color;
+			duration:.2s;
+		}
+		.fa {
+			top:0px;
+			font-size:22px;
+			margin-right:15px;
+		}
+	}
+	p {
+		@include text($med, 16px, #939598, 20px, none);
+		padding:0px;
+		padding-bottom:8px;
+		a {
+			color:#b9b9b9;
+			&:hover {
+				color:$blue;
+			}
+			.fa {
+				top:0px;
+				margin-left:5px;
+			}
+		}
+	}
+}
+.video {
+	display:flex;
+	flex-flow:row wrap;
+	justify-content:space-around;
+	align-content:center;
+	align-items:center;
+	.laptop {
+		display:flex;
+		flex-flow:row wrap;
+		justify-content:center;
+		align-content:center;
+		align-items:center;
+		position:relative;
+		width:594px;
+		height:348px;
+		@include text($light, 18px, $black, 26px, none);
+		text-align:center;
+		padding-left:90px;
+		padding-right:90px;
+		padding-bottom:15px;
+		margin-bottom:30px;
+		@include max($btablet) {
+			width:500px;
+			height:293px;
+			padding-left:75px;
+			padding-right:75px;
+		}
+		@include max($bmobile) {
+			width:300px;
+			height:176px;
+			font-size:11px;
+			line-height:12px;
+			padding-left:45px;
+			padding-right:45px;
+			padding-bottom:5px;
+			margin:0px auto;
+		}
+		&:before {
+			content:'';
+			position:absolute;
+			left:0px;
+			top:0px;
+			width:100%;
+			height:100%;
+			background-image:url(../images/laptop.svg);
+			background-repeat:no-repeat;
+			background-position:0px 0px;
+			background-size:100% 100%;
+			opacity:0.3;
+		}
+		span {
+			position:relative;
+		}
+	}
+	.play {
+		position:relative;
+		width:115px;
+		height:115px;
+		margin-top:-100px;
+		@include max($bmobile) {
+			margin-top:15px;
+		}
+		a {
+			display:block;
+			width:100%;
+			height:100%;
+			background-image:url(../images/play.png);
+			background-repeat:no-repeat;
+			background-position:0px 0px;
+		}
+		span {
+			position:absolute;
+			left:-70px;
+			top:55px;
+			width:57px;
+			height:102px;
+			background-image:url(../images/arrow_play.png);
+			background-repeat:no-repeat;
+			background-position:0px 0px;
+			background-size:100% 100%;
+			@include max($bmobile) {
+				left:-35px;
+				top:27px;
+				width:28px;
+				height:50px;
+			}
+		}
+		strong {
+			position:absolute;
+			left:-80px;
+			top:170px;
+			@include text($reg, 20px, $black, 30px, uppercase);
+			white-space:nowrap;
+			font-weight:normal;
+			@include max($bmobile) {
+				left:auto;
+				right:110%;
+				top:83px;
+				font-size:14px;
+				line-height:20px;
 			}
 		}
 	}

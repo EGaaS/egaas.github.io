@@ -54,8 +54,15 @@ $(document).ready(function(){
 	Scroll();
 	
 	$("header .logo, .subscription .logo").on('click', function () {
-		$.scrollTo(0, 500);
-		return false;
+		var id = $(this).attr("href").split('');
+		
+		if (id[0] === "#") {
+			$.scrollTo(0, 500);
+			if ($("header").hasClass("on")) {
+				$("header").removeClass("on");
+			}
+			return false;
+		}
 	});
 	$("header .nav .nav-link").on('click', function () {
 		var id = $(this).attr("href").split('');
@@ -63,7 +70,7 @@ $(document).ready(function(){
 		if (id[0] === "#") {
 			$.scrollTo(this.hash, 500);
 			$("header .menu").click();
-			return false;
+			//return false;
 		}
 	});
 	$("header .menu").on('click', function(){

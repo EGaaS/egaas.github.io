@@ -92,11 +92,11 @@ var canvasDots = function() {
 
   window.onmousemove = function(parameter) {
     mousePosition.x = parameter.pageX;
-    mousePosition.y = parameter.pageY - $(window).scrollTop();
+    mousePosition.y = parameter.pageY;
   }
 
   mousePosition.x = window.innerWidth / 2;
-  mousePosition.y = (window.innerHeight / 2) - $(window).scrollTop();
+  mousePosition.y = window.innerHeight / 2;
 
   setInterval(createDots, 1000/30); 
 };

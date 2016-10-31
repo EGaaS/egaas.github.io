@@ -4,6 +4,7 @@
 @import "mixins";
 @import "bootstrap/bootstrap";
 @import "font-awesome/font-awesome";
+@import "TimeCircles";
 
 /* Main tags
 ----------------------------------------- */
@@ -96,9 +97,15 @@ input, textarea, button {
 	overflow:hidden;
 	background-color:$red;
 	&#about {
-		top:-50px;
+		//top:-50px;
 		@include min($btablet) {
 			top:-72px;
+		}
+	}
+	&#team {
+		@include max($btablet) {
+			margin-top:-47px;
+			margin-bottom:47px;
 		}
 	}
 	@include max($btablet) {
@@ -313,7 +320,7 @@ header {
 			position:fixed;
 			left:0px;
 			top:auto;
-			bottom:-100%;
+			bottom:-120%;
 			width:100%;
 			height:100%;
 			background-color:$dblue;
@@ -450,6 +457,9 @@ header {
 		top:72px;
 		bottom:0px;
 		width:100%;
+		@include max($bmobile) {
+			top:50px;
+		}
 		.container {
 			display:flex;
 			flex-flow:row wrap;
@@ -479,7 +489,44 @@ header {
 					transform:translate3d(0, 200%, 0);
 				}
 			}
+			.timer {
+				position:relative;
+				flex:1 100%;
+				padding-bottom:60px;
+				strong {
+					display:block;
+					@include text($bold, 25px, $white, 30px, uppercase);
+					text-align:center;
+					padding-bottom:19px;
+					animation:showSlogan 0.3s forwards;
+					animation-delay:0.9s;
+					transform:translate3d(0, 200%, 0);
+					opacity:0;
+					@include max($bmobile) {
+						font-size:15px;
+						line-height:20px;
+						padding-top:15px;
+						padding-bottom:0px;
+					}
+				}
+				.start {
+					width:400px;
+					height:100px;
+					margin:0px auto;
+					animation:showSlogan 0.3s forwards;
+					animation-delay:0.9s;
+					transform:translate3d(0, 200%, 0);
+					opacity:0;
+					@include max($bmobile) {
+						width:320px;
+						height:70px;
+					}
+				}
+			}
 			.spam {
+				@include max($bmobile) {
+					margin-bottom:20px;
+				}
 				.head {
 					position:absolute;
 					left:50%;
@@ -540,6 +587,60 @@ header {
 			margin-left:0px;
 			margin-right:0px;
 		}
+	}
+}
+.countdown-container {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+
+}
+
+.clock-item .inner {
+	height: 0px;
+	padding-bottom: 100%;
+	position: relative;	
+	width: 100%;
+}
+
+.clock-canvas {
+	background-color: rgba(255, 255, 255, .1);
+	border-radius: 50%;
+	height: 0px;
+	padding-bottom: 100%;
+}
+
+.text {
+	color: #fff;	
+	font-size: 30px;
+	font-weight: bold;	
+	margin-top: -50px;
+	position: absolute;
+	top: 50%;
+	text-align: center;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+	width: 100%;
+}
+
+.text .val {
+	font-size: 50px;
+}
+
+.text .type-time {
+	font-size: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+	.clock-item {
+		margin-bottom: 30px;		
+	}
+}
+
+@media (max-width: 767px) {
+	.clock-item {
+		margin: 0px 30px 30px 30px;
 	}
 }
 /* Content
@@ -715,16 +816,132 @@ header {
 		}
 	}
 }
-.team {
+.about {
 	position:relative;
 	clear:both;
-	min-height:100vh;
+	background-color:$blue;
+	overflow:hidden;
 	@include min($bmobile) {
 		display:flex;
 		flex-flow:row wrap;
 		align-items:stretch;
 		align-content:stretch;
 		justify-content:flex-start;
+		min-height:100vh;
+	}
+	.container {
+		@include min($bmobile) {
+			flex:1 100%;
+			display:flex;
+			flex-direction:row;
+			align-items:stretch;
+			align-content:center;
+			justify-content:flex-start;
+		}
+		.inner {
+			flex:1;
+			padding-top:90px;
+			padding-bottom:90px;
+			@include max($bmobile) {
+				padding-top:15px;
+				padding-bottom:0px;
+			}
+			h2 {
+				position:relative;
+				color:$white;
+				z-index:2;
+			}
+			p {
+				color:$white;
+				position:relative;
+				z-index:2;
+			}
+			.egaas_video {
+				display:flex;
+				flex-flow:row wrap;
+				justify-content:center;
+				align-content:center;
+				align-items:center;
+				position:relative;
+				margin-top:30px;
+				z-index:2;
+				@include max($bmobile) {
+					display:block;
+					text-align:center;
+					margin-top:15px;
+				}
+				.laptop {
+					position:relative;
+					width:594px;
+					height:348px;
+					margin-right:30px;
+					@include max($btablet) {
+						width:500px;
+						height:293px;
+					}
+					@include max($bmobile) {
+						width:300px;
+						height:176px;
+						margin:0px auto;
+					}
+					.play {
+						position:absolute;
+						left:50%;
+						top:50%;
+						width:115px;
+						height:115px;
+						background-image:url(../images/play.png);
+						background-repeat:no-repeat;
+						background-position:0px 0px;
+						margin-left:-57px;
+						margin-top:-57px;
+					}
+				}
+				.text {
+					position:relative;
+					@include text($light, 14px, $white, 24px, none);
+					text-align:center;
+					span {
+						position:absolute;
+						left:-50px;
+						top:60%;
+						width:34px;
+						height:31px;
+						background-image:url(../images/arrow.png);
+						background-repeat:no-repeat;
+						background-position:left bottom;
+						background-size:100% auto;
+						transform:scaleY(-1) rotate(75deg);
+					}
+					strong {
+						display:block;
+						@include text($reg, 20px, $white, 24px, uppercase);
+						font-weight:normal;
+					}
+					@include max($bmobile) {
+						display:inline-block;
+						padding-top:15px;
+						padding-bottom:15px;
+						span {
+							top:10px;
+							transform:scaleY(-1) rotate(0deg);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.team {
+	position:relative;
+	clear:both;
+	@include min($bmobile) {
+		display:flex;
+		flex-flow:row wrap;
+		align-items:stretch;
+		align-content:stretch;
+		justify-content:flex-start;
+		min-height:100vh;
 	}
 	.container {
 		@include min($bmobile) {

@@ -45,7 +45,7 @@ function Scroll(){
 		bg.css({"height":"0px"});
 	}
 	
-	$(".banner .inner .container .slogan, .banner .inner .container .spam").css({"transform":"translate3d(0, " + (-1*wy) + "px, 0)"});
+	$(".banner .inner .container .slogan, .banner .inner .container .timer, .banner .inner .container .spam").css({"transform":"translate3d(0, " + (-1*wy) + "px, 0)"});
 }
 
 $(document).ready(function(){
@@ -61,7 +61,6 @@ $(document).ready(function(){
 			if ($("header").hasClass("on")) {
 				$("header").removeClass("on");
 			}
-			return false;
 		}
 	});
 	$("header .nav .nav-link").on('click', function () {
@@ -114,7 +113,6 @@ $(document).ready(function(){
 	
 	var z = 2;
 	var el = $("#team_particles");
-	particlesJS.load('team_particles', 'js/team_particles.json');
 	
 	jQuery.os = { name: (/(win|mac|linux|sunos|solaris|iphone|ipad)/.exec(navigator.platform.toLowerCase()) || [u])[0].replace('sunos', 'solaris') };
 	if (jQuery.os.name === "iphone" || jQuery.os.name === "ipad") {
@@ -159,6 +157,8 @@ $(document).ready(function(){
 	if (jQuery.os.name === "linux") {
 		$("body").addClass("androidfix");
 	}
+	
+	$(".start").TimeCircles();
 });
 
 $(window).on('load', function(){

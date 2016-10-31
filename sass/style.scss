@@ -96,8 +96,9 @@ input, textarea, button {
 	overflow:hidden;
 	background-color:$red;
 	&#about {
+		top:-50px;
 		@include min($btablet) {
-			top:-50px;
+			top:-72px;
 		}
 	}
 	@include max($btablet) {

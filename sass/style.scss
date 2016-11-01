@@ -327,18 +327,17 @@ header {
 				text-align:center;
 				padding-top:26px;
 				padding-left:240px;
-				padding-right:75px;
+				padding-right:150px;
 				z-index:1;
 				.nav-item {
 					display:inline-block;
 					&.dropdown {
 						.dropdown-menu {
 							@include max($btablet) {
-								position:relative;
 								left:0px;
-								top:0px;
+								top:50px;
 								width:100%;
-								background-color:$blue;
+								background-color:lighten($dblue, 5%);
 								border:0px;
 								border-radius:0px;
 								box-shadow:none;
@@ -349,6 +348,9 @@ header {
 								a {
 									font-size:14px;
 									line-height:30px;
+									&:hover {
+										background-color:transparent;
+									}
 								}
 							}
 						}
@@ -370,12 +372,40 @@ header {
 										border-top:1px solid rgba(155, 156, 156, 0.2);
 									}
 									&.active {
-										background-color:$lgray;
+										background-color:$lgray !important;
 									}
 									&:hover {
 										background-color:lighten($lgray, 3%);
 									}
 								}
+							}
+						}
+					}
+					&.language {
+						position:absolute;
+						right:0px;
+						top:26px;
+						@include max($btablet) {
+							top:0px;
+							background-color:lighten($dblue, 5%);
+						}
+						.dropdown-toggle {
+							@include max($btablet) {
+								width:70px;
+								text-align:center;
+							}
+						}
+						.dropdown-menu {
+							min-width:70px;
+							width:70px;
+							margin:0px;
+							@include max($btablet) {
+								left:auto;
+								right:0px;
+								width:70px;
+								max-height:270px;
+								overflow:hidden;
+								overflow-y:auto;
 							}
 						}
 					}
@@ -388,8 +418,8 @@ header {
 				}
 				.soc {
 					position:absolute;
-					right:0px;
-					top:26px;
+					right:75px;
+					top:28px;
 					a {
 						margin-left:0px;
 						margin-right:0px;
@@ -400,6 +430,7 @@ header {
 					@include max($btablet) {
 						display:flex;
 						justify-content:space-around;
+						right:0px;
 						top:auto;
 						bottom:0px;
 						width:100%;
@@ -447,11 +478,8 @@ header {
 							line-height:50px;
 							padding:0px;
 							margin:0px;
-							&:hover {
-								background-color:$blue;
-							}
 							&.active {
-								background-color:$blue;
+								background-color:$blue !important;
 							}
 						}
 					}
@@ -1580,9 +1608,14 @@ footer {
 	font-size:0px;
 	z-index:2;
 	.copyright {
+		position:relative;
 		float:left;
 		@include text($arial, 14px, $white, 14px, none);
 		padding-top:30px;
+		z-index:2;
+		@include max($bmobile) {
+			padding-top:50px;
+		}
 		span {
 			position:relative;
 			top:7px;
@@ -1591,11 +1624,28 @@ footer {
 			padding-right:5px;
 		}
 	}
+	.manifest {
+		position:absolute;
+		left:0px;
+		top:0px;
+		width:100%;
+		text-align:center;
+		padding-top:38px;
+		z-index:1;
+		@include max($bmobile) {
+			padding-top:18px;
+		}
+		a {
+			@include text($arial, 14px, $white, 14px, none);
+		}
+	}
 	.soc {
+		position:relative;
 		float:right;
 		padding-top:39px;
+		z-index:2;
 		@include max($bmobile) {
-			padding-top:34px;
+			padding-top:54px;
 		}
 		a {
 			display:inline-block;

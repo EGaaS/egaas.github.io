@@ -48,6 +48,42 @@ function Scroll(){
 	$(".banner .inner .container .slogan, .banner .inner .container .timer, .banner .inner .container .spam").css({"transform":"translate3d(0, " + (-1*wy) + "px, 0)"});
 }
 
+function showVideo(elem){
+	'use strict';
+	
+	var video = document.createElement("div");
+	var close = document.createElement("div");
+	var link = elem.getAttribute("data-link");
+	
+	video.setAttribute("id", "video");
+	video.innerHTML = link;
+	close.setAttribute("data-player-close", true);
+	close.innerHTML = '<span>&times;</span>';
+	
+	video.prepend(close);
+	document.body.append(video);
+	
+	$("#video").bind('touchmove', function(e) {
+		e.preventDefault();
+	});
+	
+	$("[data-player-close]").on('click', function(){
+		closeVideo();
+		return false;
+	});
+	
+	$("body").css({"overflow":"hidden"});
+}
+
+function closeVideo(){
+	'use strict';
+	
+	var video = document.getElementById("video");
+	video.parentNode.removeChild(video);
+	
+	$("body").css({"overflow":"visible"});
+}
+
 $(document).ready(function(){
 	'use strict';
 	
@@ -110,6 +146,11 @@ $(document).ready(function(){
 		var val = $(this);
 		
 		val.removeClass("form-control-danger");
+	});
+	
+	$("[data-player]").on('click', function(){
+		showVideo(this);
+		return false;
 	});
 	
 	var z = 2;

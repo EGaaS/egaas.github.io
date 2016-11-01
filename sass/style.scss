@@ -97,7 +97,11 @@ input, textarea, button {
 	overflow:hidden;
 	background-color:$red;
 	&#about {
-		//top:-50px;
+		@include min($btablet) {
+			top:-72px;
+		}
+	}
+	&#wallet {
 		@include min($btablet) {
 			top:-72px;
 		}
@@ -283,6 +287,42 @@ header {
 				z-index:1;
 				.nav-item {
 					display:inline-block;
+					&.dropdown {
+						.dropdown-menu {
+							@include max($btablet) {
+								position:relative;
+								left:0px;
+								top:0px;
+								width:100%;
+								background-color:$blue;
+								border:0px;
+								border-radius:0px;
+								box-shadow:none;
+								text-align:center;
+								padding:0px;
+								margin:0px;
+								margin-bottom:50px;
+								a {
+									line-height:30px;
+								}
+							}
+						}
+					}
+					@include min($btablet) {
+						&.dropdown {
+							.dropdown-menu {
+								a {
+									display:block;
+									width:auto;
+									color:#939598;
+									line-height:30px;
+									& + a {
+										border-top:1px solid rgba(155, 156, 156, 0.2);
+									}
+								}
+							}
+						}
+					}
 				}
 				a {
 					display:inline-block;
@@ -307,7 +347,7 @@ header {
 						top:auto;
 						bottom:0px;
 						width:100%;
-						height:50px;
+						height:40px;
 						a {
 							font-size:26px;
 						}
@@ -326,7 +366,7 @@ header {
 			background-color:$dblue;
 			line-height:50px;
 			text-align:center;
-			padding-top:72px;
+			padding-top:50px;
 			z-index:10;
 			transition: {
 				property:all;
@@ -1161,7 +1201,7 @@ header {
 			min-height:1px;
 		}
 		.container {
-			padding-top:15px;
+			padding-top:87px;
 			@include max($btablet) {
 				padding-top:15px;
 			}

@@ -66,10 +66,11 @@ $(document).ready(function(){
 	$("header .nav .nav-link").on('click', function () {
 		var id = $(this).attr("href").split('');
 		
-		if (id[0] === "#") {
-			$.scrollTo(this.hash, 500);
-			$("header .menu").click();
-			//return false;
+		if (!$(this).hasClass("dropdown-toggle")) {
+			if (id[0] === "#") {
+				$.scrollTo(this.hash, 500);
+				$("header .menu").click();
+			}
 		}
 	});
 	$("header .menu").on('click', function(){

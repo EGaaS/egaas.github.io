@@ -26,7 +26,14 @@
 					<li class="nav-item"><a class="nav-link" href="./#about">About</a></li>
 					<li class="nav-item"><a class="nav-link" href="./#team">Team</a></li>
 					<li class="nav-item"><a class="nav-link" href="http://forum.egaas.org/" target="_blank">Forum</a></li>
-					<li class="nav-item"><a class="nav-link active" href="download.html">Download</a></li>
+					<li class="nav-item active dropdown">
+						<a class="nav-link dropdown-toggle active" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Download</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item nav-link" href="#lite">eGaaS v1.0 Lite beta</a>
+							<a class="dropdown-item nav-link" href="#wallet">eGaaS Node v1.0 beta</a>
+							<a class="dropdown-item nav-link" href="#private">eGaaS Node v0.1 beta (private)</a>
+						</div>
+					</li>
 					<li class="nav-item">
 						<div class="soc">
 							<a href="https://www.facebook.com/EgaasProject" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
@@ -43,6 +50,7 @@
 	</div>
 </header>
 <section class="version nano">
+	<div id="lite" class="page"></div>
 	<div class="container">
 		<canvas class="stars"></canvas>
 		<h2>eGaaS v1.0 Lite beta</h2>
@@ -90,6 +98,7 @@
 	</div>
 </section>
 <section class="version node">
+	<div id="wallet" class="page"></div>
 	<div class="container">
 		<h2>eGaaS Node v1.0 beta</h2>
 		<p>You can launch your node, engage in forging or delegate forging. To start work, you must install <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>.</p>
@@ -118,8 +127,9 @@
 	</div>
 </section>
 <section class="version private">
+	<div id="private" class="page"></div>
 	<div class="container">
-		<h2>eGaaS Node v 0.1 beta <span>(private)</span></h2>
+		<h2>eGaaS Node v0.1 beta <span>(private)</span></h2>
 		<p>Smart contracts, smart laws, states, citizens, etc.</p>
 		<div class="video">
 			<div class="laptop"><span>This version contains bugs that we have not had time to fix yet, and there are some shortcomings. But we decided to make it publicly available to show what we're currently working on. To start work, you must install <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>. The documentation is in the process of writing. You can also watch the video showing a part of the functionality of this version</span></div>

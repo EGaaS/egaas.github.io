@@ -1,19 +1,44 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
 <title>eGaaS - Worldwide Blockchain Platform</title>
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-<link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-<script type="text/javascript" src="js/tether.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-<script type="text/javascript" src="js/stars.js"></script>
-<script type="text/javascript" src="js/particles.min.js"></script>
-<script type="text/javascript" src="js/TimeCircles.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<link href="../css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="../js/tether.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="../js/stars.js"></script>
+<script type="text/javascript" src="../js/particles.min.js"></script>
+<script type="text/javascript" src="../js/TimeCircles.js"></script>
+<script type="text/javascript" src="../js/scripts.js"></script>
+<script>
+$(document).ready(function(){
+	$(".spam .btn").on('click', function () {
+		var btn = $(this);
+		var val = $(this).parents(".spam").find(".form-control");
+		
+		if (val.val().indexOf('@') === -1) {
+			val.addClass("form-control-danger").val('Incorrect e-mail address!');
+			return false;
+		} else {
+			$.ajax({
+				url: 'http://148.251.83.120:8093/subscribe',
+				type: 'POST',
+				data: {
+					email: val.val()
+				},
+				success: function(){
+					val.val('Thank you!').prop("disabled", true);
+					btn.prop("disabled", true);
+				}    
+			});
+		}
+	});
+})
+</script>
 </head>
 <body data-spy="scroll" data-target="#navbar">
 <header class="subpage">
@@ -41,15 +66,15 @@
 							<a href="https://medium.com/egaas" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
 						</div>
 					</li>
-					<!--<li class="nav-item dropdown language">
+					<li class="nav-item dropdown language">
 						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">En</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item nav-link" href="/en/">En</a>
-							<a class="dropdown-item nav-link" href="/ru/">Ru</a>
-							<a class="dropdown-item nav-link" href="/cn/">简体</a>
-							<a class="dropdown-item nav-link" href="/tw/">繁體</a>
+							<a class="dropdown-item nav-link" href="../en/download.html">En</a>
+							<a class="dropdown-item nav-link" href="../ru/download.html">Ру</a>
+							<a class="dropdown-item nav-link" href="../cn/download.html">简体</a>
+							<a class="dropdown-item nav-link" href="../tw/download.html">繁體</a>
 						</div>
-					</li>-->
+					</li>
 				</ul>
 			</div>
 		</nav>
@@ -66,15 +91,15 @@
 		<p>You can run the app and start working right away, there is no need to wait for blockchain synchronization.</p>
 		<div class="row">
 			<article class="icon col-sm-4">
-				<span><img src="images/i_12.svg" alt=""/></span>
+				<span><img src="../images/i_12.svg" alt=""/></span>
 				<p>Minimal feature-set</p>
 			</article>
 			<article class="icon col-sm-4">
-				<span><img src="images/i_13.svg" alt=""/></span>
+				<span><img src="../images/i_13.svg" alt=""/></span>
 				<p>No blockchain download</p>
 			</article>
 			<article class="icon col-sm-4">
-				<span><img src="images/i_14.svg" alt=""/></span>
+				<span><img src="../images/i_14.svg" alt=""/></span>
 				<p>Instant Access</p>
 			</article>
 		</div>
@@ -189,7 +214,7 @@
 <footer>
 	<div class="container clearfix">
 		<div class="copyright"><span>&copy;</span> 2016 «EGaaS»</div>
-		<div class="manifest"><a href="docs/eGaaS_Manifest.pdf" target="_blank">eGaaS Manifest</a></div>
+		<div class="manifest"><a href="../docs/eGaaS_Manifest.pdf" target="_blank">eGaaS Manifest</a></div>
 		<div class="soc">
 			<a href="https://www.facebook.com/EgaasProject" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 			<a href="https://twitter.com/egaasproject" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>

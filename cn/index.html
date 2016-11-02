@@ -1,20 +1,60 @@
-
 <!DOCTYPE html>
-<html lang="zh_TW">
+<html lang="zh-Hans">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
 <title>eGaaS - 环球区块链平台</title>
-<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-<link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
-<script type="text/javascript" src="js/tether.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.min.js"></script>
-<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
-<!--<script type="text/javascript" src="js/about.js"></script>-->
-<script type="text/javascript" src="js/particles.min.js"></script>
-<script type="text/javascript" src="js/TimeCircles.js"></script>
-<script type="text/javascript" src="js/scripts.js"></script>
+<link rel="shortcut icon" href="../images/favicon.ico" type="image/x-icon">
+<link href="../css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="../js/tether.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../js/jquery.scrollTo.js"></script>
+<!--<script type="text/javascript" src="../js/about.js"></script>-->
+<script type="text/javascript" src="../js/particles.min.js"></script>
+<script type="text/javascript" src="../js/TimeCircles.js"></script>
+<script type="text/javascript" src="../js/scripts.js"></script>
+<script>
+$(document).ready(function(){
+	$(".start").TimeCircles({
+		time: {
+            Days: {
+                text: "Days"
+            },
+            Hours: {
+                text: "Hours"
+            },
+            Minutes: {
+                text: "Minutes"
+            },
+            Seconds: {
+                text: "Seconds"
+            }
+        }
+	});
+	$(".spam .btn").on('click', function () {
+		var btn = $(this);
+		var val = $(this).parents(".spam").find(".form-control");
+		
+		if (val.val().indexOf('@') === -1) {
+			val.addClass("form-control-danger").val('Incorrect e-mail address!');
+			return false;
+		} else {
+			$.ajax({
+				url: 'http://148.251.83.120:8093/subscribe',
+				type: 'POST',
+				data: {
+					email: val.val()
+				},
+				success: function(){
+					val.val('Thank you!').prop("disabled", true);
+					btn.prop("disabled", true);
+				}    
+			});
+		}
+	});
+})
+</script>
 </head>
 <body data-spy="scroll" data-target="#navbar">
 <header>
@@ -36,15 +76,15 @@
 							<a href="https://medium.com/egaas" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
 						</div>
 					</li>
-					<!--<li class="nav-item dropdown language">
-						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">En</a>
+					<li class="nav-item dropdown language">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">简体</a>
 						<div class="dropdown-menu">
-							<a class="dropdown-item nav-link" href="/en/">En</a>
-							<a class="dropdown-item nav-link" href="/ru/">Ru</a>
-							<a class="dropdown-item nav-link" href="/cn/">简体</a>
-							<a class="dropdown-item nav-link" href="/tw/">繁體</a>
+							<a class="dropdown-item nav-link" href="../en/">En</a>
+							<a class="dropdown-item nav-link" href="../ru/">Ру</a>
+							<a class="dropdown-item nav-link" href="../cn/">简体</a>
+							<a class="dropdown-item nav-link" href="../tw/">繁體</a>
 						</div>
-					</li>-->
+					</li>
 				</ul>
 			</div>
 		</nav>
@@ -88,7 +128,7 @@
 			<div class="inner">
 				<div class="row">
 					<div class="col-sm-4 pull-sm-right p-y-2">
-						<img class="img-fluid m-x-auto" src="images/web.png" alt=""/>
+						<img class="img-fluid m-x-auto" src="../images/web.png" alt=""/>
 					</div>
 					<div class="col-sm-8">
 						<h2>使命</h2>
@@ -97,7 +137,7 @@
 				</div>
 				<div class="row">
 					<div class="col-sm-4 p-x-3 p-y-2">
-						<img class="img-fluid m-x-auto" src="images/logo_big.svg" alt=""/>
+						<img class="img-fluid m-x-auto" src="../images/logo_big.svg" alt=""/>
 					</div>
 					<div class="col-sm-8">
 						<h2>科技</h2>
@@ -114,7 +154,7 @@
 				<div class="article col-md-6">
 					<div class="head">
 						<div class="icon">
-							<img src="images/i_01.svg" alt=""/>
+							<img src="../images/i_01.svg" alt=""/>
 						</div>
 					</div>
 					<h2>政府</h2>
@@ -123,7 +163,7 @@
 				<div class="article col-md-6">
 					<div class="head">
 						<div class="icon">
-							<img src="images/i_02.svg" alt=""/>
+							<img src="../images/i_02.svg" alt=""/>
 						</div>
 					</div>
 					<h2>法律</h2>
@@ -138,7 +178,7 @@
 				<div class="article col-md-6">
 					<div class="head">
 						<div class="icon">
-							<img src="images/i_03.svg" alt=""/>
+							<img src="../images/i_03.svg" alt=""/>
 						</div>
 					</div>
 					<h2>投票</h2>
@@ -148,7 +188,7 @@
 				<div class="article col-md-6">
 					<div class="head">
 						<div class="icon">
-							<img src="images/i_04.svg" alt=""/>
+							<img src="../images/i_04.svg" alt=""/>
 						</div>
 					</div>
 					<h2>金融</h2>
@@ -164,7 +204,7 @@
 				<div class="article col-md-6">
 					<div class="head">
 						<div class="icon">
-							<img src="images/i_05.svg" alt=""/>
+							<img src="../images/i_05.svg" alt=""/>
 						</div>
 					</div>
 					<h2>常用注册表</h2>
@@ -173,7 +213,7 @@
 				<div class="article col-md-6">
 					<div class="head">
 						<div class="icon">
-							<img src="images/i_06.svg" alt=""/>
+							<img src="../images/i_06.svg" alt=""/>
 						</div>
 					</div>
 					<h2>医疗记录</h2>
@@ -189,7 +229,7 @@
 				<div class="article col-md-6">
 					<div class="head">
 						<div class="icon">
-							<img src="images/i_07.svg" alt=""/>
+							<img src="../images/i_07.svg" alt=""/>
 						</div>
 					</div>
 					<h2>商业</h2>
@@ -198,7 +238,7 @@
 				<div class="article col-md-6">
 					<div class="head">
 						<div class="icon">
-							<img src="images/i_08.svg" alt=""/>
+							<img src="../images/i_08.svg" alt=""/>
 						</div>
 					</div>
 					<h2>社会保障</h2>
@@ -215,7 +255,7 @@
 				<div class="article col-md-6">
 					<div class="head">
 						<div class="icon">
-							<img src="images/i_09.svg" alt=""/>
+							<img src="../images/i_09.svg" alt=""/>
 						</div>
 					</div>
 					<h2>Registration of companies</h2>
@@ -224,7 +264,7 @@
 				<div class="article col-md-6">
 					<div class="head">
 						<div class="icon">
-							<img src="images/i_10.svg" alt=""/>
+							<img src="../images/i_10.svg" alt=""/>
 						</div>
 					</div>
 					<h2>Citizen</h2>
@@ -239,7 +279,7 @@
 				<div class="article col-md-12">
 					<div class="head">
 						<div class="icon">
-							<img src="images/i_11.svg" alt=""/>
+							<img src="../images/i_11.svg" alt=""/>
 						</div>
 					</div>
 					<h2>Education</h2>
@@ -286,7 +326,7 @@
 				<h2>团队</h2>
 				<div class="row">
 					<article>
-						<img src="images/team_01.png" alt=""/>
+						<img src="../images/team_01.png" alt=""/>
 						<div>
 							<h3>
 								Oleg Strelenko
@@ -297,7 +337,7 @@
 						</div>
 					</article>
 					<article>
-						<img src="images/team_07.png" alt=""/>
+						<img src="../images/team_07.png" alt=""/>
 						<div>
 							<h3>
 								Artur Pakhomov
@@ -307,7 +347,7 @@
 						</div>
 					</article>
 					<article>
-						<img src="images/team_02.png" alt=""/>
+						<img src="../images/team_02.png" alt=""/>
 						<div>
 							<h3>
 								Yuriy Lomakin
@@ -317,7 +357,7 @@
 						</div>
 					</article>
 					<article>
-						<img src="images/team_03.png" alt=""/>
+						<img src="../images/team_03.png" alt=""/>
 						<div>
 							<h3>
 								Aleksandr Boldachev
@@ -327,7 +367,7 @@
 						</div>
 					</article>
 					<article>
-						<img src="images/team_04.png" alt=""/>
+						<img src="../images/team_04.png" alt=""/>
 						<div>
 							<h3>
 								Ruben Pombuhchan
@@ -337,7 +377,7 @@
 						</div>
 					</article>
 					<article>
-						<img src="images/team_05.png" alt=""/>
+						<img src="../images/team_05.png" alt=""/>
 						<div>
 							<h3>
 								Sergey Chernyshev 
@@ -349,7 +389,7 @@
 						</div>
 					</article>
 					<article>
-						<img src="images/team_06.png" alt=""/>
+						<img src="../images/team_06.png" alt=""/>
 						<div>
 							<h3>
 								Alexey Krivonogov
@@ -359,7 +399,7 @@
 						</div>
 					</article>
 					<article>
-						<img src="images/team_08.png" alt=""/>
+						<img src="../images/team_08.png" alt=""/>
 						<div>
 							<h3>
 								Dmitry Eliseev
@@ -369,7 +409,7 @@
 						</div>
 					</article>
 					<article>
-						<img src="images/team_09.png" alt=""/>
+						<img src="../images/team_09.png" alt=""/>
 						<div>
 							<h3>
 								Andrey Nechaev
@@ -400,7 +440,7 @@
 <footer>
 	<div class="container clearfix">
 		<div class="copyright"><span>&copy;</span> 2016 «EGaaS»</div>
-		<div class="manifest"><a href="docs/eGaaS_Manifest.pdf" target="_blank">eGaaS 白皮书</a></div>
+		<div class="manifest"><a href="../docs/eGaaS_Manifest.pdf" target="_blank">eGaaS 白皮书</a></div>
 		<div class="soc">
 			<a href="https://www.facebook.com/EgaasProject" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
 			<a href="https://twitter.com/egaasproject" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
@@ -408,9 +448,9 @@
 		</div>
 	</div>
 </footer>
-<script type="text/javascript" src="js/triangles.js"></script>
+<script type="text/javascript" src="../js/triangles.js"></script>
 <script>
-	particlesJS.load('team_particles', 'js/team_particles.json');
+	particlesJS.load('team_particles', '../js/team_particles.json');
 </script>
 </body>
 </html>

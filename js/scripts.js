@@ -121,27 +121,6 @@ $(document).ready(function(){
 		return false;
 	});
 	
-	$(".spam .btn").on('click', function () {
-		var btn = $(this);
-		var val = $(this).parents(".spam").find(".form-control");
-		
-		if (val.val().indexOf('@') === -1) {
-			val.addClass("form-control-danger").val('Incorrect e-mail address!');
-			return false;
-		} else {
-			$.ajax({
-				url: 'http://148.251.83.120:8093/subscribe',
-				type: 'POST',
-				data: {
-					email: val.val()
-				},
-				success: function(){
-					val.val('Thank you!').prop("disabled", true);
-					btn.prop("disabled", true);
-				}    
-			});
-		}
-	});
 	$(".spam .form-control").on('focus', function () {
 		var val = $(this);
 		
@@ -199,8 +178,6 @@ $(document).ready(function(){
 	if (jQuery.os.name === "linux") {
 		$("body").addClass("androidfix");
 	}
-	
-	$(".start").TimeCircles();
 });
 
 $(window).on('load', function(){

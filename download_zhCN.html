@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zhCN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0" />
+<title>eGaaS - 环球区块链平台</title>
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+<link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="js/tether.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.scrollTo.js"></script>
+<script type="text/javascript" src="js/stars.js"></script>
+<script type="text/javascript" src="js/particles.min.js"></script>
+<script type="text/javascript" src="js/TimeCircles.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+<body data-spy="scroll" data-target="#navbar">
+<header class="subpage">
+	<div class="container">
+		<a class="logo" href="./"><i class="before"></i><i class="after"></i></a>
+		<nav id="navbar">
+			<div>
+				<ul class="nav">
+					<li class="nav-item"><a class="nav-link" href="#mission">使命</a></li>
+					<li class="nav-item"><a class="nav-link" href="#about">关于我们</a></li>
+					<li class="nav-item"><a class="nav-link" href="#team">团队</a></li>
+					<li class="nav-item"><a class="nav-link" href="http://forum.egaas.org/" target="_blank">讨论区</a></li>
+					<li class="nav-item active dropdown">
+						<a class="nav-link dropdown-toggle active" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">下载</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item nav-link" href="#lite">eGaaS v1.0 轻客户端 Beta</a>
+							<a class="dropdown-item nav-link" href="#wallet">eGaaS 节点 v1.0 beta</a>
+							<a class="dropdown-item nav-link" href="#private">eGaaS 节点 v0.1 beta (私密)</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<div class="soc">
+							<a href="https://www.facebook.com/EgaasProject" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+							<a href="https://twitter.com/egaasproject" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+							<a href="https://medium.com/egaas" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+						</div>
+					</li>
+					<!--<li class="nav-item dropdown language">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">En</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item nav-link" href="/en/">En</a>
+							<a class="dropdown-item nav-link" href="/ru/">Ru</a>
+							<a class="dropdown-item nav-link" href="/cn/">简体</a>
+							<a class="dropdown-item nav-link" href="/tw/">繁體</a>
+						</div>
+					</li>-->
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="menu">
+		<div class="patty"></div>
+	</div>
+</header>
+<section class="version nano">
+	<div id="lite" class="page"></div>
+	<div class="container">
+		<canvas class="stars"></canvas>
+		<h2>eGaaS v1.0 轻客户端 beta</h2>
+		<p>你可以直接运行客户端，客户端不需要等待区块链同步完成。</p>
+		<div class="row">
+			<article class="icon col-sm-4">
+				<span><img src="images/i_12.svg" alt=""/></span>
+				<p>轻版本 全功能</p>
+			</article>
+			<article class="icon col-sm-4">
+				<span><img src="images/i_13.svg" alt=""/></span>
+				<p>无需下载区块链</p>
+			</article>
+			<article class="icon col-sm-4">
+				<span><img src="images/i_14.svg" alt=""/></span>
+				<p>即时启用</p>
+			</article>
+		</div>
+		<div class="google_and_app">
+			<a class="google_play" href="https://play.google.com/store/apps/details?id=egaas.org.egaas" target="_blank"></a>
+			<a class="app_store" href="https://itunes.apple.com/nz/app/daylight-light/id1148765378?mt=8" target="_blank"></a>
+		</div>
+		<div class="row">
+			<article class="links col-sm-4 col-xs-6">
+				<strong><i class="fa fa-windows" aria-hidden="true"></i>Windows</strong>
+				<p><a href="https://github.com/EGaaS/go-egaas-mvp/releases/download/v1.0-lite/egaasl64_setup.exe">下载64位元版本<i class="fa fa-download" aria-hidden="true"></i></a></p>
+				<p><a href="https://github.com/EGaaS/go-egaas-mvp/releases/download/v1.0-lite/egaasl32_setup.exe">下载32位元版本<i class="fa fa-download" aria-hidden="true"></i></a></p>
+			</article>
+			<article class="links col-sm-4 col-xs-6">
+				<strong><i class="fa fa-apple" aria-hidden="true"></i>Mac OS</strong>
+				<p><a href="https://github.com/EGaaS/go-egaas-mvp/releases/download/v1.0-lite/egaas_osx64.dmg">下载<i class="fa fa-download" aria-hidden="true"></i></a></p>
+				<p>&nbsp;</p>
+			</article>
+			<!--<article class="links col-sm-3 col-xs-6">
+				<strong><i class="fa fa-linux" aria-hidden="true"></i>Linux</strong>
+				<p><a href="https://github.com/EGaaS/go-egaas-mvp/releases/download/v1.0/egaas_linux64">Download 64<i class="fa fa-download" aria-hidden="true"></i></a></p>
+				<p><a href="#">Download 32<i class="fa fa-download" aria-hidden="true"></i></a></p>
+			</article>-->
+			<article class="links col-sm-4 col-xs-6">
+				<strong><i class="fa fa-globe" aria-hidden="true"></i>Web版</strong>
+				<p><a href="http://node001.egaas.org/" target="_blank">前往<i class="fa fa-external-link" aria-hidden="true"></i></a></p>
+				<p>&nbsp;</p>
+			</article>
+		</div>
+	</div>
+</section>
+<section class="version node">
+	<div id="wallet" class="page"></div>
+	<div class="container">
+		<h2>eGaaS 节点 v1.0 beta</h2>
+		<p>你能启用节点然后开始进行锻造（forging），如要使用锻造功能，电脑必须配备 <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>.</p>
+		<div class="row">
+			<article class="links col-sm-3 col-xs-6">
+				<strong><i class="fa fa-windows" aria-hidden="true"></i>Win</strong>
+				<p><a href="https://github.com/EGaaS/go-egaas-mvp/releases/download/v1.0/egaasw64_setup.exe">Download 64<i class="fa fa-download" aria-hidden="true"></i></a></p>
+				<p><a href="https://github.com/EGaaS/go-egaas-mvp/releases/download/v1.0/egaasw32_setup.exe">Download 32<i class="fa fa-download" aria-hidden="true"></i></a></p>
+			</article>
+			<article class="links col-sm-3 col-xs-6">
+				<strong><i class="fa fa-apple" aria-hidden="true"></i>Mac OS</strong>
+				<p><a href="https://github.com/EGaaS/go-egaas-mvp/releases/download/v1.0/egaas_osx64.dmg">Download<i class="fa fa-download" aria-hidden="true"></i></a></p>
+				<p>&nbsp;</p>
+			</article>
+			<article class="links col-sm-3 col-xs-6">
+				<strong><i class="fa fa-linux" aria-hidden="true"></i>Linux</strong>
+				<p><a href="https://github.com/EGaaS/go-egaas-mvp/releases/download/v1.0/egaas_linux64">Download 64<i class="fa fa-download" aria-hidden="true"></i></a></p>
+				<!--<p><a href="#">Download 32<i class="fa fa-download" aria-hidden="true"></i></a></p>-->
+			</article>
+			<article class="links col-sm-3 col-xs-6">
+				<strong><i class="fa fa-file-code-o" aria-hidden="true"></i>源码</strong>
+				<p><a href="https://github.com/EGaaS/go-egaas-mvp/archive/v1.0.zip" target="_blank">Download<i class="fa fa-download" aria-hidden="true"></i></a></p>
+				<p>&nbsp;</p>
+			</article>
+		</div>
+	</div>
+</section>
+<section class="version private">
+	<div id="private" class="page"></div>
+	<div class="container">
+		<h2>eGaaS 节点 v0.1 beta <span>(私密)</span></h2>
+		<p>智能合约，智能法律，省级，市民</p>
+		<div class="video">
+			<div class="laptop"><span>这个版本包含我们没有时间修复的错误，并有一些缺点。 但我们决定公开展示我们目前正在开展的工作。 要开始工作，您必须安装 <a href="https://www.postgresql.org/" target="_blank">PostgreSQL</a>。文档正在编写过程中。 您还可以观看显示此版本功能的一部分的视频</span></div>
+			<!--<div class="play">
+				<a href="#" data-player data-link='<iframe width="560" height="315" src="https://www.youtube.com/embed/76RbWuFll0Y?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1" frameborder="0" allowfullscreen></iframe>'></a>
+				<span></span>
+				<strong>Play video</strong>
+			</div>-->
+		</div>
+		<div class="row">
+			<article class="links col-sm-3 col-xs-6">
+				<strong><i class="fa fa-windows" aria-hidden="true"></i>Win</strong>
+				<p><a href="https://github.com/EGaaS/go-egaas-mvp/releases/download/v0.1/egaas64_setup.exe">下载 64位元版本<i class="fa fa-download" aria-hidden="true"></i></a></p>
+				<p><a href="https://github.com/EGaaS/go-egaas-mvp/releases/download/v0.1/egaas32_setup.exe">下载 32位元版本<i class="fa fa-download" aria-hidden="true"></i></a></p>
+			</article>
+			<article class="links col-sm-3 col-xs-6">
+				<strong><i class="fa fa-apple" aria-hidden="true"></i>Mac OS</strong>
+				<p><a href="https://github.com/EGaaS/go-egaas-mvp/releases/download/v0.1/egaas_osx64.dmg">下载<i class="fa fa-download" aria-hidden="true"></i></a></p>
+				<p>&nbsp;</p>
+			</article>
+			<article class="links col-sm-3 col-xs-6">
+				<strong><i class="fa fa-linux" aria-hidden="true"></i>Linux</strong>
+				<p><a href="https://github.com/EGaaS/go-egaas-mvp/releases/download/v0.1/egaas_linux64">下载 64位元版本<i class="fa fa-download" aria-hidden="true"></i></a></p>
+				<!--<p><a href="#">Download 32<i class="fa fa-download" aria-hidden="true"></i></a></p>-->
+			</article>
+			<article class="links col-sm-3 col-xs-6">
+				<strong><i class="fa fa-file-code-o" aria-hidden="true"></i>Source code</strong>
+				<p><a href="https://github.com/EGaaS/go-egaas-mvp/archive/v0.1.zip" target="_blank">下载<i class="fa fa-download" aria-hidden="true"></i></a></p>
+				<p>&nbsp;</p>
+			</article>
+		</div>
+	</div>
+</section>
+<section class="subscription">
+	<div class="container clearfix">
+		<a class="logo" href="#"></a>
+		<form class="spam pull-sm-right">
+			<div class="head">订阅我们的消息</div>
+			<div class="input-group input-group-lg">
+				<input class="form-control" type="email" placeholder="Your email">
+				<span class="input-group-btn">
+					<button class="btn btn-primary" type="button"><i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+				</span>
+			</div>
+		</form>
+	</div>
+</section>
+<footer>
+	<div class="container clearfix">
+		<div class="copyright"><span>&copy;</span> 2016 «EGaaS»</div>
+		<div class="manifest"><a href="docs/eGaaS_Manifest.pdf" target="_blank">eGaaS 白皮书</a></div>
+		<div class="soc">
+			<a href="https://www.facebook.com/EgaasProject" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+			<a href="https://twitter.com/egaasproject" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+			<a href="https://medium.com/egaas" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

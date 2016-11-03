@@ -1225,7 +1225,7 @@ header {
 		}
 	}
 	&.private {
-		min-height:650px;
+		min-height:750px;
 		background-color:$white;
 		@include max($bmobile) {
 			min-height:1px;
@@ -1284,6 +1284,15 @@ header {
 		@include min($btablet) {
 			padding-left:80px;
 			padding-right:80px;
+		}
+		a {
+			&:hover {
+				color:darken($blue, 10%) !important;
+			}
+		}
+		.fa {
+			top:0px;
+			margin-right:5px;
 		}
 	}
 	.icon {
@@ -1483,6 +1492,11 @@ header {
 		}
 		span {
 			position:relative;
+		}
+		a {
+			&:hover {
+				color:darken($blue, 10%) !important;
+			}
 		}
 	}
 	.play {

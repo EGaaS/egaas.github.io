@@ -1,0 +1,20 @@
+{
+	"LANG": "zh-Hant",
+	"LANGUAGE": "繁體",
+	"TITLE": "eGaaS - 環球區塊鏈平台",
+	"MENU": {
+		"MISSION": "使命",
+		"ABOUT": "關於我們",
+		"TEAM": "團隊",
+		"FORUM": "討論區",
+		"DOWNLOAD": "下載"
+	},
+	"COUNTDOWN": {
+		"TITLE": "Prior to ICO less than:",
+		"LEFT": "предложение актуально еще",
+		"DAYS": "Days",
+		"HOURS": "Hours",
+		"MINUTES": "Minutes",
+		"SECONDS": "Seconds"
+	}
+}

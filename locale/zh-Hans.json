@@ -1,0 +1,20 @@
+{
+	"LANG": "zh-Hans",
+	"LANGUAGE": "简体",
+	"TITLE": "eGaaS - 环球区块链平台",
+	"MENU": {
+		"MISSION": "使命",
+		"ABOUT": "关于我们",
+		"TEAM": "团队",
+		"FORUM": "讨论区",
+		"DOWNLOAD": "下载"
+	},
+	"COUNTDOWN": {
+		"TITLE": "Prior to ICO less than:",
+		"LEFT": "предложение актуально еще",
+		"DAYS": "Days",
+		"HOURS": "Hours",
+		"MINUTES": "Minutes",
+		"SECONDS": "Seconds"
+	}
+}

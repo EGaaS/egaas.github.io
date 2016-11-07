@@ -20,7 +20,7 @@
 	"ICO": {
 		"BANNER": {
 			"SLOGAN": "Electronic Government as&nbsp;a&nbsp;Service",
-			"TEXT": "Remaining: 300,000 EGS with 50&nbsp;% discount",
+			"TEXT": "Remaining: 300,000 EGS with <strong>50&nbsp;% bonus</strong>",
 			"BTN": "Buy tokens"
 		},
 		"MISSION": {
@@ -84,6 +84,17 @@
 		"RELEASE": {
 			"HEAD": "Release of EGS",
 			"TEXT": "100 million EGS tokens will be released at once."
+		},
+		"FUNDS": {
+			"HEAD": "Distribution of ICO funds",
+			"TEXT": "Main expenditure items of ICO funds",
+			"PIE": {
+				"TEXT1": "Finalization of the current version and writing from scratch of a new eGaaS stable version",
+				"TEXT2": "Legal services",
+				"TEXT3": "Negotiations with the states to create international groups for harmonization of rules and regulations for their connection to the platform",
+				"TEXT4": "Payments to investors who financed eGaaS before the ICO",
+				"TEXT5": "Other"
+			}
 		}
 	}
 }

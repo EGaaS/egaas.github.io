@@ -17,6 +17,14 @@
 		"MINUTES": "Minutes",
 		"SECONDS": "Seconds"
 	},
+	"SUBSCRIBE": {
+		"HEAD": "Subscribe to news",
+		"PLACEHOLDER": "Your email",
+		"INCORRECT": "Incorrect e-mail address!",
+		"THANKS": "Thank you!",
+		"SUBSCRIBED": "You are already subscribed to newsletter!",
+		"TEXT": "1-2 important emails per month"
+	},
 	"ICO": {
 		"BANNER": {
 			"SLOGAN": "Electronic Government as&nbsp;a&nbsp;Service",
@@ -41,9 +49,7 @@
 			},
 			"BUTTONS": {
 				"TEXT1": "Transferring the activities of governments and legislative bodies to the eGaaS platform can save an amount that is equal to nearly 10&nbsp;% of global GDP each year.",
-				"TEXT2": "Learn more:",
-				"TEXT3": "eGaaS Manifesto",
-				"TEXT4": "eGaaS White Paper"
+				"TEXT2": "Learn more:"
 			}
 		},
 		"PLATFORM": {
@@ -132,6 +138,16 @@
 				"TEXT4": "Payments to investors who financed eGaaS before the ICO",
 				"TEXT5": "Other"
 			}
+		}
+	},
+	"DOCS": {
+		"MANIFESTO": {
+			"TEXT": "eGaaS Manifesto",
+			"FILE": "./docs/eGaaS_Manifest.pdf"
+		},
+		"WHITEPAPER": {
+			"TEXT": "eGaaS White Paper",
+			"FILE": "./docs/eGaaS_White_Paper.pdf"
 		}
 	}
 }

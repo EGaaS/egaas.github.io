@@ -17,6 +17,14 @@
 		"MINUTES": "Минуты",
 		"SECONDS": "Секунды"
 	},
+	"SUBSCRIBE": {
+		"HEAD": "Подписаться на новости",
+		"PLACEHOLDER": "Ваш email",
+		"INCORRECT": "Неверный e-mail адрес!",
+		"THANKS": "Спасибо!",
+		"SUBSCRIBED": "Вы уже подписаны на новости!",
+		"TEXT": "1-2 важных письма в месяц"
+	},
 	"ICO": {
 		"BANNER": {
 			"SLOGAN": "Electronic Government as&nbsp;a&nbsp;Service",
@@ -41,9 +49,7 @@
 			},
 			"BUTTONS": {
 				"TEXT1": "Перевод деятельности правительств и законодательных органов на платформу eGaaS сможет сэкономить сумму, составляющую почти 10&nbsp;% от мирового ВВП ежегодно.",
-				"TEXT2": "Узнать больше:",
-				"TEXT3": "Манифест eGaaS",
-				"TEXT4": "White Paper eGaaS"
+				"TEXT2": "Узнать больше:"
 			}
 		},
 		"PLATFORM": {
@@ -132,6 +138,16 @@
 				"TEXT4": "выплаты инвесторам, финансировавшим egaas до ICO",
 				"TEXT5": "прочие"
 			}
+		}
+	},
+	"DOCS": {
+		"MANIFESTO": {
+			"TEXT": "Манифест eGaaS",
+			"FILE": "./docs/eGaaSManifestRu.pdf"
+		},
+		"WHITEPAPER": {
+			"TEXT": "White Paper eGaaS",
+			"FILE": "./docs/eGaaS_White_Paper.pdf"
 		}
 	}
 }

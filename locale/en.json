@@ -85,6 +85,29 @@
 			"HEAD": "Release of EGS",
 			"TEXT": "100 million EGS tokens will be released at once."
 		},
+		"DISTRIBUTION": {
+			"HEAD": "EGS distribution",
+			"PIE": {
+				"TEXT1": "goes to investors (those that invested in the project before ICO), to the team and to future employees as motivational packages",
+				"TEXT2": "will be sold at ICO in several rounds."
+			},
+			"TEXT": "The need to conduct ICO in several rounds is to enhance transparency in the activities of the eGaaS team and increase the possibility of reporting to investors after each roadmap stage. To implement the next roadmap stage after ICO,  $500,000 investment is required. Therefore, during the first ICO round, 5.9 million EGS tokens will be sold."
+		},
+		"STAGES": {
+			"HEAD": "Sales are broken down into five stages with different discounts:",
+			"STEPS": {
+				"TEXT1": "1st day: bonus 50&nbsp;%<br />Limit: 0.3m EGS = 32 BTC<br />1 EGS = 0,0001066 BTC",
+				"TEXT2": "1st week: bonus 25&nbsp;%<br />Limit: 1.3m EGS = 166,4 BTC<br />1 EGS = 0,000128 BTC",
+				"TEXT3": "2nd week : bonus 10&nbsp;%<br />Limit: 1.25m EGS = 181,81 BTC<br />1 EGS = 0,0001454 BTC",
+				"TEXT4": "3rd week : bonus 5&nbsp;%<br />Limit: 1.2m EGS  = 182,85 BTC<br />1 EGS = 0,0001523 BTC",
+				"TEXT5": "4th week<br />Limit: 1.85m EGS = 296 BTC<br />1 EGS = 0,00016 BTC"
+			},
+			"CASE": {
+				"TEXT1": "Sold:",
+				"TEXT2": "Remaining:"
+			},
+			"TEXT": "* When the limit is reached, the system moves to the next sales stage with a new discount. Therefore, the ICO round can be completed ahead of schedule if the token limit is exhausted."
+		},
 		"FUNDS": {
 			"HEAD": "Distribution of ICO funds",
 			"TEXT": "Main expenditure items of ICO funds",

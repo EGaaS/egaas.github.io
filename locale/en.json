@@ -108,6 +108,20 @@
 			},
 			"TEXT": "* When the limit is reached, the system moves to the next sales stage with a new discount. Therefore, the ICO round can be completed ahead of schedule if the token limit is exhausted."
 		},
+		"WHY": {
+			"HEAD": "Why buy EGS",
+			"TEXT1": "EGS tokens ensure security of the eGaaS platform and working capacity of its nodes: opening of new tables, adding attributes, connecting and performing smart contracts and smart laws are paid for in EGS. Therefore, private and corporate users of the platform, as well as states will have to buy EGS to secure the working capacity of their eGaaS projects. Hence, the need for EGS tokens will inevitably grow, which, considering the exclusion of additional releases, will increase their exchange rate.",
+			"TEXT2": "It is inevitable that obsolete forms of governance will die off, while governments will be transformed into e-services for citizens. Do not miss the chance to participate in this revolutionary project in the first stages of development."
+		},
+		"DONE": {
+			"HEAD": "What has been done to date?",
+			"TEXT1": "We’ve created two versions of the eGaaS application:",
+			"TEXT2": "v 1.x – stable; for EGS tokens; available both in Lite version and in node control mode; the light version is also available for IOS and Android",
+			"TEXT3": "v 0.x – unstable and so works on private blockchains; it can be used on your PC or local network; it allows to create eGaaS nodes, etc.",
+			"TEXT4": "In v 0.x, with creation of new and modification of existing tables, pages, menus, and smart contracts of eGaaS, you can configure a state or community to your requirements.",
+			"TEXT5": "In the near future, we will add embedded applications (sets of smart contracts, smart laws, tables, pages, menus) in the 0.x version based on which it will be possible to – in a few clicks – create interstate unions, monetary unions, central banks, registries, exchanges and so forth.",
+			"TEXT6": "In the future, the 0.x and 1.x versions will be merged after which v 1.x will have all the features of version 0.x – instead of private blockchains there will be a common blockchain. All the countries and communities will be able to interact with each other, and will use EGS tokens for network protection."
+		},
 		"FUNDS": {
 			"HEAD": "Distribution of ICO funds",
 			"TEXT": "Main expenditure items of ICO funds",

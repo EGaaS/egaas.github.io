@@ -48,13 +48,13 @@
 				"TEXT7": "trillion"
 			},
 			"BUTTONS": {
-				"TEXT1": "Transferring the activities of governments and legislative bodies to the eGaaS platform can save an amount that is equal to nearly 10&nbsp;% of global GDP each year.",
+				"TEXT1": "Transferring the activities of governments and legislative bodies to the eGaaS platform can save nearly 10% of global GDP each year.",
 				"TEXT2": "Learn more:"
 			}
 		},
 		"PLATFORM": {
 			"HEAD": "Platform for business and communities",
-			"TEXT": "eGaaS is technically a blockchain platform featuring a mechanism for creation and execution of smart contracts and smart laws. So, before States are connected to it, the platform can still be used to create a variety of financial, business and social applications, such as payment systems, exchanges, insurance and credit institutions, accounting and management systems in all spheres, from trade to medicine. eGaaS facilitates the creation of flexible custom applications with multiple smart contract features. Common rules and conditions for implementation of individual smart contracts are entered as smart laws. The eGaaS platform is a handy tool for organizing the activities of communities. It allows to establish the rules of relations between members and to conduct voting. That is, before the first States move over to eGaaS, the platform will be widely used in business and in social activities.",
+			"TEXT": "eGaaS is technically a blockchain platform with the mechanism for creation and execution of smart contracts and smart laws. Therefore, even before the governments’ joining it, the platform can be successfully used to create a variety of financial, business and social applications, such as payment systems, stock exchanges, insurance and credit organizations, accounting and management systems in all fields, from commerce to medicine. eGaaS allows to create highly customizable applications with multiple functions implemented by smart contracts. Rules and conditions of smart contracts execution that are common for an application are recorded as smart laws. The eGaaS platform is a handy tool for the organization of the communities’ activities. It allows setting the rules of relations between their members and conduct voting. That is, even before the first States join eGaaS, the platform can be widely used in business and various spheres of social life.",
 			"IMG": {
 				"TEXT1": "Smart contracts",
 				"TEXT2": "Registries",
@@ -68,7 +68,7 @@
 				"TEXT1": "Idea of creating eGaaS: early",
 				"TEXT2": "eGaaS application",
 				"TEXT3": "The first State transfers registry of citizens, legislation on civil status and electoral system to the eGaaS platform",
-				"TEXT4": "The first State opens an account in eGaaS in its currency and translates the tax system and business law into smart laws",
+				"TEXT4": "The first State opens an account in eGaaS in its national currency and translates the tax system and business law into smart laws",
 				"TEXT5": "Full transfer of the functioning of EU governments to the eGaaS platform",
 				"TEXT6": "The United States fully transfers to eGaaS",
 				"TEXT7": "90&nbsp;% of States in eGaaS",
@@ -88,8 +88,8 @@
 			}
 		},
 		"RELEASE": {
-			"HEAD": "Release of EGS",
-			"TEXT": "100 million EGS tokens will be released at once."
+			"HEAD": "EGS emission",
+			"TEXT": "EGS tokens will be emitted only once, in an amount of 100 million."
 		},
 		"DISTRIBUTION": {
 			"HEAD": "EGS distribution",
@@ -116,16 +116,16 @@
 		},
 		"WHY": {
 			"HEAD": "Why buy EGS",
-			"TEXT1": "EGS tokens ensure security of the eGaaS platform and working capacity of its nodes: opening of new tables, adding attributes, connecting and performing smart contracts and smart laws are paid for in EGS. Therefore, private and corporate users of the platform, as well as states will have to buy EGS to secure the working capacity of their eGaaS projects. Hence, the need for EGS tokens will inevitably grow, which, considering the exclusion of additional releases, will increase their exchange rate.",
-			"TEXT2": "It is inevitable that obsolete forms of governance will die off, while governments will be transformed into e-services for citizens. Do not miss the chance to participate in this revolutionary project in the first stages of development."
+			"TEXT1": "EGS tokens ensure security of the eGaaS platform and working capacity of its nodes: opening of new tables, adding attributes, connecting and performing smart contracts and smart laws are paid for in EGS. Therefore, private and corporate users of the platform, as well as states will have to buy EGS to secure the working capacity of their eGaaS projects. Hence, the need for EGS tokens will inevitably grow, which will increase their exchange rate because EGS will be emitted only once.",
+			"TEXT2": "It is inevitable that obsolete forms of governance will die out, while governments will be transformed into e-services for citizens. Do not miss the chance to participate in this revolutionary project in the first stages of its development."
 		},
 		"DONE": {
 			"HEAD": "What has been done to date?",
 			"TEXT1": "We’ve created two versions of the eGaaS application:",
 			"TEXT2": "v 1.x – stable; for EGS tokens; available both in Lite version and in node control mode; the light version is also available for IOS and Android",
-			"TEXT3": "v 0.x – unstable and so works on private blockchains; it can be used on your PC or local network; it allows to create eGaaS nodes, etc.",
-			"TEXT4": "In v 0.x, with creation of new and modification of existing tables, pages, menus, and smart contracts of eGaaS, you can configure a state or community to your requirements.",
-			"TEXT5": "In the near future, we will add embedded applications (sets of smart contracts, smart laws, tables, pages, menus) in the 0.x version based on which it will be possible to – in a few clicks – create interstate unions, monetary unions, central banks, registries, exchanges and so forth.",
+			"TEXT3": "v 0.x – unstable and so is powered by private blockchains; it can be used on your PC or local network; it allows to create eGaaS nodes, etc.",
+			"TEXT4": "In v 0.x, through creation of new and modification of existing tables, pages, menus, and smart contracts of eGaaS, you can configure a state or community to suit your taste.",
+			"TEXT5": "In the near future, we will add embedded applications (sets of smart contracts, smart laws, tables, pages, menus) in the 0.x version after which it will be possible to – in a few clicks – create interstate unions, monetary unions, central banks, registries, stock exchanges and so forth.",
 			"TEXT6": "In the future, the 0.x and 1.x versions will be merged after which v 1.x will have all the features of version 0.x – instead of private blockchains there will be a common blockchain. All the countries and communities will be able to interact with each other, and will use EGS tokens for network protection."
 		},
 		"FUNDS": {
@@ -134,7 +134,7 @@
 			"PIE": {
 				"TEXT1": "Finalization of the current version and writing from scratch of a new eGaaS stable version",
 				"TEXT2": "Legal services",
-				"TEXT3": "Negotiations with the states to create international groups for harmonization of rules and regulations for their connection to the platform",
+				"TEXT3": "3.	Negotiating with States, creating international groups to agree on the rules and regulations by which States could join the platform",
 				"TEXT4": "Payments to investors who financed eGaaS before the ICO",
 				"TEXT5": "Other"
 			}
@@ -142,7 +142,7 @@
 	},
 	"DOCS": {
 		"MANIFESTO": {
-			"TEXT": "eGaaS Manifesto",
+			"TEXT": "eGaaS Manifest",
 			"FILE": "./docs/eGaaS_Manifest.pdf"
 		},
 		"WHITEPAPER": {

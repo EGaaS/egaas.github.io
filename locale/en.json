@@ -7,7 +7,12 @@
 		"ABOUT": "About",
 		"TEAM": "Team",
 		"FORUM": "Forum",
-		"DOWNLOAD": "Download"
+		"DOWNLOAD": {
+			"NAME": "Download",
+			"LITE": "eGaaS v1.0 Lite beta",
+			"FULL": "eGaaS Node v1.0 beta",
+			"PRIVATE": "eGaaS Node v0.1 beta (private)"
+		}
 	},
 	"COUNTDOWN": {
 		"TITLE": "ICO will start in:",
@@ -24,6 +29,133 @@
 		"THANKS": "Thank you!",
 		"SUBSCRIBED": "You are already subscribed to newsletter!",
 		"TEXT": "1-2 important emails per month"
+	},
+	"MAIN": {
+		"BANNER": {
+			"SLOGAN": "EGAAS<br />Electronic Government as&nbsp;a&nbsp;Service",
+			"TEXT": "EGaaS is a blockchain platform for organizing economic, public and social activities. These events are powered by smart laws and smart contracts"
+		},
+		"MISSION": {
+			"HEAD1": "Mission",
+			"HEAD2": "Technology",
+			"TEXT1": "eGaaS’s main mission is to free people, business and governments from routine bureaucratic procedures and to serve as a tool that could be used to organize any activity and exercise control over that activity without documents circulation. eGaaS is aimed at illuminating the shadow niche in which the modern financial and political systems reside. eGaaS should become the platform on which the State and business structures of all countries should function harmoniously for the benefit of the citizens.",
+			"TEXT2": "eGaaS performs four basic functions required for efficient transfer of most types of government and business activities into blockchain technology: financial system, registry structure, smart contract algorithm and smart law formation and execution mechanism. The financial system secures transactions in the currency of a particular country. Smart contracts automatically implement the algorithm of deals involving registry objects and with possible fiat-currency transactions. Smart laws regulate the creation and implementation of smart contracts and automatically regulate relations between individuals and organizations in all areas of government activity.",
+			"BUTTONS": {
+				"TEXT1": "Transferring the activities of governments and legislative bodies to the eGaaS platform can save nearly 10&nbsp;% of global GDP each year.",
+				"TEXT2": "Learn more:"
+			}
+		},
+		"ABOUT": {
+			"HEAD1": "Government",
+			"HEAD2": "Legislation",
+			"HEAD3": "Voting",
+			"HEAD4": "Finance",
+			"HEAD5": "Common registry",
+			"HEAD6": "Medicine",
+			"HEAD7": "Business",
+			"HEAD8": "Social protection",
+			"TEXT1": "Each State independently sets the structure of its state organs, establishes its governance and principles of relations between citizens and institutions. eGaaS only regulates the protocols for confirming and recording data in the registries of governments, provides templates of basic smart laws and supports their adoption and implementation mechanism.",
+			"TEXT2": "All state laws, whose subjects are the objects listed in the eGaaS blockchain registries, are transferred into smart law format. Smart laws are directly effective laws. Implementing them does not require intermediaries or regulatory authorities. Amendments and changes made to them take effect immediately. Many of the functions of government bodies – such as registration of civil status (birth, marriage, and divorce), taxation, regulation of financial and business relations and many others – are automatically performed and controlled by eGaaS smart laws.",
+			"TEXT3": "In eGaaS, citizens can be reliably identified, thus simplifying election procedures – special smart laws prescribe the period and conditions of elections, accept applications from candidates, launch the voting procedure and count the votes. Voting by means of electronic keys is quick and incurs minimum cost. Voting results, that are stored in the blockchain, can hardly be tampered with.",
+			"TEXT4": "For a State to join the common blockchain platform, it needs to first open eGaaS accounts for all individuals and legal entities in its Central Bank. From this point onwards, all financial transactions – from buying of goods in the shop to execution of state budget – will be conducted under the control of smart laws. Any financial obligations (repayment of loan, insurance payout, payment of bills) are secured via smart contracts and are executed automatically. eGaaS protocols easily and reliably implement p2p lending procedures.",
+			"TEXT5": "Smart laws and smart contracts can function efficiently only if maximum number of registries is transferred to the eGaaS platform: registries of natural persons and legal entities, of property, of copyrights, inventions, etc. Needless to say that blockchain technology would greatly enhance registry security against manipulation and fraud.",
+			"TEXT6": "eGaaS keeps all medical records, medical recommendations, diagnoses, etc. of each person, while maintaining anonymity of data. Because of this, each person can receive effective treatment anywhere in the world. At the same time, medical science and pharmacology obtain unique statistical information that would take diagnosis and prescription of treatment to an entirely new level.",
+			"TEXT7": "eGaaS is a complete tool for effective business operations. It contains a common structure of registries (companies, products, licenses, etc.), whose objects are used when drawing up smart contracts. The smart law system secures automatic deduction of taxes, customs duties and other charges.",
+			"TEXT8": "Keeping records of the income and medical data of citizens would allow the government, or more precisely, a special smart law, to optimally implement social support in the form of disability pensions, various allowances and benefits. The state pension system is also implemented on the basis of smart laws, which automatically allocates social tax, calculates pensions and starts paying them when the citizen reaches a retirement age."
+		},
+		"TEAM": {
+			"HEAD": "Team",
+			"PEOPLE1": {
+				"NAME": "Oleg Strelenko",
+				"PROFESSION": "Funder, CEO, Blockchain developer",
+				"TEXT": "Blockchain developer with 5 years of work experience. Developed decentralized electronic currency DCoin (80k lines of Go code) from scratch. He is known in the Russian IT community as Dmitry Kharitonov. For over 10 years, he has developed his own projects and managed IT teams."
+			},
+			"PEOPLE2": {
+				"NAME": "Artur Pakhomov",
+				"PROFESSION": "Science Advisor",
+				"TEXT": "Member of the Presidium of the Council of St. Petersburg Chamber of Commerce and Industry. Ph.D. in Economics. Author of a number of reports and papers on modernization and restructuring of real estate management. For over 30 years, he has implemented own projects, including international ones."
+			},
+			"PEOPLE3": {
+				"NAME": "Yuriy Lomakin",
+				"PROFESSION": "Frontend Developer",
+				"TEXT": "Front-end developer with 10-years experience. Worked in the team charmerstudio.com, developing major news portal lenta.ru."
+			},
+			"PEOPLE4": {
+				"NAME": "Aleksandr Boldachev",
+				"PROFESSION": "Advisor/Analyst",
+				"TEXT": "Philosopher, analyst, member of the Association of Russian Futurologists. Main research areas: global evolutionism, temporal ontology, philosophy of artificial intelligence, futurology. In recent years, he worked on creation of subject-event approach to complex systems modeling."
+			},
+			"PEOPLE5": {
+				"NAME": "Ruben Pombuhchan",
+				"PROFESSION": "Advisor at IPE Lab",
+				"TEXT": "Expert in development and implementation of innovative technologies. An investment analyst. Head of Sapsan Consulting Group. He has extensive experience in project management in major corporations. He took part in implementing large projects in major companies and groups such as Gazprom, Magnit, and Basic Element. He is the head of the project office of the Institutional Project Engineering Laboratory (IPE Lab)."
+			},
+			"PEOPLE6": {
+				"NAME": "Sergey Chernyshev",
+				"PROFESSION": "Science Advisor at IPE Lab",
+				"TEXT": "Philosopher, lecturer and expert in the area of organization and management. Professor at National Research University - Higher School of Economics. Member of the Expert Council of the Russian Government. Author of 8 monographs and 150 papers. Head of the Research Council of the Institutional Project Engineering Laboratory (IPE Lab)."
+			},
+			"PEOPLE7": {
+				"NAME": "Alexey Krivonogov",
+				"PROFESSION": "Core developer",
+				"TEXT": "A professional C/C++ programmer with 24 years of experience. Graduated from Novosibirsk State University in 1992 with a degree in mathematics and applied mathematics. Developed programming language Gentee from scratch. Developed personal data store Eonza."
+			},
+			"PEOPLE8": {
+				"NAME": "Dmitry Eliseev",
+				"PROFESSION": "Advisor at IPE Lab",
+				"TEXT": "Ph.D. in Technical Sciences, economist, a professional management consultant, associate professor. Author of over 70 publications and manuals. For 15 years, has successfully implemented 46 consulting projects on strategic planning and organizational design at major national and international companies such as Oreltekmash. Senior methodologist, Member of the Research Council of the Institutional Project Engineering Laboratory (IPE Lab)."
+			},
+			"PEOPLE9": {
+				"NAME": "Andrey Nechaev",
+				"PROFESSION": "Mobile developer",
+				"TEXT": "More than 5 years of experience in Software development. Excellent understanding of Web stack, mostly backend (Erlang, Java and Python). Developed applications on both front-end and high-loaded back-end sides. Experience with the most popular mobile platforms, cross-compilation for all popular desktop and mobile platforms. Focused on fault-tolerant distributed services and UX."
+			},
+			"PEOPLE10": {
+				"NAME": "Nikolay V. Kapranov",
+				"PROFESSION": "Advisor",
+				"TEXT": "Ph.D. in technical sciences; Ph.D. in political science. More than 10 years of experience in state authorities, 4 years of experience in international organizations. 7 years as a Deputy Director in the Administration of the President of the Russian Federation, Internal Policy Department. Was an Advisor to the Academy President in the Soviet Academy of Science, governed his own research institute. Has a number of state awards."
+			},
+			"PEOPLE11": {
+				"NAME": "Nosova Anna",
+				"PROFESSION": "Public Relations Manager",
+				"TEXT": "Psychologist. 4 years of experience in the field of project promotion. 2 years of experience in the organization and management of social projects. Cooperated with international environmental and volunteer organizations: Peace Corp, Spare, Biomass Project, United Nations Development Programme. Is the author of the educational program and a number of scientific articles."
+			},
+			"PEOPLE12": {
+				"NAME": "Vitaly Bondar",
+				"PROFESSION": "Legal counsel",
+				"TEXT": "Vitaly is a Russian qualified lawyer and Legal Director of the Luxembourg based law firm ChristmannSchmitt. He is an expert in e-commerce and private international law matters. In the past 15 years, he has been holding senior positions at large international law firms and industrial companies with a focus on cross-border M&A deals and transaction structuring.  Vitaly graduated from the law faculty of Kuban State University, Russia, in 1999, and further obtained a postgraduate diploma (L.L.M) in International Banking and Commercial Law in 2001 from Queen Mary University in London."
+			},
+			"TEXT": "We are expanding our team!<br />If you are an expert in golang, please <a href='mailto:hello@egaas.org'>send us your CV</a>. Join the egaas team!"
+		}
+	},
+	"DOWNLOAD": {
+		"LITE": {
+			"HEAD": "eGaaS v1.0 Lite beta",
+			"TEXT1": "You can run the app and start working right away, there is no need to wait for blockchain synchronization.",
+			"TEXT2": "Minimal feature-set",
+			"TEXT3": "No blockchain download",
+			"TEXT4": "Instant Access"
+		},
+		"FULL": {
+			"HEAD": "eGaaS Node v1.0 beta",
+			"TEXT1": "You can launch your node, engage in forging or delegate forging. To start work, you must install <a href='https://www.postgresql.org/' target='_blank'>PostgreSQL</a>."
+		},
+		"PRIVATE": {
+			"HEAD": "eGaaS Node v0.1 beta <span>(private)</span>",
+			"TEXT1": "Smart contracts, smart laws, states, citizens, etc.",
+			"TEXT2": "This version contains bugs that we have not had time to fix yet, and there are some shortcomings. But we decided to make it publicly available to show what we're currently working on. To start work, you must install <a href='https://www.postgresql.org/' target='_blank'>PostgreSQL</a>. The documentation is in the process of writing. You can also watch the video showing a part of the functionality of this version",
+			"TEXT3": "Play video"
+		},
+		"INSTRUCTION": {
+			"TEXT": "eGaaS app installation instruction",
+			"LINK": "https://github.com/EGaaS/go-egaas-mvp/wiki/eGaaS-app-installation-instruction"
+		},
+		"WEB": "Web",
+		"SOURCE": "Source code",
+		"GO": "Go",
+		"DOWNLOAD": "Download",
+		"DOWNLOAD32": "Download 32",
+		"DOWNLOAD64": "Download 64"
 	},
 	"ICO": {
 		"BANNER": {
@@ -48,7 +180,7 @@
 				"TEXT7": "trillion"
 			},
 			"BUTTONS": {
-				"TEXT1": "Transferring the activities of governments and legislative bodies to the eGaaS platform can save nearly 10% of global GDP each year.",
+				"TEXT1": "Transferring the activities of governments and legislative bodies to the eGaaS platform can save nearly 10&nbsp;% of global GDP each year.",
 				"TEXT2": "Learn more:"
 			}
 		},
@@ -102,10 +234,10 @@
 		"STAGES": {
 			"HEAD": "Sales are broken down into five stages with different discounts:",
 			"STEPS": {
-				"TEXT1": "1st day: bonus 50&nbsp;%<br />Limit: 0.3m EGS = 32 BTC<br />1 EGS = 0,0001066 BTC",
-				"TEXT2": "1st week: bonus 25&nbsp;%<br />Limit: 1.3m EGS = 166,4 BTC<br />1 EGS = 0,000128 BTC",
-				"TEXT3": "2nd week : bonus 10&nbsp;%<br />Limit: 1.25m EGS = 181,81 BTC<br />1 EGS = 0,0001454 BTC",
-				"TEXT4": "3rd week : bonus 5&nbsp;%<br />Limit: 1.2m EGS  = 182,85 BTC<br />1 EGS = 0,0001523 BTC",
+				"TEXT1": "1st day: bonus 50%<br />Limit: 0.3m EGS = 32 BTC<br />1 EGS = 0,0001066 BTC",
+				"TEXT2": "1st week: bonus 25%<br />Limit: 1.3m EGS = 166,4 BTC<br />1 EGS = 0,000128 BTC",
+				"TEXT3": "2nd week : bonus 10%<br />Limit: 1.25m EGS = 181,81 BTC<br />1 EGS = 0,0001454 BTC",
+				"TEXT4": "3rd week : bonus 5%<br />Limit: 1.2m EGS  = 182,85 BTC<br />1 EGS = 0,0001523 BTC",
 				"TEXT5": "4th week<br />Limit: 1.85m EGS = 296 BTC<br />1 EGS = 0,00016 BTC"
 			},
 			"CASE": {

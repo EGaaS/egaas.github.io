@@ -1,0 +1,29 @@
+{
+  "name": "eGaaS",
+  "description": "No",
+  "main": "",
+  "authors": [
+    "Yuriy <yuriy.lomakin@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "www/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "angularjs#^1.5.8",
+    "angular-translate": "^2.13.0",
+    "angular-translate-handler-log": "^2.13.0",
+    "angular-cookies": "^1.5.8",
+    "angular-translate-storage-cookie": "^2.13.0",
+    "angular-translate-storage-local": "^2.13.0",
+    "angular-translate-loader-static-files": "^2.13.0",
+    "angular-ui-router": "^0.3.2",
+    "angular-sanitize": "^1.5.8"
+  }
+}

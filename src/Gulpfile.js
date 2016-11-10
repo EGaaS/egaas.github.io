@@ -29,7 +29,7 @@ var dir = new function(){
 	// this.base   = cwd !== __dirname ? '.' : 'www/zozhgo';
 	this.base   = '.';
 	this.folder = this.base   + '/www';
-	this.dist   = '../dist';
+	this.dist   = '../';
 	
 	this.js     = this.folder + '/js';
 	this.css    = this.folder + '/css';

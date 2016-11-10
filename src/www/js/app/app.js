@@ -3,25 +3,47 @@
 	
 	angular.module('app', ['ui.router', 'pascalprecht.translate', 'ngCookies']);
 	
-	angular.module('app').run(function($rootScope, $location, $window, $timeout, $anchorScroll){
-		$rootScope.$on('$stateChangeSuccess', function(){
+	angular.module('app').run(function($rootScope, $location, $window, $timeout, $state){
+		$rootScope.$on('$viewContentLoading', function(){
+			$("header .nav .nav-link").removeClass("active");
 			$window.scrollTo(0, 0);
 			
-			$rootScope.scroll = function(target){
+			var startRoute = $location.url().split('/');
+			var anchor = startRoute[startRoute.length - 1];
+			
+			if (anchor.indexOf("#") === 0) {
 				$timeout(function() {
-					$.scrollTo("#" + target, 500, {easing:'linear', onAfter: function() {
-						$timeout(function() {
-							//$location.hash(target);
-							//$anchorScroll();
-						}, 0);
-					}});
+					Scrolling(anchor.replace("#", ""));
+				}, 0);
+			}
+			
+			$rootScope.scroll = function(target, state){
+				if (state) {
+					$state.go(state);
+				}
+				$timeout(function() {
+					Scrolling(target);
 				}, 0);
 			};
-			
+		});
+		
+		$rootScope.$on('$stateChangeSuccess', function(){
 			if ($window.ga) {
 				$window.ga('send', 'pageview', {page: $location.path()});
 			}
 		});
+		
+		function Scrolling(target) {
+			var top = "#" + target;
+			if (!target) {
+				top = 0;
+			}
+			$.scrollTo(top, 300, {easing:'linear', onAfter: function() {
+				$timeout(function() {
+					$location.hash(target);
+				}, 0);
+			}});
+		}
 	});
 	
 })();

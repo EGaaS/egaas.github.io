@@ -14,13 +14,15 @@ $(document).ready(function(){
 		}
 	});
 	$("header .nav .nav-link").on('click', function () {
-		var id = $(this).attr("href").split('');
+		var id = $(this).attr("href").split('/');
+		var blank = $(this).attr("target");
 		
-		if (!$(this).hasClass("dropdown-toggle")) {
-			$("header .menu").click();
-			if (id[0] === "#") {
-				$.scrollTo(this.hash, 500);
-				return false;
+		if (blank !== "_blank") {
+			if (!$(this).hasClass("dropdown-toggle")) {
+				$("header .menu").click();
+				if (id[0] !== "#") {
+					return false;
+				}
 			}
 		}
 	});

@@ -1,23 +1,23 @@
 <div class="white"></div>
 <div class="container">
-	<a class="logo" ui-sref="root"><i class="before"></i><i class="after"></i></a>
+	<a class="logo" ui-sref="root" ng-click="scroll('')"><i class="before"></i><i class="after"></i></a>
 	<nav id="navbar">
 		<div>
 			<ul class="nav">
-				<li class="nav-item" ng-show="!pageClass('subpage')"><a class="nav-link" href="#mission" translate="MENU.MISSION"></a></li>
-				<li class="nav-item" ng-show="pageClass('subpage')"><a class="nav-link" ui-sref="root" ng-click="scroll('mission')" translate="MENU.MISSION"></a></li>
-				<li class="nav-item" ng-show="!pageClass('subpage')"><a class="nav-link" href="#about" translate="MENU.ABOUT"></a></li>
-				<li class="nav-item" ng-show="pageClass('subpage')"><a class="nav-link" ui-sref="root" ng-click="scroll('about')" href="#about" translate="MENU.ABOUT"></a></li>
-				<li class="nav-item" ng-show="!pageClass('subpage')"><a class="nav-link" href="#team" translate="MENU.TEAM"></a></li>
-				<li class="nav-item" ng-show="pageClass('subpage')"><a class="nav-link" ui-sref="root" ng-click="scroll('team')" href="#team" translate="MENU.TEAM"></a></li>
+				<li class="nav-item" ng-show="!pageClass('subpage')"><a class="nav-link" href="#mission" ng-click="scroll('mission')" translate="MENU.MISSION"></a></li>
+				<li class="nav-item" ng-show="pageClass('subpage')"><a class="nav-link" href="#mission" ng-click="scroll('mission', 'root')" translate="MENU.MISSION"></a></li>
+				<li class="nav-item" ng-show="!pageClass('subpage')"><a class="nav-link" href="#about" ng-click="scroll('about')" translate="MENU.ABOUT"></a></li>
+				<li class="nav-item" ng-show="pageClass('subpage')"><a class="nav-link" href="#about" ng-click="scroll('about', 'root')" translate="MENU.ABOUT"></a></li>
+				<li class="nav-item" ng-show="!pageClass('subpage')"><a class="nav-link" href="#team" ng-click="scroll('team')" translate="MENU.TEAM"></a></li>
+				<li class="nav-item" ng-show="pageClass('subpage')"><a class="nav-link" href="#team" ng-click="scroll('team', 'root')" translate="MENU.TEAM"></a></li>
 				<li class="nav-item"><a class="nav-link" href="http://forum.egaas.org/" target="_blank" translate="MENU.FORUM"></a></li>
 				<li class="nav-item" ng-show="!showClass('download')"><a class="nav-link" ui-sref="root.Download" translate="MENU.DOWNLOAD.NAME"></a></li>
-				<li class="nav-item active dropdown" ng-show="showClass('download')">
-					<a class="nav-link dropdown-toggle active" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" translate="MENU.DOWNLOAD.NAME"></a>
+				<li class="nav-item dropdown" ng-show="showClass('download')">
+					<a class="nav-link dropdown-toggle" ng-class="navClass('download')" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" translate="MENU.DOWNLOAD.NAME"></a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item nav-link" href="#lite" translate="MENU.DOWNLOAD.LITE"></a>
-						<a class="dropdown-item nav-link" href="#wallet" translate="MENU.DOWNLOAD.FULL"></a>
-						<a class="dropdown-item nav-link" href="#private" translate="MENU.DOWNLOAD.PRIVATE"></a>
+						<a class="dropdown-item nav-link" href="#lite" ng-click="scroll('lite')" translate="MENU.DOWNLOAD.LITE"></a>
+						<a class="dropdown-item nav-link" href="#wallet" ng-click="scroll('wallet')" translate="MENU.DOWNLOAD.FULL"></a>
+						<a class="dropdown-item nav-link" href="#private" ng-click="scroll('private')" translate="MENU.DOWNLOAD.PRIVATE"></a>
 					</div>
 				</li>
 				<li class="nav-item"><a class="nav-link" ng-class="navClass('ico')" ui-sref="root.ICO">ICO</a></li>

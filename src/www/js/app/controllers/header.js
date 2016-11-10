@@ -7,8 +7,12 @@
 		$rootScope.pageClass = function (page) {
 			var currentRoute = $location.url().split('/');
 			
-			if (currentRoute[1] !== "") {
-				return 'subpage';
+			if (currentRoute[1].indexOf("#") === -1) {
+				if (currentRoute[1] !== "") {
+					return 'subpage';
+				} else {
+					return '';
+				}
 			} else {
 				return '';
 			}

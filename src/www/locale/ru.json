@@ -275,11 +275,11 @@
 	"DOCS": {
 		"MANIFESTO": {
 			"TEXT": "Манифест eGaaS",
-			"FILE": "./docs/eGaaSManifestRu.pdf"
+			"FILE": "./docs/eGaaS_Manifest_Ru.pdf"
 		},
 		"WHITEPAPER": {
 			"TEXT": "White Paper eGaaS",
-			"FILE": "./docs/eGaaS_White_Paper.pdf"
+			"FILE": "./docs/eGaaS_White_Paper_Ru.pdf"
 		}
 	}
 }

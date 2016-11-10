@@ -1,0 +1,50 @@
+<div class="white"></div>
+<div class="container">
+	<a class="logo" ui-sref="root"><i class="before"></i><i class="after"></i></a>
+	<nav id="navbar">
+		<div>
+			<ul class="nav">
+				<li class="nav-item" ng-show="!pageClass('subpage')"><a class="nav-link" href="#mission" translate="MENU.MISSION"></a></li>
+				<li class="nav-item" ng-show="pageClass('subpage')"><a class="nav-link" ui-sref="root" ng-click="scroll('mission')" translate="MENU.MISSION"></a></li>
+				<li class="nav-item" ng-show="!pageClass('subpage')"><a class="nav-link" href="#about" translate="MENU.ABOUT"></a></li>
+				<li class="nav-item" ng-show="pageClass('subpage')"><a class="nav-link" ui-sref="root" ng-click="scroll('about')" href="#about" translate="MENU.ABOUT"></a></li>
+				<li class="nav-item" ng-show="!pageClass('subpage')"><a class="nav-link" href="#team" translate="MENU.TEAM"></a></li>
+				<li class="nav-item" ng-show="pageClass('subpage')"><a class="nav-link" ui-sref="root" ng-click="scroll('team')" href="#team" translate="MENU.TEAM"></a></li>
+				<li class="nav-item"><a class="nav-link" href="http://forum.egaas.org/" target="_blank" translate="MENU.FORUM"></a></li>
+				<li class="nav-item" ng-show="!showClass('download')"><a class="nav-link" ui-sref="root.Download" translate="MENU.DOWNLOAD.NAME"></a></li>
+				<li class="nav-item active dropdown" ng-show="showClass('download')">
+					<a class="nav-link dropdown-toggle active" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" translate="MENU.DOWNLOAD.NAME"></a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item nav-link" href="#lite" translate="MENU.DOWNLOAD.LITE"></a>
+						<a class="dropdown-item nav-link" href="#wallet" translate="MENU.DOWNLOAD.FULL"></a>
+						<a class="dropdown-item nav-link" href="#private" translate="MENU.DOWNLOAD.PRIVATE"></a>
+					</div>
+				</li>
+				<li class="nav-item"><a class="nav-link" ng-class="navClass('ico')" ui-sref="root.ICO">ICO</a></li>
+				<li class="nav-item">
+					<div class="soc">
+						<a href="https://www.facebook.com/EgaasProject" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+						<a href="https://twitter.com/egaasproject" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+						<a href="https://medium.com/egaas" target="_blank"><i class="fa fa-medium" aria-hidden="true"></i></a>
+					</div>
+				</li>
+				<li class="nav-item dropdown language" ng-controller="LanguageSwitchController">
+					<a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ 'LANGUAGE' | translate }}</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item nav-link" href="" ng-click="changeLanguage('en')">En</a>
+						<a class="dropdown-item nav-link" href="" ng-click="changeLanguage('ru')">Ру</a>
+						<a class="dropdown-item nav-link" href="" ng-click="changeLanguage('zh-Hans')">简体</a>
+						<a class="dropdown-item nav-link" href="" ng-click="changeLanguage('zh-Hant')">繁體</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</div>
+<div class="menu">
+	<div class="patty"></div>
+</div>
+
+<!-- build:js1 js/header.js -->
+<script type="text/javascript" src="/view/js/header.js"></script>
+<!-- endbuild -->

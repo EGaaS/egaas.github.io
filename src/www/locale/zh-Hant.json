@@ -1,0 +1,285 @@
+{
+	"LANG": "zh-Hant",
+	"LANGUAGE": "繁體",
+	"TITLE": "eGaaS - 環球區塊鏈平台",
+	"MENU": {
+		"MISSION": "使命",
+		"ABOUT": "關於我們",
+		"TEAM": "團隊",
+		"FORUM": "討論區",
+		"DOWNLOAD": {
+			"NAME": "下載",
+			"LITE": "eGaaS v1.0 輕客戶端 Beta",
+			"FULL": "eGaaS 節點 v1.0 beta",
+			"PRIVATE": "eGaaS 節點 v0.1 beta (私密)"
+		}
+	},
+	"COUNTDOWN": {
+		"TITLE": "距離初始募股:",
+		"LEFT": "The offer is still open for",
+		"DAYS": "Days",
+		"HOURS": "Hours",
+		"MINUTES": "Minutes",
+		"SECONDS": "Seconds"
+	},
+	"SUBSCRIBE": {
+		"HEAD": "訂閱我們的消息",
+		"PLACEHOLDER": "您的電郵地址",
+		"INCORRECT": "Incorrect e-mail address!",
+		"THANKS": "Thank you!",
+		"SUBSCRIBED": "You are already subscribed to newsletter!",
+		"TEXT": "每個月 1 - 2 個精華郵件"
+	},
+	"MAIN": {
+		"BANNER": {
+			"SLOGAN": "EGAAS<br />環球區塊鏈平台",
+			"TEXT": "EGaaS是一個用於組織經濟、公共以及社會活動的區塊鏈平台。這些活動由智能法律和智能合約驅動。"
+		},
+		"MISSION": {
+			"HEAD1": "使命",
+			"HEAD2": "科技",
+			"TEXT1": "eGaaS 的主要使命是釋放人民、企業、政府免受傳統的官僚程序影響，並且成為一個無需繁瑣文件交互之下舉辦並控制各類型活動的工具。eGaaS旨在照亮現代金融和政治制度下的陰霾。eGaaS能夠成為所有國家與國家和業務之間融和交互的協作平台，從而令社會在順暢運作中繁榮。",
+			"TEXT2": "eGaaS將透過區塊鏈技術處理大多數類型的政府和業務活動運行所需的4個基礎功能：金融系統，註冊表結構，智能合同算法以及智能法律形成和執行機制。金融系統使用特定貨幣來進行某國的交易。智能合約能夠自動實現涉及註冊表對象和涉及法定貨幣交易的交易算法。智能法律規範智能合同的創建、實施和運行，並自動規範在政府體系內個人和組織之間的關係。",
+			"BUTTONS": {
+				"TEXT1": "Transferring the activities of governments and legislative bodies to the eGaaS platform can save nearly 10&nbsp;% of global GDP each year.",
+				"TEXT2": "Learn more:"
+			}
+		},
+		"ABOUT": {
+			"HEAD1": "政府",
+			"HEAD2": "法律",
+			"HEAD3": "投票",
+			"HEAD4": "金融",
+			"HEAD5": "常用註冊表",
+			"HEAD6": "醫療記錄",
+			"HEAD7": "商業",
+			"HEAD8": "社會保障",
+			"TEXT1": "每個國家能夠獨立設置國家機構的內部結構，確立其治理的方針和機構公民關係的原則。eGaaS管理政府登記冊中進行確認和記錄數據的協議，提供智能法律的模板，用於支持系統的運行和實現。",
+			"TEXT2": "所有的地區法律，凡為eGaaS的註冊對象，都會轉化到智能法律的格式，智能法律為直接有效的法律，不需要透過任何中介或監管機構操作，對有關法律的更改能夠即時生效。政府機構的許多職能 - 例如公民身份（出生，婚姻）的註冊，稅務，金融和商業關係的監管等等 - 均可由eGaaS智能法自動執行和控制。",
+			"TEXT3": "在eGaaS中，我們可以可靠地識別公民，從而簡化選舉程序 - 特製的智能法律能夠界定選舉的期限和條件，接受候選人的申請，並啟動自動化的投票和點票程序。 通過電子密鑰簽署能夠進行省時、高效而且最低成本的投票活動。而且選舉結果將會被存儲在區塊鏈中，確保不能被篡改。",
+			"TEXT4": "如果一個地區希望加入共同區塊鏈平台，該地區的中央銀行只需要為地區的所有個人和法律實體建立eGaaS賬戶。 由此起的所有金融交易，不論是商店購買商品到執行國家預算，都將能夠在智能法律的控制下進行。 任何財務義務（償還貸款，保險支付，賬單支付等）亦能夠通過智能合約自動執行。在eGaaS協議下，地區能夠實現輕鬆可靠的p2p貸款程序。",
+			"TEXT5": "智能法律和智能合同在大量用戶使用eGaaS平台時就能夠高效地運行：這些用戶包括自然人和法律實體，以及其財產，版權，發明等等。毋庸置疑，區塊鏈技術將大大提高註冊管理機構的安全性，防止操縱和欺詐。",
+			"TEXT6": "eGaaS保持每個人的所有醫療記錄，醫療建議，診斷等，同時保持數據的匿名性。因此，每個人都可以在世界任何地方在數據的流通下接受有效的治療。同時，醫學和藥理學的機構就能夠獲得獨特而全面的統計信息，令治療、診斷和處方的效率和準確性提升到前所未有的水平。",
+			"TEXT7": "eGaaS是有效整全的業務操作工具。它包含註冊表（公司，產品，許可證等）的通用結構，能夠用於制定各式各樣的智能合約 智能法律體系則能夠自動扣除稅款，關稅和其他費用。",
+			"TEXT8": "記錄公民的收入和醫療數據記錄將允許政府，即智能法律，制定更全面的殘疾養卹金、津貼和福利，使這些資金能夠有效地支持社會的日常運作。 國家養老金制度也是在智慧法律的基礎上實施的，它能夠自動分配社會稅，計算養老金，並在公民達到退休年齡時開始分發。"
+		},
+		"TEAM": {
+			"HEAD": "團隊",
+			"PEOPLE1": {
+				"NAME": "Oleg Strelenko",
+				"PROFESSION": "投資者, 首席執行官, 區塊鏈開發者",
+				"TEXT": "擁有5年的工作經驗的區塊鏈開發者。負責從基礎開發分散電子貨幣DCoin（8萬行Go代碼）。他在俄羅斯IT社區稱為Dmitry Kharitonov。十多年來，他已經開發了自己的項目和管理多個IT團隊。"
+			},
+			"PEOPLE2": {
+				"NAME": "Artur Pakhomov",
+				"PROFESSION": "科學顧問",
+				"TEXT": "聖彼得堡工商會理事會主席團成員。擁有經濟學博士學位。亦是一系列關於房地產管理現代化與重組報告和研究論文的作者。擁有30多年經驗，他已經實現了多個自己的項目，其中部分為國際項目。"
+			},
+			"PEOPLE3": {
+				"NAME": "Yuriy Lomakin",
+				"PROFESSION": "前端開發者",
+				"TEXT": "具有10年經驗的前端開發人員。 在charmerstudio.com團隊工作，開發主要新聞門戶lenta.ru。"
+			},
+			"PEOPLE4": {
+				"NAME": "Aleksandr Boldachev",
+				"PROFESSION": "顧問/分析師",
+				"TEXT": "俄羅斯未來學家協會的成員，是一位哲學家和分析師。主要研究領域：全球進化論，時間本體論，人工智能哲學，未來學。近年來，他致力於使用主體事件模型創建複雜系統建模方法。"
+			},
+			"PEOPLE5": {
+				"NAME": "Ruben Pombuhchan",
+				"PROFESSION": "IPE Lab顧問",
+				"TEXT": "創新技術開發和實現專家，專業投資分析師，身為Sapsan諮詢集團負責人。 他在大型企業的項目管理方面有豐富的經驗。 他曾參與大型公司和集團的主要項目，如Gazprom，Magnit和Basic Element。 他是機構項目工程實驗室（IPE Lab）項目辦公室的負責人。"
+			},
+			"PEOPLE6": {
+				"NAME": "Sergey Chernyshev",
+				"PROFESSION": "IPE Lab 科學顧問",
+				"TEXT": "Sergey是哲學家，講師以及組織管理領域的專家。 現身為國家研究大學高等經濟學院教授，並是俄羅斯政府專家委員會成員，編寫了8篇專著和150篇論文。 擔任機構項目工程實驗室（IPE Lab）研究委員會主任。"
+			},
+			"PEOPLE7": {
+				"NAME": "Alexey Krivonogov",
+				"PROFESSION": "核心開發者",
+				"TEXT": "一個有24年編程經驗專業的C / C ++ 程序員。在1992年畢業於新西伯利亞州立大學，獲得數學和應用數學學位。白手開發編程語言Gentee，並開發個人數據存儲系統Eonza。"
+			},
+			"PEOPLE8": {
+				"NAME": "Dmitry Eliseev",
+				"PROFESSION": "IPE Lab 顧問",
+				"TEXT": "Dmitry是技術科學，經濟學博士，作為專業管理顧問並兼任副教授。為70多個出版物和手冊的作者。15年來，在Oreltekmash等跨國公司成功實現了46個關於戰略規劃和組織設計的諮詢項目。身為高級方法學家，他於機構項目工程實驗室（IPE Lab）擔任研究委員會成員。"
+			},
+			"PEOPLE9": {
+				"NAME": "Andrey Nechaev",
+				"PROFESSION": "移動程式開發者",
+				"TEXT": "擁有5年以上軟件開發經驗，Andrey對後端（Erlang，Java和Python）Web Stack擁有深入的了解。曾開發前端和高負載後端應用程序。 對於流行的移動平台開發擁有豐富經驗，並能夠交叉編譯所有流行的桌面和移動平台。並專注研究容錯率高的分佈式服務與用戶體驗研究。"
+			},
+			"PEOPLE10": {
+				"NAME": "Nikolay V. Kapranov",
+				"PROFESSION": "Advisor",
+				"TEXT": "Ph.D. in technical sciences; Ph.D. in political science. More than 10 years of experience in state authorities, 4 years of experience in international organizations. 7 years as a Deputy Director in the Administration of the President of the Russian Federation, Internal Policy Department. Was an Advisor to the Academy President in the Soviet Academy of Science, governed his own research institute. Has a number of state awards."
+			},
+			"PEOPLE11": {
+				"NAME": "Nosova Anna",
+				"PROFESSION": "Public Relations Manager",
+				"TEXT": "Psychologist. 4 years of experience in the field of project promotion. 2 years of experience in the organization and management of social projects. Cooperated with international environmental and volunteer organizations: Peace Corp, Spare, Biomass Project, United Nations Development Programme. Is the author of the educational program and a number of scientific articles."
+			},
+			"PEOPLE12": {
+				"NAME": "Vitaly Bondar",
+				"PROFESSION": "Legal counsel",
+				"TEXT": "Vitaly is a Russian qualified lawyer and Legal Director of the Luxembourg based law firm ChristmannSchmitt. He is an expert in e-commerce and private international law matters. In the past 15 years, he has been holding senior positions at large international law firms and industrial companies with a focus on cross-border M&A deals and transaction structuring.  Vitaly graduated from the law faculty of Kuban State University, Russia, in 1999, and further obtained a postgraduate diploma (L.L.M) in International Banking and Commercial Law in 2001 from Queen Mary University in London."
+			},
+			"TEXT": "We are expanding our team!<br />If you are an expert in golang, please <a href='mailto:hello@egaas.org'>send us your CV</a>. Join the egaas team!"
+		}
+	},
+	"DOWNLOAD": {
+		"LITE": {
+			"HEAD": "eGaaS v1.0 輕客戶端 beta",
+			"TEXT1": "你可以直接運行客戶端，客戶端不需要等待區塊鏈同步完成。",
+			"TEXT2": "輕版本 全功能",
+			"TEXT3": "無需下載區塊鏈",
+			"TEXT4": "即時啟用"
+		},
+		"FULL": {
+			"HEAD": "eGaaS 節點 v1.0 beta",
+			"TEXT1": "節點你能啟用節點然後開始進行鍛造（forging），如要使用鍛造功能，電腦必須配備 <a href='https://www.postgresql.org/' target='_blank'>PostgreSQL</a>."
+		},
+		"PRIVATE": {
+			"HEAD": "eGaaS 節點 v0.1 beta <span>(私密)</span>",
+			"TEXT1": "智能合约，智能法律，省级，市民",
+			"TEXT2": "這個版本包含我們沒有時間修復的錯誤，並有一些缺點。但我們決定公開展示我們目前正在開展的工作。要開始工作，您必須安裝 <a href='https://www.postgresql.org/' target='_blank'>PostgreSQL</a>。文檔正在編寫過程中。您還可以觀看顯示此版本功能的一部分的視頻",
+			"TEXT3": "Play video"
+		},
+		"INSTRUCTION": {
+			"TEXT": "eGaaS app installation instruction",
+			"LINK": "https://github.com/EGaaS/go-egaas-mvp/wiki/eGaaS-app-installation-instruction"
+		},
+		"WEB": "Web版",
+		"SOURCE": "源码",
+		"GO": "前往",
+		"DOWNLOAD": "下載",
+		"DOWNLOAD32": "下載32位元版本",
+		"DOWNLOAD64": "下載64位元版本"
+	},
+	"ICO": {
+		"BANNER": {
+			"SLOGAN": "Electronic Government as&nbsp;a&nbsp;Service",
+			"TEXT": "Remaining: 300,000 EGS with <strong>50&nbsp;% bonus</strong>",
+			"BTN": "Buy tokens"
+		},
+		"MISSION": {
+			"TEXT": "The main mission of eGaaS is to create a common international platform for full implementation of an electronic government as a service, which would free citizens and businesses from routine bureaucratic procedures, provide a tool for organizing all activities and exercising control over them without documents circulation.",
+			"PEOPLES": {
+				"TEXT1": "Were employed in 2015 in the US alone in the field of accounting and auditing",
+				"TEXT2": "The rise in their number is projected in the coming years",
+				"TEXT3": "people"
+			},
+			"FINANCE": {
+				"TEXT1": "Expenses of the US Internal Revenue Service (IRS) in 2015 amounted to",
+				"TEXT2": "Total revenue of the US banking sector formed from expenses of businesses and citizens on banking services in 2015",
+				"TEXT3": "Business expenses on accounting services and preparation of tax documentation in the US by 2018 could reach",
+				"TEXT4": "Turnover of the US shadow economy in 2012",
+				"TEXT5": "Losses from unpaid taxes on wages in the shadow economy",
+				"TEXT6": "billion",
+				"TEXT7": "trillion"
+			},
+			"BUTTONS": {
+				"TEXT1": "Transferring the activities of governments and legislative bodies to the eGaaS platform can save nearly &nbsp;% of global GDP each year.",
+				"TEXT2": "Learn more:"
+			}
+		},
+		"PLATFORM": {
+			"HEAD": "Platform for business and communities",
+			"TEXT": "eGaaS is technically a blockchain platform with the mechanism for creation and execution of smart contracts and smart laws. Therefore, even before the governments’ joining it, the platform can be successfully used to create a variety of financial, business and social applications, such as payment systems, stock exchanges, insurance and credit organizations, accounting and management systems in all fields, from commerce to medicine. eGaaS allows to create highly customizable applications with multiple functions implemented by smart contracts. Rules and conditions of smart contracts execution that are common for an application are recorded as smart laws. The eGaaS platform is a handy tool for the organization of the communities’ activities. It allows setting the rules of relations between their members and conduct voting. That is, even before the first States join eGaaS, the platform can be widely used in business and various spheres of social life.",
+			"IMG": {
+				"TEXT1": "Smart contracts",
+				"TEXT2": "Registries",
+				"TEXT3": "Finance",
+				"TEXT4": "Smart laws"
+			}
+		},
+		"ROADMAP": {
+			"HEAD": "Roadmap",
+			"LEFT": {
+				"TEXT1": "Idea of creating eGaaS: early",
+				"TEXT2": "eGaaS application",
+				"TEXT3": "The first State transfers registry of citizens, legislation on civil status and electoral system to the eGaaS platform",
+				"TEXT4": "The first State opens an account in eGaaS in its national currency and translates the tax system and business law into smart laws",
+				"TEXT5": "Full transfer of the functioning of EU governments to the eGaaS platform",
+				"TEXT6": "The United States fully transfers to eGaaS",
+				"TEXT7": "90&nbsp;% of States in eGaaS",
+				"TEXT8": "99&nbsp;% of States in the world in eGaaS"
+			},
+			"RIGHT": {
+				"TEXT1": "August 2016",
+				"TEXT2": "Development of smart law and smart contract mechanisms",
+				"TEXT3": "October 2016",
+				"TEXT4": "Release of the first version of the eGaaS application",
+				"TEXT5": "November 15",
+				"TEXT6": "ICO",
+				"TEXT7": "Merging of v1.x and v0.x versions, which will enable to create states, communities, smart contracts/laws, etc. on a common eGaaS blockchain: Q1",
+				"TEXT8": "A stable full-featured version of the eGaaS application: Q2",
+				"TEXT9": "Launching of financial technology, insurance, registry, and other business and social applications on the eGaaS platform: Q3",
+				"TEXT10": "States start testing eGaaS: Q4"
+			}
+		},
+		"RELEASE": {
+			"HEAD": "EGS emission",
+			"TEXT": "EGS tokens will be emitted only once, in an amount of 100 million."
+		},
+		"DISTRIBUTION": {
+			"HEAD": "EGS distribution",
+			"PIE": {
+				"TEXT1": "goes to investors (those that invested in the project before ICO), to the team and to future employees as motivational packages",
+				"TEXT2": "will be sold at ICO in several rounds."
+			},
+			"TEXT": "The need to conduct ICO in several rounds is to enhance transparency in the activities of the eGaaS team and increase the possibility of reporting to investors after each roadmap stage. To implement the next roadmap stage after ICO,  $500,000 investment is required. Therefore, during the first ICO round, 5.9 million EGS tokens will be sold."
+		},
+		"STAGES": {
+			"HEAD": "Sales are broken down into five stages with different discounts:",
+			"STEPS": {
+				"TEXT1": "1st day: bonus 50%<br />Limit: 0.3m EGS = 32 BTC<br />1 EGS = 0,0001066 BTC",
+				"TEXT2": "1st week: bonus 25%<br />Limit: 1.3m EGS = 166,4 BTC<br />1 EGS = 0,000128 BTC",
+				"TEXT3": "2nd week : bonus 10%<br />Limit: 1.25m EGS = 181,81 BTC<br />1 EGS = 0,0001454 BTC",
+				"TEXT4": "3rd week : bonus 5%<br />Limit: 1.2m EGS  = 182,85 BTC<br />1 EGS = 0,0001523 BTC",
+				"TEXT5": "4th week<br />Limit: 1.85m EGS = 296 BTC<br />1 EGS = 0,00016 BTC"
+			},
+			"CASE": {
+				"TEXT1": "Sold:",
+				"TEXT2": "Remaining:"
+			},
+			"TEXT": "* When the limit is reached, the system moves to the next sales stage with a new discount. Therefore, the ICO round can be completed ahead of schedule if the token limit is exhausted."
+		},
+		"WHY": {
+			"HEAD": "Why buy EGS",
+			"TEXT1": "EGS tokens ensure security of the eGaaS platform and working capacity of its nodes: opening of new tables, adding attributes, connecting and performing smart contracts and smart laws are paid for in EGS. Therefore, private and corporate users of the platform, as well as states will have to buy EGS to secure the working capacity of their eGaaS projects. Hence, the need for EGS tokens will inevitably grow, which will increase their exchange rate because EGS will be emitted only once.",
+			"TEXT2": "It is inevitable that obsolete forms of governance will die out, while governments will be transformed into e-services for citizens. Do not miss the chance to participate in this revolutionary project in the first stages of its development."
+		},
+		"DONE": {
+			"HEAD": "What has been done to date?",
+			"TEXT1": "We’ve created two versions of the eGaaS application:",
+			"TEXT2": "v 1.x – stable; for EGS tokens; available both in Lite version and in node control mode; the light version is also available for IOS and Android",
+			"TEXT3": "v 0.x – unstable and so is powered by private blockchains; it can be used on your PC or local network; it allows to create eGaaS nodes, etc.",
+			"TEXT4": "In v 0.x, through creation of new and modification of existing tables, pages, menus, and smart contracts of eGaaS, you can configure a state or community to suit your taste.",
+			"TEXT5": "In the near future, we will add embedded applications (sets of smart contracts, smart laws, tables, pages, menus) in the 0.x version after which it will be possible to – in a few clicks – create interstate unions, monetary unions, central banks, registries, stock exchanges and so forth.",
+			"TEXT6": "In the future, the 0.x and 1.x versions will be merged after which v 1.x will have all the features of version 0.x – instead of private blockchains there will be a common blockchain. All the countries and communities will be able to interact with each other, and will use EGS tokens for network protection."
+		},
+		"FUNDS": {
+			"HEAD": "Distribution of ICO funds",
+			"TEXT": "Main expenditure items of ICO funds",
+			"PIE": {
+				"TEXT1": "Finalization of the current version and writing from scratch of a new eGaaS stable version",
+				"TEXT2": "Legal services",
+				"TEXT3": "Negotiating with States, creating international groups to agree on the rules and regulations by which States could join the platform",
+				"TEXT4": "Payments to investors who financed eGaaS before the ICO",
+				"TEXT5": "Other"
+			}
+		}
+	},
+	"DOCS": {
+		"MANIFESTO": {
+			"TEXT": "eGaaS 白皮書",
+			"FILE": "./docs/eGaaS_Manifest.pdf"
+		},
+		"WHITEPAPER": {
+			"TEXT": "eGaaS White Paper",
+			"FILE": "./docs/eGaaS_White_Paper.pdf"
+		}
+	}
+}

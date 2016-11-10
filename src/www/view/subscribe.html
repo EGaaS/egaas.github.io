@@ -1,0 +1,13 @@
+<form class="spam">
+	<div class="head"><i></i>{{ 'SUBSCRIBE.HEAD' | translate }}</div>
+	<div class="input-group input-group-lg">
+		<input class="form-control" type="email" placeholder="{{ 'SUBSCRIBE.PLACEHOLDER' | translate }}" onFocus="SubscribeFocus(this);">
+		<span class="input-group-btn">
+			<button class="btn btn-primary" type="button" onClick="Subscribe(this);"><i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+		</span>
+	</div>
+	<div class="note" translate="SUBSCRIBE.TEXT"></div>
+	<div class="hidden incorrect" translate="SUBSCRIBE.INCORRECT">Incorrect e-mail address!</div>
+	<div class="hidden thanks" translate="SUBSCRIBE.THANKS">Thank you!</div>
+	<div class="hidden subscribed" translate="SUBSCRIBE.SUBSCRIBED">You are already subscribed to the newsletter!</div>
+</form>

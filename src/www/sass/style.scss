@@ -1127,8 +1127,8 @@ header {
 				}
 				.laptop {
 					position:relative;
-					width:594px;
-					height:348px;
+					width:502px;
+					height:294px;
 					margin-right:30px;
 					@include max($btablet) {
 						width:500px;
@@ -1139,29 +1139,32 @@ header {
 						height:176px;
 						margin:0px auto;
 					}
-					svg {
-						position:relative;
+					&:before {
+						content:'';
+						position:absolute;
+						left:0px;
+						top:0px;
+						width:100%;
+						height:100%;
+						background-image:url(../images/laptop_white.png);
+						background-repeat:no-repeat;
+						background-position:0px 0px;
+						background-size:100% 100%;
 						z-index:2;
 					}
 					.bg {
 						position:absolute;
-						left:83px;
-						top:40px;
-						width:425px;
-						height:255px;
+						left:61px;
+						top:28px;
+						width:376px;
+						height:226px;
 						border-radius:5px;
 						z-index:1;
-						@include max($btablet) {
-							left:69px;
-							top:33px;
-							width:359px;
-							height:216px;
-						}
 						@include max($bmobile) {
-							left:42px;
-							top:20px;
-							width:215px;
-							height:130px;
+							left:36px;
+							top:17px;
+							width:225px;
+							height:135px;
 						}
 					}
 					.play {

@@ -254,8 +254,8 @@
 		"DONE": {
 			"HEAD": "What has been done to date?",
 			"TEXT1": "We’ve created two versions of the eGaaS application:",
-			"TEXT2": "v 1.x – stable; for EGS tokens; available both in Lite version and in node control mode; the light version is also available for IOS and Android",
-			"TEXT3": "v 0.x – unstable and so is powered by private blockchains; it can be used on your PC or local network; it allows to create eGaaS nodes, etc.",
+			"TEXT2": "stable; for EGS tokens; available both in Lite version and in node control mode; the light version is also available for IOS and Android",
+			"TEXT3": "unstable and so is powered by private blockchains; it can be used on your PC or local network; it allows to create eGaaS nodes, etc.",
 			"TEXT4": "In v 0.x, through creation of new and modification of existing tables, pages, menus, and smart contracts of eGaaS, you can configure a state or community to suit your taste.",
 			"TEXT5": "In the near future, we will add embedded applications (sets of smart contracts, smart laws, tables, pages, menus) in the 0.x version after which it will be possible to – in a few clicks – create interstate unions, monetary unions, central banks, registries, stock exchanges and so forth.",
 			"TEXT6": "In the future, the 0.x and 1.x versions will be merged after which v 1.x will have all the features of version 0.x – instead of private blockchains there will be a common blockchain. All the countries and communities will be able to interact with each other, and will use EGS tokens for network protection."

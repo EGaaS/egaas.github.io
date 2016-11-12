@@ -5,7 +5,11 @@
 	
 	angular.module('app').run(function($rootScope, $location, $window, $timeout, $state){
 		$rootScope.$on('$viewContentLoading', function(){
-			$("header .nav .nav-link").removeClass("active");
+			$("header .nav .nav-link").each(function() {
+				if (!$(this).hasClass("dropdown-item")) {
+					$(this).removeClass("active");
+				}
+			});
 			$window.scrollTo(0, 0);
 			
 			var startRoute = $location.url().split('/');

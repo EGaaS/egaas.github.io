@@ -26,6 +26,10 @@ $(document).ready(function(){
 $(function () {
 	'use strict';
 	
+	$(".ico .done article div .list a").on('click', function () {
+		return false;
+	});
+	
 	$("#distribution").highcharts({
         colors: ['#16b6e8', '#e5e5e5'],
         credits: { enabled: false },

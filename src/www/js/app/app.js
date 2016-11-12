@@ -42,11 +42,13 @@
 			if (!target) {
 				top = 0;
 			}
-			$.scrollTo(top, 300, {easing:'linear', onAfter: function() {
-				$timeout(function() {
-					$location.hash(target);
-				}, 0);
-			}});
+			$timeout(function() {
+				$.scrollTo(top, 300, {easing:'linear', onAfter: function() {
+					$timeout(function() {
+						$location.hash(target);
+					}, 0);
+				}});
+			}, 500);
 		}
 	});
 	

@@ -1139,21 +1139,28 @@ header {
 						height:176px;
 						margin:0px auto;
 					}
+					svg {
+						position:relative;
+						z-index:2;
+					}
 					.bg {
 						position:absolute;
-						left:82px;
-						top:39px;
-						height:256px;
+						left:83px;
+						top:40px;
+						width:425px;
+						height:255px;
 						border-radius:5px;
-						z-index:-1;
+						z-index:1;
 						@include max($btablet) {
 							left:69px;
 							top:33px;
+							width:359px;
 							height:216px;
 						}
 						@include max($bmobile) {
 							left:42px;
 							top:20px;
+							width:215px;
 							height:130px;
 						}
 					}
@@ -1168,6 +1175,7 @@ header {
 						background-position:0px 0px;
 						margin-left:-47px;
 						margin-top:-47px;
+						z-index:3;
 						&:before, &:after {
 							content:'';
 							position:absolute;

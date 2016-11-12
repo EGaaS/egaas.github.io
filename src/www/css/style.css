@@ -10876,9 +10876,77 @@ header.on .menu .patty:before {
   }
 }
 
+.press {
+  position: relative;
+  clear: both;
+  overflow: hidden;
+  text-align: center;
+}
+
+.press .container .inner {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+@media screen and (max-width: 767px) {
+  .press .container .inner {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+
+.press .container .inner .logos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+@media (min-width: 1000px) {
+  .press .container .inner .logos {
+    justify-content: space-between;
+  }
+}
+
+.press .container .inner .logos a {
+  display: inline-block;
+  filter: grayscale(100%);
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  transition-property: all;
+  transition-duration: .2s;
+}
+
+@media screen and (max-width: 999px) {
+  .press .container .inner .logos a {
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .press .container .inner .logos a {
+    margin-bottom: 10px;
+  }
+}
+
+.press .container .inner .logos a:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+.press .container .inner .logos a img {
+  display: block;
+  max-width: 100%;
+}
+
 .team {
   position: relative;
   clear: both;
+  overflow: hidden;
+  background-color: #f2f2f2;
 }
 
 @media (min-width: 768px) {

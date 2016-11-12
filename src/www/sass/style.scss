@@ -1234,9 +1234,63 @@ header {
 		}
 	}
 }
+.press {
+	position:relative;
+	clear:both;
+	overflow:hidden;
+	text-align:center;
+	.container {
+		.inner {
+			padding-top:50px;
+			padding-bottom:50px;
+			@include max($bmobile) {
+				padding-top:15px;
+				padding-bottom:15px;
+			}
+			.logos {
+				display:flex;
+				flex-flow:row wrap;
+				justify-content:center;
+				align-content:center;
+				align-items:center;
+				@include min($btablet) {
+					justify-content:space-between;
+				}
+				a {
+					display:inline-block;
+					filter:grayscale(100%);
+					margin-top:15px;
+					margin-left:10px;
+					margin-right:10px;
+					transition: {
+						property:all;
+						duration:.2s;
+					}
+					@include max($btablet) {
+						filter: grayscale(0%);
+						opacity:1;
+					}
+					@include max($bmobile) {
+						margin-bottom:10px;
+					}
+					&:hover {
+						filter: grayscale(0%);
+						opacity:1;
+					}
+					img {
+						display:block;
+						max-width:100%;
+					}
+				}
+			}
+		}
+	}
+}
 .team {
 	position:relative;
 	clear:both;
+	overflow:hidden;
+	background-color:$lgray;
 	@include min($bmobile) {
 		display:flex;
 		flex-flow:row wrap;

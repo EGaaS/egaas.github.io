@@ -67,6 +67,9 @@
 				"TEXT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat, tellus porta lacinia condimentum, est augue porttitor enim, a cursus quam lacus a nisi. Nullam aliquam dapibus mauris vel dapibus. Vestibulum laoreet congue congue. Nam purus metus, blandit quis porta at, mattis ac nunc. Integer vel malesuada nisl.",
 				"PLAY": "Play our video",
 				"PLAYTEXT": "We filmed it for you"
+			},
+			"PRESS": {
+				"HEAD": "Пресса"
 			}
 		},
 		"TEAM": {

@@ -61,7 +61,13 @@
 			"TEXT5": "Smart laws and smart contracts can function efficiently only if maximum number of registries is transferred to the eGaaS platform: registries of natural persons and legal entities, of property, of copyrights, inventions, etc. Needless to say that blockchain technology would greatly enhance registry security against manipulation and fraud.",
 			"TEXT6": "eGaaS keeps all medical records, medical recommendations, diagnoses, etc. of each person, while maintaining anonymity of data. Because of this, each person can receive effective treatment anywhere in the world. At the same time, medical science and pharmacology obtain unique statistical information that would take diagnosis and prescription of treatment to an entirely new level.",
 			"TEXT7": "eGaaS is a complete tool for effective business operations. It contains a common structure of registries (companies, products, licenses, etc.), whose objects are used when drawing up smart contracts. The smart law system secures automatic deduction of taxes, customs duties and other charges.",
-			"TEXT8": "Keeping records of the income and medical data of citizens would allow the government, or more precisely, a special smart law, to optimally implement social support in the form of disability pensions, various allowances and benefits. The state pension system is also implemented on the basis of smart laws, which automatically allocates social tax, calculates pensions and starts paying them when the citizen reaches a retirement age."
+			"TEXT8": "Keeping records of the income and medical data of citizens would allow the government, or more precisely, a special smart law, to optimally implement social support in the form of disability pensions, various allowances and benefits. The state pension system is also implemented on the basis of smart laws, which automatically allocates social tax, calculates pensions and starts paying them when the citizen reaches a retirement age.",
+			"WHAT": {
+				"HEAD": "What is the eGaaS?",
+				"TEXT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat, tellus porta lacinia condimentum, est augue porttitor enim, a cursus quam lacus a nisi. Nullam aliquam dapibus mauris vel dapibus. Vestibulum laoreet congue congue. Nam purus metus, blandit quis porta at, mattis ac nunc. Integer vel malesuada nisl.",
+				"PLAY": "Play our video",
+				"PLAYTEXT": "We filmed it for you"
+			}
 		},
 		"TEAM": {
 			"HEAD": "Team",

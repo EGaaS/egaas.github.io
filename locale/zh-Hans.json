@@ -61,7 +61,13 @@
 			"TEXT5": "智能法律和智能合同在大量用户使用eGaaS平台时就能够高效地运行：这些用户包括自然人和法律实体，以及其财产，版权，发明等等。毋庸置疑，区块链技术将大大提高注册管理机构的安全性，防止操纵和欺诈。",
 			"TEXT6": "eGaaS保持每个人的所有医疗记录，医疗建议，诊断等，同时保持数据的匿名性。因此，每个人都可以在世界任何地方在数据的流通下接受有效的治疗。同时，医学和药理学的机构就能够获得独特而全面的统计信息，令治疗、诊断和处方的效率和准确性提升到前所未有的水平。",
 			"TEXT7": "eGaaS是有效整全的业务操作工具。它包含注册表（公司，产品，许可证等）的通用结构，能够用于制定各式各样的智能合约智能法律体系则能够自动扣除税款，关税和其他费用。",
-			"TEXT8": "记录公民的收入和医疗数据记录将允许政府，即智能法律，制定更全面的残疾养恤金、津贴和福利，使这些资金能够有效地支持社会的日常运作。国家养老金制度也是在智慧法律的基础上实施的，它能够自动分配社会税，计算养老金，并在公民达到退休年龄时开始分发。"
+			"TEXT8": "记录公民的收入和医疗数据记录将允许政府，即智能法律，制定更全面的残疾养恤金、津贴和福利，使这些资金能够有效地支持社会的日常运作。国家养老金制度也是在智慧法律的基础上实施的，它能够自动分配社会税，计算养老金，并在公民达到退休年龄时开始分发。",
+			"WHAT": {
+				"HEAD": "What is the eGaaS?",
+				"TEXT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat, tellus porta lacinia condimentum, est augue porttitor enim, a cursus quam lacus a nisi. Nullam aliquam dapibus mauris vel dapibus. Vestibulum laoreet congue congue. Nam purus metus, blandit quis porta at, mattis ac nunc. Integer vel malesuada nisl.",
+				"PLAY": "Play our video",
+				"PLAYTEXT": "We filmed it for you"
+			}
 		},
 		"TEAM": {
 			"HEAD": "团队",

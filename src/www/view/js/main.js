@@ -22,9 +22,15 @@ $(document).ready(function(){
             }
         }
 	});
+	
 	$(".timer_text").each(function() {
 		var id = $(this).attr("data-for");
 		$(this).prependTo($(".start ." + id));
+	});
+	
+	$("[data-player]").on('click', function(){
+		showVideo(this);
+		return false;
 	});
 	
 	if (jQuery.os.name === "iphone" || jQuery.os.name === "ipad") {

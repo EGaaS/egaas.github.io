@@ -10502,40 +10502,36 @@ header.on .menu .patty:before {
   clear: both;
   background-color: #16b6e8;
   overflow: hidden;
+  /*@include min($bmobile) {
+		display:flex;
+		flex-flow:row wrap;
+		align-items:stretch;
+		align-content:stretch;
+		justify-content:flex-start;
+		min-height:100vh;
+	}*/
 }
 
-@media (min-width: 768px) {
-  .about {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-    align-content: stretch;
-    justify-content: flex-start;
-    min-height: 100vh;
-  }
-}
-
-@media (min-width: 768px) {
-  .about .container {
-    flex: 1 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    align-content: center;
-    justify-content: flex-start;
-  }
+.about .container {
+  /*@include min($bmobile) {
+			flex:1 100%;
+			display:flex;
+			flex-direction:row;
+			align-items:stretch;
+			align-content:center;
+			justify-content:flex-start;
+		}*/
 }
 
 .about .container .inner {
-  flex: 1;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 767px) {
   .about .container .inner {
     padding-top: 15px;
-    padding-bottom: 0px;
+    padding-bottom: 15px;
   }
 }
 
@@ -10558,7 +10554,6 @@ header.on .menu .patty:before {
   align-content: center;
   align-items: center;
   position: relative;
-  margin-top: 30px;
   z-index: 2;
 }
 
@@ -10566,7 +10561,6 @@ header.on .menu .patty:before {
   .about .container .inner .egaas_video {
     display: block;
     text-align: center;
-    margin-top: 15px;
   }
 }
 
@@ -10592,17 +10586,62 @@ header.on .menu .patty:before {
   }
 }
 
+.about .container .inner .egaas_video .laptop .bg {
+  position: absolute;
+  left: 82px;
+  top: 39px;
+  height: 256px;
+  border-radius: 5px;
+  z-index: -1;
+}
+
+@media screen and (max-width: 999px) {
+  .about .container .inner .egaas_video .laptop .bg {
+    left: 69px;
+    top: 33px;
+    height: 216px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about .container .inner .egaas_video .laptop .bg {
+    left: 42px;
+    top: 20px;
+    height: 130px;
+  }
+}
+
 .about .container .inner .egaas_video .laptop .play {
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 115px;
-  height: 115px;
+  width: 94px;
+  height: 94px;
   background-image: url(../images/play.png);
   background-repeat: no-repeat;
   background-position: 0px 0px;
-  margin-left: -57px;
-  margin-top: -57px;
+  margin-left: -47px;
+  margin-top: -47px;
+}
+
+.about .container .inner .egaas_video .laptop .play:before, .about .container .inner .egaas_video .laptop .play:after {
+  content: '';
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  border-radius: 100px;
+  border: 1px solid white;
+  background-color: #ffffff;
+  transform-origin: center center;
+  transform: scale(0.5);
+  animation: pulse-me 3s linear infinite;
+  opacity: 0;
+}
+
+.about .container .inner .egaas_video .laptop .play:after {
+  animation-delay: 2s;
 }
 
 .about .container .inner .egaas_video .text {
@@ -10642,7 +10681,6 @@ header.on .menu .patty:before {
   .about .container .inner .egaas_video .text {
     display: inline-block;
     padding-top: 15px;
-    padding-bottom: 15px;
   }
   .about .container .inner .egaas_video .text span {
     top: 10px;
@@ -11330,9 +11368,11 @@ header.on .menu .patty:before {
   display: block;
   width: 100%;
   height: 100%;
+  background-color: #16b6e8;
   background-image: url(../images/play.png);
   background-repeat: no-repeat;
-  background-position: 0px 0px;
+  background-position: center center;
+  background-size: 80px 80px;
 }
 
 .video .play span {
@@ -12149,6 +12189,23 @@ header.on .menu .patty:before {
     right: 100%;
     width: 34px;
     height: 31px;
+  }
+}
+
+@keyframes pulse-me {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  70% {
+    opacity: 0.09;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
   }
 }
 

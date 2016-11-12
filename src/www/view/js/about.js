@@ -4,7 +4,7 @@ var canvasDots = function() {
       colorDot = '#ffffff',
       color = '#ffffff';
   canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
+  canvas.height = $(".about").height();//window.innerHeight;
   canvas.style.display = 'block';
   ctx.fillStyle = colorDot;
   ctx.lineWidth = .1;
@@ -101,6 +101,6 @@ var canvasDots = function() {
   setInterval(createDots, 1000/30); 
 };
 
-window.onload = function() {
+//window.onload = function() {
   canvasDots();
-};
+//};

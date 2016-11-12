@@ -2529,6 +2529,9 @@ footer {
 	background-color:$black;
 	font-size:0px;
 	z-index:2;
+	@include max($bmobile) {
+		height:auto;
+	}
 	.copyright {
 		position:relative;
 		float:left;
@@ -2536,6 +2539,8 @@ footer {
 		padding-top:30px;
 		z-index:2;
 		@include max($bmobile) {
+			float:none;
+			text-align:center;
 			padding-top:50px;
 		}
 		span {
@@ -2567,7 +2572,12 @@ footer {
 		padding-top:39px;
 		z-index:2;
 		@include max($bmobile) {
-			padding-top:54px;
+			display:flex;
+			justify-content:space-around;
+			float:none;
+			text-align:center;
+			padding-top:30px;
+			padding-bottom:15px;
 		}
 		a {
 			display:inline-block;

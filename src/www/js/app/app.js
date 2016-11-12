@@ -4,6 +4,8 @@
 	angular.module('app', ['ui.router', 'pascalprecht.translate', 'ngCookies']);
 	
 	angular.module('app').run(function($rootScope, $location, $window, $timeout, $state){
+		var time;
+		
 		$rootScope.$on('$viewContentLoading', function(){
 			$("header .nav .nav-link").each(function() {
 				if (!$(this).hasClass("dropdown-item")) {
@@ -25,6 +27,13 @@
 				if (state) {
 					$state.go(state);
 				}
+				
+				if (target === "lite" && target === "wallet" && target === "private" || state === "root.Download") {
+					time = 500;
+				} else {
+					time = 0;
+				}
+				
 				$timeout(function() {
 					Scrolling(target);
 				}, 0);
@@ -39,16 +48,18 @@
 		
 		function Scrolling(target) {
 			var top = "#" + target;
+			
 			if (!target) {
 				top = 0;
 			}
+			
 			$timeout(function() {
 				$.scrollTo(top, 300, {easing:'linear', onAfter: function() {
 					$timeout(function() {
 						$location.hash(target);
 					}, 0);
 				}});
-			}, 500);
+			}, time);
 		}
 	});
 	

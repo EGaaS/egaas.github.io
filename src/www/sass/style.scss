@@ -1305,8 +1305,21 @@ header {
 				span {
 					display:block;
 					width:100%;
-					@include text($light, 14px, $white, 30px, none);
+					@include text($light, 14px, $white, 20px, none);
 					font-weight:normal;
+					&.soc {
+						padding-top:10px;
+						a {
+							position:relative;
+							top:1px;
+							display:inline-block;
+							font-size:20px;
+							color:$white !important;
+							& + a {
+								margin-left:15px;
+							}
+						}
+					}
 				}
 				aside {
 					position:absolute;

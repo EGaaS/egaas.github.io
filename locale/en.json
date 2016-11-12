@@ -235,10 +235,17 @@
 		"DISTRIBUTION": {
 			"HEAD": "EGS distribution",
 			"PIE": {
-				"TEXT1": "goes to investors (those that invested in the project before ICO), to the team and to future employees as motivational packages",
-				"TEXT2": "will be sold at ICO in several rounds."
+				"TEXT1": "goes to investors (those that invested in the project before ICO), to the team and to future employees as motivational packages<span><em>7,5%</em> - инвесторы, которые вложили до ИСО<br /><em>22,5%</em> - разработчики<br /><em>5% </em>- мотивационные пакеты</span>",
+				"TEXT2": "will be sold at ICO in several rounds.<span><em>5.9%</em> - 11/15/16 - 12/15/16<br /><em>11.8%</em> - 03/01/17 - 04/01/17<br /><em>11.8%</em> - 11/15/17 - 12/15/17<br /><em>11.8%</em> - 07/01/18 - 08/01/18<br /><em>11.8%</em> - 03/01/19 - 04/01/19<br /><em>11.9%</em> - 11/15/19 - 12/15/19</span>"
 			},
-			"TEXT": "The need to conduct ICO in several rounds is to enhance transparency in the activities of the eGaaS team and increase the possibility of reporting to investors after each roadmap stage. To implement the next roadmap stage after ICO,  $500,000 investment is required. Therefore, during the first ICO round, 5.9 million EGS tokens will be sold."
+			"TEXT1": "The need to conduct ICO in several rounds is to enhance transparency in the activities of the eGaaS team and increase the possibility of reporting to investors after each roadmap stage. To implement the next roadmap stage after ICO,  $500,000 investment is required. Therefore, during the first ICO round, 5.9 million EGS tokens will be sold.",
+			"TEXT2": "We plan to sell the remaining 59.1&nbsp;% during 2017-2019 in several rounds."
+		},
+		"SALE": {
+			"HEAD": "Why is sale of our tokens in several rounds beneficial to investors?",
+			"TEXT1": "Before each round, we show what we have done and report what the investment has been spent on",
+			"TEXT2": "We will carry out the advertising campaign during each round, so the rate will grow on the stock exchange before the ICO",
+			"TEXT3": "During each round, we will sell tokens at higher price than during the previous round"
 		},
 		"STAGES": {
 			"HEAD": "Sales are broken down into five stages with different discounts:",

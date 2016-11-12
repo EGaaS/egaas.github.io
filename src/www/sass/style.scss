@@ -2114,6 +2114,15 @@ header {
 				font-size:20px;
 				text-align:left;
 				padding-bottom:0px;
+				span {
+					display:block;
+					font-size:16px;
+					padding-top:18px;
+					em {
+						color:$blue;
+						font-style:normal;
+					}
+				}
 			}
 			article {
 				position:relative;
@@ -2160,19 +2169,19 @@ header {
 					float:right;
 					background-image:url(../images/i_16.svg);
 					background-size:78px 78px;
-					margin-top:135px;
+					margin-top:65px;
 					&:before {
 						left:-20px;
-						top:101px;
+						top:171px;
 					}
 					&:after {
 						left:-190px;
-						top:103px;
+						top:173px;
 						width:170px;
 					}
 					strong {
 						left:-190px;
-						top:45px;
+						top:115px;
 						color:$dgray;
 					}
 				}
@@ -2189,6 +2198,37 @@ header {
 				height:360px;
 				margin:-10px;
 				z-index:1;
+			}
+		}
+		p {
+			&:last-of-type {
+				font-family:$reg;
+				font-size:20px;
+				padding-bottom:0px;
+			}
+		}
+	}
+	.sale {
+		text-align:center;
+		article {
+			float:left;
+			width:33.33%;
+			background-repeat:no-repeat;
+			background-position:center 0px;
+			padding-left:10px;
+			padding-right:10px;
+			padding-top:100px;
+			&:nth-of-type(1) {
+				background-image:url(../images/i_17.svg);
+				background-size:81px 80px;
+			}
+			&:nth-of-type(2) {
+				background-image:url(../images/i_18.svg);
+				background-size:79px 77px;
+			}
+			&:nth-of-type(3) {
+				background-image:url(../images/i_19.svg);
+				background-size:81px 77px;
 			}
 		}
 	}

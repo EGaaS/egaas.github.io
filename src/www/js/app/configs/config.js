@@ -40,7 +40,9 @@
 			url: 'ico/',
 			views: {
 				'main@': {
-					templateUrl: '/view/ico.html'
+					templateUrl: '/view/ico.html',
+					controller: 'IcoCtrl',
+					controllerAs: 'vm'
 				},
 				'subscribe@root.ICO': {
 					templateUrl: '/view/subscribe.html'

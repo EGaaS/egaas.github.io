@@ -250,11 +250,12 @@
 		"STAGES": {
 			"HEAD": "Sales are broken down into five stages with different discounts:",
 			"STEPS": {
-				"TEXT1": "1st day: bonus 50%<br />Limit: 0.3m EGS = 32 BTC<br />1 EGS = 0,0001066 BTC",
-				"TEXT2": "1st week: bonus 25%<br />Limit: 1.3m EGS = 166 BTC<br />1 EGS = 0,000128 BTC",
-				"TEXT3": "2nd week : bonus 10%<br />Limit: 1.25m EGS = 182 BTC<br />1 EGS = 0,0001454 BTC",
-				"TEXT4": "3rd week : bonus 5%<br />Limit: 1.2m EGS  = 183 BTC<br />1 EGS = 0,0001523 BTC",
-				"TEXT5": "4th week<br />Limit: 1.59m EGS = 254 BTC<br />1 EGS = 0,00016 BTC"
+				"TEXT1": "1st day: bonus",
+				"TEXT2": "1st week: bonus",
+				"TEXT3": "2nd week: bonus",
+				"TEXT4": "3rd week: bonus",
+				"TEXT5": "4th week",
+				"LIMIT": "Limit"
 			},
 			"CASE": {
 				"TEXT1": "Sold:",

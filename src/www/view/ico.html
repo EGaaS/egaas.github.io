@@ -227,39 +227,39 @@
 					<article>
 						<strong>1</strong>
 						<i class="fa fa-flag-o" aria-hidden="true"></i>
-						<p>{{ 'ICO.STAGES.STEPS.TEXT1' | translate }} {{vm.ico.stat[0].bonus}}%<br />{{ 'ICO.STAGES.STEPS.LIMIT' | translate }}: 0.3m EGS = 32 BTC<br />1 EGS = 0,0001066 BTC</p>
+						<p>{{ 'ICO.STAGES.STEPS.TEXT1' | translate }} {{vm.ico.stat[0].bonus}}%<br />{{ 'ICO.STAGES.STEPS.LIMIT' | translate }}: {{vm.limit[0]}}m EGS = {{vm.summ[0]}} BTC<br />1 EGS = {{vm.ico.stat[0].btc}} BTC</p>
 					</article>
 					<article>
 						<strong>2</strong>
 						<i class="fa fa-flag-o" aria-hidden="true"></i>
-						<p>{{ 'ICO.STAGES.STEPS.TEXT2' | translate }} {{vm.ico.stat[1].bonus}}%<br />{{ 'ICO.STAGES.STEPS.LIMIT' | translate }}: 1.3m EGS = 166 BTC<br />1 EGS = 0,000128 BTC</p>
+						<p>{{ 'ICO.STAGES.STEPS.TEXT2' | translate }} {{vm.ico.stat[1].bonus}}%<br />{{ 'ICO.STAGES.STEPS.LIMIT' | translate }}: {{vm.limit[1]}}m EGS = {{vm.summ[1]}} BTC<br />1 EGS = {{vm.ico.stat[1].btc}} BTC</p>
 					</article>
 					<article>
 						<strong>3</strong>
 						<i class="fa fa-flag-o" aria-hidden="true"></i>
-						<p>{{ 'ICO.STAGES.STEPS.TEXT3' | translate }} {{vm.ico.stat[2].bonus}}%<br />{{ 'ICO.STAGES.STEPS.LIMIT' | translate }}: 1.25m EGS = 182 BTC<br />1 EGS = 0,0001454 BTC</p>
+						<p>{{ 'ICO.STAGES.STEPS.TEXT3' | translate }} {{vm.ico.stat[2].bonus}}%<br />{{ 'ICO.STAGES.STEPS.LIMIT' | translate }}: {{vm.limit[2]}}m EGS = {{vm.summ[2]}} BTC<br />1 EGS = {{vm.ico.stat[2].btc}} BTC</p>
 					</article>
 					<article>
 						<strong>4</strong>
 						<i class="fa fa-flag-o" aria-hidden="true"></i>
-						<p>{{ 'ICO.STAGES.STEPS.TEXT4' | translate }} {{vm.ico.stat[3].bonus}}%<br />{{ 'ICO.STAGES.STEPS.LIMIT' | translate }}: 1.2m EGS  = 183 BTC<br />1 EGS = 0,0001523 BTC</p>
+						<p>{{ 'ICO.STAGES.STEPS.TEXT4' | translate }} {{vm.ico.stat[3].bonus}}%<br />{{ 'ICO.STAGES.STEPS.LIMIT' | translate }}: {{vm.limit[3]}}m EGS  = {{vm.summ[3]}} BTC<br />1 EGS = {{vm.ico.stat[3].btc}} BTC</p>
 					</article>
 					<article>
 						<strong>5</strong>
-						<p>{{ 'ICO.STAGES.STEPS.TEXT5' | translate }}<br />{{ 'ICO.STAGES.STEPS.LIMIT' | translate }}: 1.59m EGS = 254 BTC<br />1 EGS = 0,00016 BTC</p>
+						<p>{{ 'ICO.STAGES.STEPS.TEXT5' | translate }}<br />{{ 'ICO.STAGES.STEPS.LIMIT' | translate }}: {{vm.limit[4]}}m EGS = {{vm.summ[4]}} BTC<br />1 EGS = {{vm.ico.stat[4].btc}} BTC</p>
 					</article>
 				</div>
 				<div class="row">
 					<div class="col-md-6">
 						<div>
 							<span translate="ICO.STAGES.CASE.TEXT1"></span>
-							0 EGS
+							{{vm.sold}} EGS
 						</div>
 					</div>
 					<div class="col-md-6">
 						<div>
 							<span translate="ICO.STAGES.CASE.TEXT2"></span>
-							5 640 000 EGS
+							{{vm.total}} EGS
 						</div>
 					</div>
 				</div>
@@ -356,6 +356,6 @@
 </section>
 
 <!-- build:js5 js/ico.js -->
-<!--<script type="text/javascript" src="/view/js/mirror.js"></script>-->
+<script type="text/javascript" src="/view/js/mirror.js"></script>
 <script type="text/javascript" src="/view/js/ico.js"></script>
 <!-- endbuild -->

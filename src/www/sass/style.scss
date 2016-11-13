@@ -1282,6 +1282,11 @@ header {
 						max-width:100%;
 					}
 				}
+				div {
+					@include min($btablet) {
+						width:100%;
+					}
+				}
 			}
 		}
 	}

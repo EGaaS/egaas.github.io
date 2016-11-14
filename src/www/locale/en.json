@@ -248,7 +248,7 @@
 			"TEXT3": "During each round, we will sell tokens at higher price than during the previous round"
 		},
 		"STAGES": {
-			"HEAD": "Sales are broken down into five stages with different discounts:",
+			"HEAD": "Sales in the first round are broken down into five stages with different discounts:",
 			"STEPS": {
 				"TEXT1": "1st day: bonus",
 				"TEXT2": "1st week: bonus",

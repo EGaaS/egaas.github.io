@@ -11,7 +11,8 @@
 					controller: 'HeaderCtrl'
 				},
 				'main@': {
-					templateUrl: '/view/main.html'
+					templateUrl: '/view/main.html',
+					controller: 'MainCtrl'
 				},
 				'subscription': {
 					templateUrl: '/view/subscription.html'

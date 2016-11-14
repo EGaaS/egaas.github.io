@@ -5,16 +5,18 @@
 			<div class="slogan">
 				<h1 translate="ICO.BANNER.SLOGAN"></h1>
 				<p translate="ICO.BANNER.TEXT"></p>
+				<p translate="ICO.BANNER.LEFT" translate-value-bonus="{{bonus}}" translate-value-left="{{left}}"></p>
 			</div>
 			<div class="timer">
-				<strong translate="COUNTDOWN.TITLE"></strong>
+				<strong translate="COUNTDOWN.START"></strong>
+				<strong translate="COUNTDOWN.LEFT"></strong>
 				<div class="start" data-date="2016-11-15 12:00:00"></div>
 				<h4 class="timer_text" data-for="textDiv_Days" translate="COUNTDOWN.DAYS"></h4>
 				<h4 class="timer_text" data-for="textDiv_Hours" translate="COUNTDOWN.HOURS"></h4>
 				<h4 class="timer_text" data-for="textDiv_Minutes" translate="COUNTDOWN.MINUTES"></h4>
 				<h4 class="timer_text" data-for="textDiv_Seconds" translate="COUNTDOWN.SECONDS"></h4>
 			</div>
-			<!--<a href="#" class="buy btn btn-primary btn-lg" target="_blank" translate="ICO.BANNER.BTN"></a>-->
+			<a href="#" class="buy btn btn-primary btn-lg" target="_blank" translate="ICO.BUY"></a>
 			<div class="row" ui-view="subscribe"></div>
 		</div>
 	</div>
@@ -221,6 +223,12 @@
 			</div>
 		</div>
 		<div class="line">
+			<div class="container first_stage">
+				<h3 translate="ICO.FIRST.HEAD"></h3>
+				<p translate="ICO.FIRST.TEXT"></p>
+			</div>
+		</div>
+		<div class="line">
 			<div class="container stages">
 				<h3 translate="ICO.STAGES.HEAD"></h3>
 				<div class="clearfix">
@@ -349,7 +357,7 @@
 						</div>
 					</aside>
 				</div>
-				<!--<a href="#" class="btn btn-primary btn-lg" target="_blank">Buy EGS</a>-->
+				<a href="#" class="buy btn btn-primary btn-lg" target="_blank" translate="ICO.BUY"></a>
 			</div>
 		</div>
 	</div>

@@ -1,28 +1,3 @@
-$(document).ready(function(){
-	'use strict';
-	
-	$(".start").TimeCircles({
-		time: {
-            Days: {
-                text: ""
-            },
-            Hours: {
-                text: ""
-            },
-            Minutes: {
-                text: ""
-            },
-            Seconds: {
-                text: ""
-            }
-        }
-	});
-	$(".timer_text").each(function() {
-		var id = $(this).attr("data-for");
-		$(this).prependTo($(".start ." + id));
-	});
-});
-
 $(function () {
 	'use strict';
 	

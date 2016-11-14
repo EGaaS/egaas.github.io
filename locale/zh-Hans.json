@@ -15,8 +15,9 @@
 		}
 	},
 	"COUNTDOWN": {
-		"TITLE": "距离初始募股:",
-		"LEFT": "The offer is still open for",
+		"START": "距离初始募股:",
+		"FINISH": "ICO will finish in:",
+		"LEFT": "Offer will be in force another",
 		"DAYS": "Days",
 		"HOURS": "Hours",
 		"MINUTES": "Minutes",
@@ -167,10 +168,11 @@
 		"DOWNLOAD64": "下载64位元版本"
 	},
 	"ICO": {
+		"BUY": "Buy tokens",
 		"BANNER": {
 			"SLOGAN": "Electronic Government as&nbsp;a&nbsp;Service",
-			"TEXT": "Remaining: 300,000 EGS with <strong>50&nbsp;% bonus</strong>",
-			"BTN": "Buy tokens"
+			"TEXT": "Hurry up to buy tokens on the 1st day of sales with a <strong>50&nbsp;% bonus</strong>, limited quantity",
+			"LEFT": "EGS with a <strong>bonus of {{bonus}}%</strong> left: <b>{{left}}</b>"
 		},
 		"MISSION": {
 			"TEXT": "The main mission of eGaaS is to create a common international platform for full implementation of an electronic government as a service, which would free citizens and businesses from routine bureaucratic procedures, provide a tool for organizing all activities and exercising control over them without documents circulation.",
@@ -246,6 +248,10 @@
 			"TEXT1": "Before each round, we show what we have done and report what the investment has been spent on",
 			"TEXT2": "We will carry out the advertising campaign during each round, so the rate will grow on the stock exchange before the ICO",
 			"TEXT3": "During each round, we will sell tokens at higher price than during the previous round"
+		},
+		"FIRST": {
+			"HEAD": "Why is it better to buy tokens in the first stage?",
+			"TEXT": "It must be kept in mind that restricting the sale of tokens in the first stage of the ICO at a fixed price, an advertising campaign before the second ICO, and start of eGaaS negotiations with several countries may lead to a sharp growth of the EGS rate on the exchanges by the second stage of the ICO, which will take place in 2017."
 		},
 		"STAGES": {
 			"HEAD": "Sales are broken down into five stages with different discounts:",

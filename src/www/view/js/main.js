@@ -6,28 +6,6 @@ $(document).ready(function(){
 	
 	particlesJS.load('team_particles', './api/team_particles.json');
 	
-	$(".start").TimeCircles({
-		time: {
-            Days: {
-                text: ""
-            },
-            Hours: {
-                text: ""
-            },
-            Minutes: {
-                text: ""
-            },
-            Seconds: {
-                text: ""
-            }
-        }
-	});
-	
-	$(".timer_text").each(function() {
-		var id = $(this).attr("data-for");
-		$(this).prependTo($(".start ." + id));
-	});
-	
 	$("[data-player]").on('click', function(){
 		showVideo(this);
 		return false;

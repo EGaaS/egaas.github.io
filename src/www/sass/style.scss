@@ -687,6 +687,7 @@ header {
 		background-color:$mblue;
 		background-image:url(../images/ico.jpg);
 		p {
+			display:none;
 			font-family:$reg;
 			font-size:20px;
 			padding-top:30px;
@@ -761,12 +762,21 @@ header {
 					animation-delay:0.6s;
 					opacity:0;
 					transform:translate3d(0, 200%, 0);
+					b {
+						font-family:$med;
+						font-size:30px;
+						font-weight:normal;
+						@include max($bmobile) {
+							font-size:26px;
+						}
+					}
 				}
 			}
 			.timer {
 				position:relative;
 				flex:1 100%;
 				padding-bottom:60px;
+				opacity:0;
 				strong {
 					display:block;
 					@include text($bold, 25px, $white, 30px, uppercase);
@@ -796,11 +806,9 @@ header {
 						height:70px;
 					}
 					h4 {
+						display:none;
 						&.timer_text {
 							display:block;
-						}
-						&:last-child {
-							display:none;
 						}
 					}
 				}
@@ -876,6 +884,9 @@ header {
 			margin-left:0px;
 			margin-right:0px;
 		}
+	}
+	.buy {
+		display:none;
 	}
 }
 /* Content
@@ -2234,6 +2245,19 @@ header {
 			&:nth-of-type(3) {
 				background-image:url(../images/i_19.svg);
 				background-size:81px 77px;
+			}
+			p {
+				&:last-of-type {
+					padding-bottom:0px;
+				}
+			}
+		}
+	}
+	.first_stage {
+		text-align:center;
+		p {
+			&:last-of-type {
+				padding-bottom:0px;
 			}
 		}
 	}

@@ -5,14 +5,70 @@
 	
 	function IcoCtrl($rootScope, $scope, $http, $location, $state){
 		var vm = this;
+		var stages = [];
+		var bonus = [];
+		var left = [];
 		vm.ICO = {};
 		vm.limit = [];
 		vm.summ = [];
 		vm.sold = 0;
 		vm.total = 0;
-		vm.getICO = getICO;
 		
-		function getICO () {
+		function Timer() {
+			$(".start").TimeCircles({
+				time: {
+					Days: {
+						text: ""
+					},
+					Hours: {
+						text: ""
+					},
+					Minutes: {
+						text: ""
+					},
+					Seconds: {
+						text: ""
+					}
+				}
+			}).addListener(countdownComplete);
+		}
+		
+		function TimerText() {
+			$(".timer_text").each(function() {
+				var id = $(this).attr("data-for");
+				$(this).prependTo($(".ico_banner .start ." + id));
+			});
+			setTimeout(function(){
+				$(".timer").animate({opacity:1});
+			}, 500);
+		}
+		
+		function countdownComplete(unit, value, total){
+			var i = 0;
+			if(total < 0){
+				$(".timer_text").appendTo($(".timer"));
+				$(this).TimeCircles().destroy();
+				$(this).data('date', stages[i]).TimeCircles();
+				$(".slogan p").eq(0).hide();
+				$(".slogan p").eq(1).show();
+				$(".timer strong").eq(0).hide();
+				$(".timer strong").eq(1).show();
+				$(".buy").show();
+				$(".ico_banner .row").hide();
+				$scope.bonus = bonus[i];
+				$scope.left = left[i];
+				TimerText();
+				i += 1;
+			} else {
+				$(".slogan p").eq(0).show();
+				$(".slogan p").eq(1).hide();
+				$(".timer strong").eq(0).show();
+				$(".timer strong").eq(1).hide();
+				TimerText();
+			}
+		}
+		
+		function getICO() {
 			$http({
 				method : 'GET',
 				url    : 'http://ico.egaas.org/ajax?json=ajax_ico_info'
@@ -21,14 +77,31 @@
 				console.log(data);
 				vm.ico = data;
 				for (var i = 0; i < data.stat.length; i++) {
+					stages.push(vm.ico.stat[i].end);
+					bonus.push(vm.ico.stat[i].bonus);
+					left.push(vm.ico.stat[i].forsell - vm.ico.stat[i].sold);
 					vm.summ.push(parseInt(vm.ico.stat[i].forsell * vm.ico.stat[i].btc));
 					vm.limit.push(vm.ico.stat[i].forsell / 1000000);
 					vm.sold += vm.ico.stat[i].sold;
 					vm.total += vm.ico.stat[i].forsell;
 				}
+				
+				vm.sold = format(vm.sold, "");
+				vm.total = format(vm.total, "");
+				console.log(left);
+				$scope.bonus = bonus[0];
+				$scope.left = left[0];
+				
+				Timer();
 			});
 		}
 		
-		vm.getICO();
+		function format(n, currency) {
+			return currency + "" + n.toFixed(0).replace(/./g, function(c, i, a) {
+				return i > 0 && c !== "." && (a.length - i) % 3 === 0 ? " " + c : c;
+			});
+		}
+		
+		getICO();
 	}
 })();

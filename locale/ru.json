@@ -170,7 +170,7 @@
 	"ICO": {
 		"BUY": "Купить токены",
 		"BANNER": {
-			"SLOGAN": "Electronic Government as&nbsp;a&nbsp;Service",
+			"SLOGAN": "Электронное государство как услуга",
 			"TEXT": "Успей купить токены в 1-й день продаж с <strong>бонусом 50&nbsp;%</strong>, количество ограничено",
 			"LEFT": "Осталось EGS  с <strong>бонусом {{bonus}}%</strong>: <b>{{left}}</b>"
 		},

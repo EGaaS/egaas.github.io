@@ -329,6 +329,9 @@ input, textarea, button {
 		z-index:100;
 	}
 }
+.buy {
+	display:none;
+}
 /* Header
 ----------------------------------------- */
 header {
@@ -884,9 +887,6 @@ header {
 			margin-left:0px;
 			margin-right:0px;
 		}
-	}
-	.buy {
-		display:none;
 	}
 }
 /* Content

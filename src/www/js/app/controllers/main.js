@@ -6,8 +6,19 @@
 	function MainCtrl($rootScope, $scope, $http, $location, $state){
 		var stages;
 		
+		if (Number(getTimeZone()) > 0) {
+			var start = moment("2016-11-15 9:00:00").add(Math.abs(getTimeZone()), 'h').format('YYYY-MM-D HH:mm:ss');
+		} else {
+			var start = moment("2016-11-15 9:00:00").subtract(Math.abs(getTimeZone()), 'h').format('YYYY-MM-D HH:mm:ss');
+		}
+		
+		function getTimeZone() {
+			var offset = new Date().getTimezoneOffset(), o = Math.abs(offset);
+			return (offset < 0 ? "+" : "-") + (o / 60);
+		}
+		
 		function Timer() {
-			$(".start").TimeCircles({
+			$(".start").data('date', start).TimeCircles({
 				time: {
 					Days: {
 						text: ""

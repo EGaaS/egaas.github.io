@@ -57,9 +57,15 @@
 		function countdownComplete(unit, value, total){
 			var i = 0;
 			if(total < 0){
+				if (Number(getTimeZone()) > 0) {
+					var next = moment(stages[i]).add(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
+				} else {
+					var next = moment(stages[i]).subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
+				}
+				
 				$(".timer_text").appendTo($(".timer"));
 				$(this).TimeCircles().destroy();
-				$(this).data('date', stages[i]).TimeCircles();
+				$(this).data('date', next).TimeCircles();
 				$(".slogan p").eq(0).hide();
 				$(".slogan p").eq(1).show();
 				$(".timer strong").eq(0).hide();

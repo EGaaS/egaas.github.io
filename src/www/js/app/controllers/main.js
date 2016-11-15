@@ -48,9 +48,15 @@
 		
 		function countdownComplete(unit, value, total){
 			if(total < 0){
+				if (Number(getTimeZone()) > 0) {
+					var next = moment(stages).add(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
+				} else {
+					var next = moment(stages).subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
+				}
+				
 				$(".timer_text").appendTo($(".timer"));
 				$(this).TimeCircles().destroy();
-				$(this).data('date', stages).TimeCircles();
+				$(this).data('date', next).TimeCircles();
 				$(".timer strong").eq(0).hide();
 				$(".timer strong").eq(1).show();
 				TimerText();

@@ -13,30 +13,20 @@
 		vm.summ = [];
 		vm.sold = 0;
 		vm.total = 0;
-		/*var Moscow = moment.tz("2016-11-15 12:00:00", "Europe/Moscow");
-		var offset = new Date().getTimezoneOffset();
-		Moscow.format('YYYY-MM-D hh:mm:ss');*/
-		//moment().subtract(parseInt(getTimeZone()), 'hours').calendar(); // 11/05/2016
-		//var start = moment("2016-11-15 9:00:00").format('YYYY-MM-D hh:mm:ss')
-		if (getTimeZone() > 0) {
-			var start = moment("2016-11-15 9:00:00").add(parseInt(getTimeZone()), 'hours').format('YYYY-MM-D hh:mm:ss');
+		
+		if (Number(getTimeZone()) > 0) {
+			var start = moment("2016-11-15 9:00:00").add(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
 		} else {
-			var start = moment("2016-11-15 9:00:00").subtract(parseInt(getTimeZone()), 'hours').format('YYYY-MM-D hh:mm:ss');
+			var start = moment("2016-11-15 9:00:00").subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
 		}
-		//alert(getTimeZone())
-		//alert(start)
-		//moment().format('YYYY-MM-D hh:mm:ss');
 		
 		function getTimeZone() {
 			var offset = new Date().getTimezoneOffset(), o = Math.abs(offset);
-			return (offset < 0 ? "+" : "-") + ("00" + Math.floor(o / 60)).slice(-2);
-			//return (offset < 0 ? "+" : "-") + ("00" + Math.floor(o / 60)).slice(-2) + ":" + ("00" + (o % 60)).slice(-2);
+			return (offset < 0 ? "+" : "-") + (o / 60);
 		}
 		
-		//alert(parseInt(getTimeZone()))
-		
 		function Timer() {
-			$(".start")/*.data('date', start)*/.TimeCircles({
+			$(".start").data('date', start).TimeCircles({
 				time: {
 					Days: {
 						text: ""

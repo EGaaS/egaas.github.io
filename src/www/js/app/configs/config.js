@@ -77,7 +77,7 @@
 						if(location.hostname === 'localhost'){
 							config.url = '' + config.url;
 						} else {
-							config.url = '' + config.url;
+							config.url = '/src/www' + config.url;
 						}
 					}
 					return config || $q.when(config);

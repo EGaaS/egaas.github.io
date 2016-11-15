@@ -96,7 +96,7 @@
 				for (var i = 0; i < data.stat.length; i++) {
 					stages.push(vm.ico.stat[i].end);
 					bonus.push(vm.ico.stat[i].bonus);
-					left.push(vm.ico.stat[i].forsell - vm.ico.stat[i].sold);
+					left.push(vm.ico.stat[i].forsell);
 					vm.summ.push(parseInt(vm.ico.stat[i].forsell * vm.ico.stat[i].btc));
 					vm.limit.push(vm.ico.stat[i].forsell / 1000000);
 					vm.sold += vm.ico.stat[i].sold;

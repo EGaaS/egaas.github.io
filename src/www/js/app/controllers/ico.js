@@ -18,17 +18,19 @@
 		Moscow.format('YYYY-MM-D hh:mm:ss');*/
 		//moment().subtract(parseInt(getTimeZone()), 'hours').calendar(); // 11/05/2016
 		//var start = moment("2016-11-15 9:00:00").format('YYYY-MM-D hh:mm:ss')
-		if (parseInt(getTimeZone()) > 0) {
+		if (getTimeZone() > 0) {
 			var start = moment("2016-11-15 9:00:00").add(parseInt(getTimeZone()), 'hours').format('YYYY-MM-D hh:mm:ss');
 		} else {
 			var start = moment("2016-11-15 9:00:00").subtract(parseInt(getTimeZone()), 'hours').format('YYYY-MM-D hh:mm:ss');
 		}
+		//alert(getTimeZone())
 		//alert(start)
 		//moment().format('YYYY-MM-D hh:mm:ss');
 		
 		function getTimeZone() {
 			var offset = new Date().getTimezoneOffset(), o = Math.abs(offset);
-			return (offset < 0 ? "+" : "-") + ("00" + Math.floor(o / 60)).slice(-2) + ":" + ("00" + (o % 60)).slice(-2);
+			return (offset < 0 ? "+" : "-") + ("00" + Math.floor(o / 60)).slice(-2);
+			//return (offset < 0 ? "+" : "-") + ("00" + Math.floor(o / 60)).slice(-2) + ":" + ("00" + (o % 60)).slice(-2);
 		}
 		
 		//alert(parseInt(getTimeZone()))

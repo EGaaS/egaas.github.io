@@ -1250,6 +1250,9 @@ header {
 	clear:both;
 	overflow:hidden;
 	text-align:center;
+	h2 {
+		padding-bottom:0px;
+	}
 	.container {
 		.inner {
 			padding-top:50px;
@@ -1269,8 +1272,9 @@ header {
 				}
 				a {
 					display:inline-block;
+					max-width:300px;
 					filter:grayscale(100%);
-					margin-top:15px;
+					margin-top:30px;
 					margin-left:10px;
 					margin-right:10px;
 					transition: {
@@ -1282,7 +1286,8 @@ header {
 						opacity:1;
 					}
 					@include max($bmobile) {
-						margin-bottom:10px;
+						max-width:140px;
+						margin-top:15px;
 					}
 					&:hover {
 						filter: grayscale(0%);

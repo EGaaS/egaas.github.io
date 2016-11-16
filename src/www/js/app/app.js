@@ -3,8 +3,19 @@
 	
 	angular.module('app', ['ui.router', 'pascalprecht.translate', 'ngCookies']);
 	
-	angular.module('app').run(function($rootScope, $location, $window, $timeout, $state){
+	angular.module('app').run(function($rootScope, $location, $window, $timeout, $state, $cookies){
 		var time;
+		$rootScope.ref = $cookies.get('EGAAS') ? $cookies.get('EGAAS') : '';
+		
+		if (!$rootScope.ref) {
+			var url = $location.url().split('/');
+			var refLink = url[url.length - 1];
+			var isRefLink = refLink.split('');
+			if (isRefLink[0] === "?") {
+				$rootScope.ref = refLink;
+				$cookies.put('EGAAS', $rootScope.ref);
+			}
+		}
 		
 		$rootScope.$on('$viewContentLoading', function(){
 			$("header .nav .nav-link").each(function() {

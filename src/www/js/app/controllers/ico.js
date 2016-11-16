@@ -3,21 +3,19 @@
 
 	angular.module('app').controller('IcoCtrl', IcoCtrl);
 	
-	function IcoCtrl($rootScope, $scope, $http, $location, $state){
+	function IcoCtrl($rootScope, $scope, $http){
+		var n = 0;
 		var vm = this;
+		var start;
 		var stages = [];
 		var bonus = [];
 		var left = [];
-		vm.ICO = {};
-		vm.limit = [];
-		vm.summ = [];
-		vm.sold = 0;
-		vm.total = 0;
+		var interval;
 		
 		if (Number(getTimeZone()) > 0) {
-			var start = moment("2016-11-15 9:00:00").add(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
+			start = moment("2016-11-15 9:00:00").add(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
 		} else {
-			var start = moment("2016-11-15 9:00:00").subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
+			start = moment("2016-11-15 9:00:00").subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
 		}
 		
 		function getTimeZone() {
@@ -55,32 +53,23 @@
 		}
 		
 		function countdownComplete(unit, value, total){
-			var i = 0;
 			if(total < 0){
+				var next;
+				var server = moment(stages[n]).add(5, 'hours').format('YYYY-MM-D HH:mm:ss');
+				
 				if (Number(getTimeZone()) > 0) {
-					var next = moment(stages[i]).add(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
+					next = moment(server).add(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
 				} else {
-					var next = moment(stages[i]).subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
+					next = moment(server).subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
 				}
 				
 				$(".timer_text").appendTo($(".timer"));
 				$(this).TimeCircles().destroy();
 				$(this).data('date', next).TimeCircles();
-				$(".slogan p").eq(0).hide();
-				$(".slogan p").eq(1).show();
-				$(".timer strong").eq(0).hide();
-				$(".timer strong").eq(1).show();
-				$(".buy").show();
-				$(".ico_banner .row").hide();
-				$scope.bonus = bonus[i];
-				$scope.left = left[i];
+				$rootScope.bonus = bonus[n];
+				$rootScope.left = format(left[n], "");
 				TimerText();
-				i += 1;
 			} else {
-				$(".slogan p").eq(0).show();
-				$(".slogan p").eq(1).hide();
-				$(".timer strong").eq(0).show();
-				$(".timer strong").eq(1).hide();
 				TimerText();
 			}
 		}
@@ -91,34 +80,55 @@
 				url    : 'http://ico.egaas.org/ajax?json=ajax_ico_info'
 			})
 			.success(function(data){
-				console.log(data);
+				//console.log(data);
+				n = 0;
+				vm.ICO = {};
+				vm.limit = [];
+				vm.summ = [];
+				vm.sold = 0;
+				vm.total = 0;
 				vm.ico = data;
+				stages = [];
+				bonus = [];
+				left = [];
+				
 				for (var i = 0; i < data.stat.length; i++) {
 					stages.push(vm.ico.stat[i].end);
 					bonus.push(vm.ico.stat[i].bonus);
 					left.push(vm.ico.stat[i].forsell);
-					vm.summ.push(parseInt(vm.ico.stat[i].forsell * vm.ico.stat[i].btc));
-					vm.limit.push(vm.ico.stat[i].forsell / 1000000);
+					vm.summ.push(parseInt((vm.ico.stat[i].forsell + vm.ico.stat[i].sold) * vm.ico.stat[i].btc));
+					vm.limit.push(((vm.ico.stat[i].forsell + vm.ico.stat[i].sold) / 1000000).toFixed(2));
 					vm.sold += vm.ico.stat[i].sold;
 					vm.total += vm.ico.stat[i].forsell;
+					
+					if (vm.ico.stat[i].finished === true) {
+						n += 1;
+					}
 				}
 				
 				vm.sold = format(vm.sold, "");
 				vm.total = format(vm.total, "");
-				console.log(left);
-				$scope.bonus = bonus[0];
-				$scope.left = left[0];
+				$rootScope.bonus = bonus[n];
+				$rootScope.left = format(left[n], "");
 				
 				Timer();
 			});
 		}
 		
-		function format(n, currency) {
-			return currency + "" + n.toFixed(0).replace(/./g, function(c, i, a) {
+		function format(num, currency) {
+			return currency + "" + num.toFixed(0).replace(/./g, function(c, i, a) {
 				return i > 0 && c !== "." && (a.length - i) % 3 === 0 ? " " + c : c;
 			});
 		}
 		
 		getICO();
+		
+		interval = setInterval(function() {
+			getICO();
+		}, 60000);
+		
+		$scope.$on('$destroy', function() {
+			clearInterval(interval);
+		});
 	}
 })();

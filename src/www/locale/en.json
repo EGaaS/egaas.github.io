@@ -232,7 +232,7 @@
 		},
 		"RELEASE": {
 			"HEAD": "EGS emission",
-			"TEXT": "EGS tokens will be emitted only once, in an amount of 100 million."
+			"TEXT": "EGS tokens were emitted only once, in an amount of 100 million."
 		},
 		"DISTRIBUTION": {
 			"HEAD": "EGS distribution",

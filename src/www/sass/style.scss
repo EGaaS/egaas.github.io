@@ -687,13 +687,16 @@ header {
 		background-color:$mblue;
 		background-image:url(../images/ico.jpg);
 		p {
-			display:none;
 			font-family:$reg;
 			font-size:20px;
 			padding-top:30px;
 			@include max($bmobile) {
 				font-size:16px;
 				line-height:18px;
+			}
+			b {
+				display:block;
+				padding-top:10px;
 			}
 		}
 		.btn {
@@ -885,9 +888,6 @@ header {
 			margin-right:0px;
 		}
 	}
-}
-.buy {
-	//display:none;
 }
 /* Content
 ----------------------------------------- */

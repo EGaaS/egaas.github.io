@@ -3,13 +3,14 @@
 
 	angular.module('app').controller('MainCtrl', MainCtrl);
 	
-	function MainCtrl($rootScope, $scope, $http, $location, $state){
+	function MainCtrl($rootScope, $scope, $http){
+		var start;
 		var stages;
 		
 		if (Number(getTimeZone()) > 0) {
-			var start = moment("2016-11-15 9:00:00").add(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
+			start = moment("2016-11-15 9:00:00").add(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
 		} else {
-			var start = moment("2016-11-15 9:00:00").subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
+			start = moment("2016-11-15 9:00:00").subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
 		}
 		
 		function getTimeZone() {
@@ -48,10 +49,13 @@
 		
 		function countdownComplete(unit, value, total){
 			if(total < 0){
+				var next;
+				var server = moment(stages).add(5, 'hours').format('YYYY-MM-D HH:mm:ss');
+				
 				if (Number(getTimeZone()) > 0) {
-					var next = moment(stages).add(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
+					next = moment(server).add(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
 				} else {
-					var next = moment(stages).subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
+					next = moment(server).subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
 				}
 				
 				$(".timer_text").appendTo($(".timer"));

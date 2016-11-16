@@ -94,7 +94,7 @@
 		$urlRouterProvider.when('', '/');
 		$urlRouterProvider.otherwise(function ($injector) {
 			var $state = $injector.get("$state");
-			$state.go("404");
+			$state.go("root");
 		});
 		
 		$urlMatcherFactoryProvider.strictMode(false);

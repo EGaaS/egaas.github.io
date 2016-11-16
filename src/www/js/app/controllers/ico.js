@@ -125,7 +125,7 @@
 		
 		interval = setInterval(function() {
 			getICO();
-		}, 60000);
+		}, 180000);
 		
 		$scope.$on('$destroy', function() {
 			clearInterval(interval);

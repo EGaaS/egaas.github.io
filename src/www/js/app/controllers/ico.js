@@ -106,7 +106,7 @@
 					}
 				}
 				
-				vm.sold = format(vm.sold - 302576, "");
+				vm.sold = format(vm.sold, "");
 				vm.total = format(vm.total, "");
 				$rootScope.bonus = bonus[n];
 				$rootScope.left = format(left[n], "");

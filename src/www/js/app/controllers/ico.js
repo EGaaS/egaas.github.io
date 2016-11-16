@@ -80,7 +80,7 @@
 				url    : 'http://ico.egaas.org/ajax?json=ajax_ico_info'
 			})
 			.success(function(data){
-				//console.log(data);
+				console.log(data);
 				n = 0;
 				vm.ICO = {};
 				vm.limit = [];
@@ -106,7 +106,7 @@
 					}
 				}
 				
-				vm.sold = format(vm.sold, "");
+				vm.sold = format(vm.sold - 302576, "");
 				vm.total = format(vm.total, "");
 				$rootScope.bonus = bonus[n];
 				$rootScope.left = format(left[n], "");

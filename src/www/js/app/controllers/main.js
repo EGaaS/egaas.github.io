@@ -50,6 +50,7 @@
 		function countdownComplete(unit, value, total){
 			if(total < 0){
 				var next;
+				stages = '2016-12-15 04:00:00';
 				var server = moment(stages).add(5, 'hours').format('YYYY-MM-D HH:mm:ss');
 				
 				if (Number(getTimeZone()) > 0) {

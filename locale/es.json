@@ -1,0 +1,308 @@
+{
+    "LANG": "es",
+    "LANGUAGE": "Es",
+    "TITLE": "eGaaS - Gobierno Electrónico como servicio",
+    "MENU": {
+        "MISSION": "Misión",
+        "ABOUT": "Acerca de nosotros",
+        "TEAM": "Equipo",
+        "FORUM": "Foro",
+        "DOWNLOAD": {
+            "NAME": "Descargar",
+            "LITE": "eGaaS v1.0 Lite beta",
+            "FULL": "eGaaS Node v1.0 beta",
+            "PRIVATE": "eGaaS Node v0.1 beta (privado)"
+        }
+    },
+    "COUNTDOWN": {
+        "START": "La ICO comenzara en:",
+        "FINISH": "La ICO terminara en:",
+        "LEFT": " La oferta será cambiada en",
+        "DAYS": "Días",
+        "HOURS": "Horas",
+        "MINUTES": "Minutos",
+        "SECONDS": "Segundos"
+    },
+    "SUBSCRIBE": {
+        "HEAD": "Suscríbete",
+        "PLACEHOLDER": "Introduce Tu Correo Electrónico",
+        "INCORRECT": "Dirección de Correo Electrónico  Incorrecta",
+        "THANKS": "Gracias por suscribirte!",
+        "SUBSCRIBED": "You are already subscribed to newsletter!",
+        "TEXT": "1 a 2 correos electrónicos importantes al mes"
+    },
+    "MAIN": {
+        "BANNER": {
+            "SLOGAN": "EGAAS<br />Gobierno Electrónico como&nbsp;Servicio",
+            "TEXT": "EGaaS es una plataforma blockchain para organizar actividades económicas, públicas y sociales. Estos eventos están impulsados por leyes inteligentes y contratos inteligentes. "
+        },
+        "MISSION": {
+            "HEAD1": "Misión",
+            "HEAD2": "Tecnología",
+            "TEXT1": "La misión principal de eGaaS es liberar a las personas, empresas y los gobiernos de procedimientos burocráticos rutinarios  y servir como una herramienta que podría utilizarse para organizar cualquier actividad y ejercer control sobre ella sin circulación de documentos. eGaas tiene como objetivo esclarecer el nicho clandestino del sistema político financiero actual en el que residimos. EGaaS debería convertirse en la plataforma sobre la cual el estado y las estructuras empresariales de todos los países deberían funcionar en armonía a beneficio de los ciudadanos.",
+            "TEXT2": "eGaas realiza cuatro funciones básicas necesarias para la transferencia eficiente de la mayoría de actividades empresariales y gubernamentales en la tecnología blockchain: sistema financieros, estructura de registros, algoritmos de contratos inteligentes y formación de leyes inteligentes además de mecanismos para la ejecución de ellas. El sistema financiero asegura transacciones en la moneda de un país particular. Los contractos inteligentes implementan automáticamente el algoritmo de transacción que involucra objetos de registro con posibles transacciones en moneda Fiat. Las leyes inteligentes regulan la creación e implementación de contratos inteligentes y regulan automáticamente las relaciones entre los individuos y las organizaciones en todas las áreas de la actividad gubernamental.",
+            "BUTTONS": {
+                "TEXT1": "Transferir las actividades de los gobiernos y los organismos legislativos a la plataforma eGaaS permitiría ahorrar casi el 10&nbsp;% del PIB mundial anualmente.",
+                "TEXT2": "Aprender más:"
+            }
+        },
+        "ABOUT": {
+            "HEAD1": "Gobierno",
+            "HEAD2": "Legislación",
+            "HEAD3": "Votación",
+            "HEAD4": "Finanzas",
+            "HEAD5": "Registro común",
+            "HEAD6": "Medicina",
+            "HEAD7": "Negocios",
+            "HEAD8": "Protección social",
+            "TEXT1": "Cada estado establece de manera independiente la estructura de sus órganos estadales, establece sus gobierno y sus principios de relación entre los cuídanos y las instituciones. EGaaS solo regula los protocolos para confirmar datos en los registros de los gobiernos, proporciona modelos de leyes inteligentes básicas y apoya su mecanismo de adopción e implementación.",
+            "TEXT2": "Todas las leyes estatales, cuyos sujetos son los objetos enumerados en los registros de las blockchain eGaaS, se transfieren en formato inteligente. Las leyes inteligentes son las leyes directamente efectivas. Su implementación no requiere intermediarios ni autoridades reguladoras. Las enmiendas y cambios que se hagan entrarán en vigor inmediatamente. Muchas de las funciones de los organismos gubernamentales - como el registro de estado civil (nacimiento, matrimonió, divorcio), Impuestos, regulaciones de relaciones financieras y de negocios entre muchas otras - se realizan y controlan automáticamente por leyes inteligentes de eGaas.",
+            "TEXT3": "En eGaas, los ciudadanos pueden ser identificados de manera fiable, simplificando así los procedimientos electorales: las leyes inteligentes especiales establecen el periodo y las condiciones de las elecciones, aceptan las candidaturas, inician el procedimiento de votación y cuentan los votos. La votación mediante claves electrónicas es rápida y supone un coste mínimo. Los resultados de votación, que se almacenan en la cadena de bloques difícilmente pueden ser manipulados.",
+            "TEXT4": "Para que un estado se una a la plataforma común blockchain, primero debe abrir cuentas en eGaaS para todas las personas físicas y jurídicas en su Banco Central. A partir de este momento, todas las transacciones financieras - desde la compra de bienes en la tienda hasta la ejecución de un presupuesto estatal - se llevarán a cabo bajo el control de leyes inteligentes. Cualquier obligación financiera (reembolso de préstamos, pago de seguros, pago de facturas) se garantiza y ejecutan mediante contratos inteligentes automáticamente. Los protocolos eGaaS implementan de manera fácil y fiable los procedimientos de préstamo p2p.",
+            "TEXT5": "Las leyes y Contratos inteligentes pueden funcionar eficientemente solo si el máximo número de registros se transfiere a la plataforma eGaaS: registros de personas naturales y jurídicas, de propiedad de derechos de autor, invenciones, ect. No hace falta decir que la tecnología blockchain mejoraría enormemente la seguridad del registro contra la manipulación y el fraude.",
+            "TEXT6": "eGaaS mantiene los registros, recomendaciones y diagnósticos médicos de cada persona asegurando el anonimato de los datos. Debido a esto, cada persona puede recibir tratamiento médico efectivo en cualquier parte del mundo. Al mismo tiempo, la ciencia médica y la farmacología obtienen información estadística única que llevaría al diagnóstico y prescripción de tratamientos a un nivel completamente nuevo.",
+            "TEXT7": "eGaas es una herramienta completa para operaciones empresariales eficaces. Contiene una estructura común de registros (empresas, productos, licencias, ect.) cuyos objetos se utilizan en la elaboración  de contratos inteligentes. El sistema de derecho inteligente asegura la deducción automática de impuestos, derechos de aduana y otros cargos.",
+            "TEXT8": "Mantener registros de los ingresos y datos médicos de los ciudadanos permitiría al gobierno, o más precisamente, a una ley inteligente especial, el implementar de forma óptima apoyo social en forma de pensiones por discapacidad, diversos subsidios y beneficios. El sistema estatal de pensiones también se aplica sobre las base de leyes inteligentes, que asigna automáticamente el impuesto social, calcula pensiones y comienza a pagarlas cuando el ciudadano alcanza la edad de jubilación.",
+            "WHAT": {
+                "HEAD": "Que es eGaaS?",
+                "TEXT": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer volutpat, tellus porta lacinia condimentum, est augue porttitor enim, a cursus quam lacus a nisi. Nullam aliquam dapibus mauris vel dapibus. Vestibulum laoreet congue congue. Nam purus metus, blandit quis porta at, mattis ac nunc. Integer vel malesuada nisl.",
+                "PLAY": "Ve nuestro video ",
+                "PLAYTEXT": "Lo grabamos para ti"
+            },
+            "PRESS": {
+                "HEAD": "Medios"
+            }
+        },
+        "TEAM": {
+            "HEAD": "Equipo", 
+            "PEOPLE1": {
+                "NAME": "Oleg Strelenko",
+                "PROFESSION": " Fundador, CEO, desarrollador Blockchain",
+                "TEXT": " Desarrollador Blockchain con 5 años de experiencia. Desarrolló la moneda electrónica descentralizada DCoin (80k líneas de código en Go) desde cero. Es conocido en la comunidad informática rusa como Dmitry Kharitonov. Por más de 10 años, ha desarrollado sus propios proyectos y gestionado equipos informáticos. "
+            },
+            "PEOPLE2": {
+                "NAME": "Artur Pakhomov",
+                "PROFESSION": "Asesor científico ",
+                "TEXT": " Miembro del Presídium del Consejo de la Cámara de Comercio e Industria de San Petersburgo. Doctorado en Economía. Autor de varios informes y ponencias sobre modernización y reestructuración de la gestión inmobiliaria. Durante más de 30 años, ha implementado proyectos propios, incluyendo proyectos internacionales. "
+            },
+            "PEOPLE3": {
+                "NAME": "Yuriy Lomakin",
+                "PROFESSION": "Desarrollador Front-end ",
+                "TEXT": "Desarrollador front-end con 10 años de experiencia. Ha trabajado en el equipo charmerstudio.com, desarrollando el portal de noticias importantes lenta.ru."
+            },
+            "PEOPLE4": {
+                "NAME": "Aleksandr Boldachev",
+                "PROFESSION": "Asesor / Analista ",
+                "TEXT": "Filósofo, analista, miembro de la Asociación de Futurólogos Rusos. Principales áreas de investigación: evolucionismo global, ontología temporal, filosofía de la inteligencia artificial, futurología. En los últimos años, trabajó en la creación del enfoque de sujeto-evento para el modelado de sistemas complejos. "
+            },
+            "PEOPLE5": {
+                "NAME": "Ruben Pombuhchan",
+                "PROFESSION": "Asesor en IPE Lab ",
+                "TEXT": "Experto en desarrollo e implementación de tecnologías innovadoras. Analista de inversiones. Director de Sapsan Consulting Group. Tiene una amplia experiencia en gestión de proyectos en grandes corporaciones. Participó en la implementación de grandes proyectos en grandes empresas y grupos como Gazprom, Magnit y Basic Element. Es el jefe de la oficina de proyectos del Laboratorio de Ingeniería de Proyectos Institucionales (IPE Lab)."
+            },
+            "PEOPLE6": {
+                "NAME": "Sergey Chernyshev",
+                "PROFESSION": "Asesor científico en IPE Lab",
+                "TEXT": "Filósofo, conferenciante y experto en el área de organización y gestión. Profesor en la Universidad Nacional de Investigación - Escuela Superior de Economía. Miembro del Consejo de Expertos del Gobierno de Rusia. Autor de 8 monografías y 150 artículos. Jefe del Consejo de Investigación del Laboratorio de Ingeniería de Proyectos Institucionales (IPE Lab)."
+            },
+            "PEOPLE7": {
+                "NAME": "Alexey Krivonogov",
+                "PROFESSION": "Desarrollador principal ",
+                "TEXT": "Desarrollador profesional de C/C++ con 24 años de experiencia. Graduado en la universidad estatal de Novosibirsk en 1992 con un título en matemática y matemáticas aplicadas. Desarrolló el lenguaje de programación Gentee (wiki) desde cero. Ha desarrollado el almacenamiento de información privada Eonza."
+            },
+            "PEOPLE8": {
+                "NAME": "Dmitry Eliseev",
+                "PROFESSION": "Advisor at IPE Lab",
+                "TEXT": " Doctorado en ciencias técnicas, economista, consultor de gestión profesional, profesor asociado. Autor de más de 70 publicaciones y manuales. Por 15 años, ha implementado con éxito 46 proyectos de consulta en planificación estratégica y diseño organizacional en grandes compañías nacionales e internacionales como Oreltekmash. Metodólogo Senior, miembro del consejo de investigación del Laboratorio de Ingeniería de Proyectos Institucionales (IPE Lab)."
+            },
+            "PEOPLE9": {
+                "NAME": "Andrey Nechaev",
+                "PROFESSION": "Desarrollador móvil",
+                "TEXT": "Más de 5 años de experiencia en el desarrollo de software. Excelente entendimiento de la Web Stack, más que nada backend (Erlang, Java y Python). Ha desarrollado aplicaciones en sus facetas front-end y back-end de alta carga. Experimentado con las plataformas móviles más populares, cross-compilation para todas las plataformas populares de escritorio y móvil. Enfocado en los servicios distribuidos fault-tolerant y UX."
+            },
+            "PEOPLE10": {
+                "NAME": "Nikolay V. Kapranov",
+                "PROFESSION": "Cabildero",
+                "TEXT": "Doctorado en ciencias técnicas. Doctorado en ciencias políticas. Más de 10 años de experiencia en las autoridades estatales, 4 años de experiencia en organizaciones internacionales. 7 años como director adjunto en la administración del presidente de la Federación Rusa, departamento de Política Interna. Era un asesor del presidente de la academia en la Academia Soviética de Ciencias, gobernaba su propio instituto de investigación. Tiene una serie de premios estatales."
+            },
+            "PEOPLE11": {
+                "NAME": "Nosova Anna",
+                "PROFESSION": "Directora de Relaciones Públicas",
+                "TEXT": " Psicóloga. 4 Años de experiencia en el campo de la promoción de proyectos. 2 Años de experiencia en la organización y gestión de proyectos sociales. Ha cooperado con organizaciones internacionales de medio ambiente y voluntariado, como: Peace Corp, Spare, Biomass Project Programa de las naciones unidas para el desarrollo. Es la autora del programa educativo y de una cantidad de artículos científicos."
+            },
+            "PEOPLE12": {
+                "NAME": "Vitaly Bondar",
+                "PROFESSION": " Consejero legal",
+                "TEXT": " Vitaly es un abogado ruso calificado y director legal de la firma de abogados con sede en Luxemburgo ChristmannSchmitt. Es un experto en comercio electrónico y en asuntos legales privados internacionales. En los últimos 15 años, ha ocupado altos cargos en grandes firmas de abogados y empresas industriales internacionales, centrándose en las transacciones cross-border M&A y en la estructuración de transacciones. Vitaly se graduó en la Facultad de Derecho de la Universidad Estatal de Kuban, Rusia, en 1999, y posteriormente obtuvo un diploma de postgrado en Derecho Bancario Internacional y Derecho Comercial en 2001 de la Queen Mary University de Londres."
+            },
+            "TEXT": " ¡Estamos ampliando nuestro equipo!<br /> Si eres un experto en golang, por favor<a href='mailto:hello@egaas.org'> envíanos tu CV.</a>. ¡Únete al equipo de eGaaS!"
+        }
+    },
+    "DOWNLOAD": {
+        "LITE": {
+            "HEAD": "eGaaS v1.0 Lite beta",
+            "TEXT1": " Puedes ejecutar la aplicación y comenzar a trabajar de inmediato, no hay necesidad  de esperar por la sincronización de la blockchain.",
+            "TEXT2": " Características mínimas",
+            "TEXT3": "No es necesario descargar la blockchain",
+            "TEXT4": "Acceso instantáneo"
+        },
+        "FULL": {
+            "HEAD": "eGaaS Node v1.0 beta",
+            "TEXT1": "Puedes iniciar tu nodo, participando en forjar o delegando forjar. Para empezar a trabajar necesitas tener instalado. <a href='https://www.postgresql.org/' target='_blank'>PostgreSQL</a>."
+        },
+        "PRIVATE": {
+            "HEAD": "eGaaS Node v0.1 beta <span>(privado)</span>",
+            "TEXT1": "Contratos inteligentes, leyes inteligentes, estados, ciudadanos ect.",
+            "TEXT2": "Esta versión contiene errores que no hemos podido arreglar todavía, y hay algunas deficiencias. Pero decidimos ponerlo a disposición pública para mostrar en que estamos trabajando actualmente. Para comenzar a trabajar necesitas tener instalado<a href='https://www.postgresql.org/' target='_blank'>PostgreSQL</a>. La documentación esta proceso de preparación. También puedes ver el video que muestra una parte de las funciones incluidas en esta versión.",
+            "TEXT3": "Ver el vídeo."
+        },
+        "INSTRUCTION": {
+            "TEXT": " Instrucciones para la instalación de eGaaS ",
+            "LINK": "https://github.com/EGaaS/go-egaas-mvp/wiki/eGaaS-app-installation-instruction"
+        },
+        "WEB": "Web",
+        "SOURCE": "Código fuente",
+        "GO": "Go",
+        "DOWNLOAD": "Descargar",
+        "DOWNLOAD32": "Descargar 32",
+        "DOWNLOAD64": "Descargar 64"
+    },
+    "ICO": {
+        "BUY": "Comprar tokens",
+        "BANNER": {
+            "SLOGAN": "Gobierno Electrónico como&nbsp;Servicio",
+            "TEXT": "Date prisa comprar fichas en el primer día de ventas te dara un bono de <strong>50&nbsp;%</strong>, cantidad limitada ",
+            "LEFT": "EGS con  un <strong> bono de {{bonus}}%</strong> restante: <b>{{left}}</b>"
+        },
+        "MISSION": {
+            "TEXT": " La misión  principal de eGaaS es crear una plataforma común internacional para una implementación plena de un gobierno electrónico, la cual  liberaría a los ciudadanos y las empresas de procedimientos burocráticos, sería un instrumento  para organizar todas las actividades y ejercer el control de ellas sin circulación de documentos.",
+            "PEOPLES": {
+                "TEXT1": " En 2015 Fueron Empleados solo en EE.UU en el campo de la contabilidad y auditoría",
+                "TEXT2": "Aumento  previsto de las cifras para los próximos años",
+                "TEXT3": "personas"
+            },
+            "FINANCE": {
+                "TEXT1": "Los gastos del  Servicio de Impuestos Internos (IRS) en 2015 ascendieron a",
+                "TEXT2": "Ingresos totales del sector bancario formados a partir de los gatos de cuídanos y empresas en servicios bancarios en 2015",
+                "TEXT3": "Los gastos de empresas en servicios de contabilidad y preparación de documentos referentes a impuestos en Estados Unidos para el 2018 pudieran llegar a",
+                "TEXT4": "Ingresos de la economía clandestina Estadounidense en 2012",
+                "TEXT5": "Perdidas de los impuestos no pagados sobre los salarios de la economía clandestina",
+                "TEXT6": "billones",
+                "TEXT7": "trillones"
+            },
+            "BUTTONS": {
+                "TEXT1": "Transferir las actividades de los gobiernos y los organismos legislativos a la plataforma eGaaS permitiría ahorrar casi el 10&nbsp;%  del PIB mundial anualmente.",
+                "TEXT2": " Aprender más:"
+            }
+        },
+        "PLATFORM": {
+            "HEAD": "Plataforma para Empresas y comunidades.",
+            "TEXT": " eGaaS es técnicamente una plataforma blockchain con el mecanismo para la creación y ejecución de contratos  leyes inteligentes. Por lo tanto, aun antes de que los gobiernos se unan a ella, la plataforma puede ser utilizada con éxito para crear una variedad de aplicaciones financieras, empresariales y aplicaciones sociales, tales como sistemas de pago, bolsas de valores, organizaciones de seguros, organizaciones de crédito, contabilidad y  sistemas de administración en todos los campos, desde el comercio hasta la medicina. eGaas permite crear aplicaciones altamente personalizadas con numerosas funciones implementadas por contratos inteligentes. “Las reglas y condiciones para la ejecución de un contrato inteligente son comunes para una aplicación registrada como Ley Inteligente. “La plataforma eGaas es una herramienta práctica para la organización de actividades de comunidades, permite establecer reglas de las relaciones entre sus miembros y dirigir la votación. Es decir, incluso antes de que los primeros estados se unan a eGaaS la plataforma puede ser usada ampliamente para  Negocios y  diversas esferas de la vida social.",
+            "IMG": {
+                "TEXT1": "Contratos inteligentes",
+                "TEXT2": "Registros",
+                "TEXT3": "Finanzas",
+                "TEXT4": "Leyes inteligentes"
+            }
+        },
+        "ROADMAP": {
+            "HEAD": "Hoja de Ruta",
+            "LEFT": {
+                "TEXT1": "Idea de crear eGaas : Comienzos",
+                "TEXT2": "Aplicación eGaaS ",
+                "TEXT3": " El primer estado transfiere el registro de ciudadanos, la legislación sobre el estado civil y el sistema electoral a la plataforma eGaaS",
+                "TEXT4": " El primer Estado abre una cuenta en eGaas en su moneda nacional y traslada su sistema fiscal y de negocios a leyes inteligentes.",
+                "TEXT5": "Transferencia plena del funcionamiento de los gobiernos de la Unión Europea a la plataforma eGaaS",
+                "TEXT6": "Los Estados Unidos se transfieren totalmente a eGaas",
+                "TEXT7": "90&nbsp;% de los países están en eGaaS ",
+                "TEXT8": "99&nbsp;% de los países están en eGaaS "
+            },
+            "RIGHT": {
+                "TEXT1": " Agosto del 2016",
+                "TEXT2": " Desarrolló de mecanismos para Leyes Inteligentes y Contratos Inteligentes",
+                "TEXT3": "Octubre del 2016",
+                "TEXT4": "Lanzamiento de la primera versión de la aplicación eGaas.",
+                "TEXT5": "15 de Noviembre",
+                "TEXT6": "ICO",
+                "TEXT7": " Fusión de las versiones v1.x y v0.x lo que permitirá crear estados, comunidades, Contratos Inteligentes/ Leyes Inteligentes, ect sobre una Blockchain eGaas común: Primer trimestre del 2017",
+                "TEXT8": "Versión completa y estable de aplicación eGaaS: Segundo trimestre del 2017",
+                "TEXT9": "Lanzamiento de la tecnología financiera, seguros, registros y otras aplicaciones empresariales y sociales de la plataforma eGaas: tercer trimestre del 2017",
+                "TEXT10": "Los estados comienzan a probar eGaaS: cuarto trimestre"
+            }
+        },
+        "RELEASE": {
+            "HEAD": "Emisión de EGS",
+            "TEXT": "Las monedas EGS se emitirán solo una vez, en una cantidad de 100 millones"
+        },
+        "DISTRIBUTION": {
+            "HEAD": "Distribución de monedas EGS",
+            "PIE": {
+                "TEXT1": "Sera destinado a los inversionistas (Los que invirtieron en el proyecto antes de la ICO)  al equipo y a los futuros empleados como paquetes motivacionales<span><em>7.5%</em> para aquellos que invirtieron antes de la ICO <br /><em>22.5%</em> - para desarrolladores <br /><em>5% </em>- como paquetes motivacionales</span>",
+                "TEXT2": "Se venderá en la ICO en varias etapas<span><em>5.9%</em> - 15/11/2016 - 15/12/2016<br /><em>11.8%</em> - 01/03/2017 - 01/04/2017<br /><em>11.8%</em> - 15/11/2017 - 15/12/2017<br /><em>11.8%</em> - 01/07/2018 - 01/08/2018<br /><em>11.8%</em> - 01/03/2019 - 01/04/2019<br /><em>11.9%</em> - 15/11/2019 - 15/12/2019</span>"
+            },
+            "TEXT1": "La necesidad de proceder la ICO en varias etapas es para aumentar la transparencia en las actividades del equipo eGaaS y aumentar las oportunidades de informar a los inversores después de cada etapa. Para implementar el siguiente paso de la hoja de ruta después de la ICO, se requiere una inversión de $500,000. Por lo tanto durante la primera etapa de la ICO se venderán 5,64 millones de monedas EGS.",
+            "TEXT2": "Planeamos vender el 59.1% restante durante varias etapas entre 2017-2019."
+        },
+        "SALE": {
+            "HEAD": " Porque la venta de nuestras moneda en varias etapas beneficia a los inversores?",
+            "TEXT1": "Antes de cada etapa, presentamos lo que hemos hecho  e informamos  lo que se ha gastado de la inversión.",
+            "TEXT2": "Llevaremos a cabo campañas publicitarias durante cada etapa, por lo que su valor en el mercado cambiario aumentara antes de cada ICO.",
+            "TEXT3": " Durante cada etapa, vedaremos monedas EGS a un precio más alto que el de la etapa predecesora."
+        },
+        "FIRST": {
+            "HEAD": "¿Porque es mejor comprar monedas EGS en la primera etapa?",
+            "TEXT": "Debes tener en cuenta que las escases de las monedas en la primera etapa de la ICO tiene un precio fijo así una campaña publicitaria antes de la segunda ICO y el inicio de negociaciones de eGaaS con varios países podría conducir a crecimiento exponencial del precio en el mercado cambiario antes de la segunda etapa de la ICO que tiene como fecha 2017."
+        },
+        "STAGES": {
+            "HEAD": "La venta de la <strong> primera etapa </strong>se divide en 5 periodos con los siguientes descuentos: 1 día: Bono de 50%:",
+            "STEPS": {
+                "TEXT1": "1 día: Bono de",
+                "TEXT2": "1 semana: Bono de",
+                "TEXT3": "2 semana: Bono de",
+                "TEXT4": "3 semana: Bono de",
+                "TEXT5": "4 semana ",
+                "LIMIT": "Limite"
+            },
+            "CASE": {
+                "TEXT1": "Vendido:",
+                "TEXT2": "Disponibilidad:"
+            },
+            "TEXT": "* Cuando se alcance el límite, el sistema pasara a la siguiente etapa de ventas con una nueva oferta. Por lo tanto, Cada etapa de la ICO se puede completar antes de lo previsto si se agota el límite de EGS."
+        },
+        "WHY": {
+            "HEAD": "Por qué comprar EGS",
+            "TEXT1": " Los tokens EGS garantizan la seguridad de la plataforma eGaaS y la capacidad de trabajo de sus nodos: Aperturando nuevas tablas, agregando atributos, conectando y realizando contratos inteligentes y leyes inteligentes son pagados en EGS. Por lo tanto, los usuarios privados y corporativos de la plataforma, así como los estados tendrán que comprar EGS para asegurar la capacidad de trabajo de sus proyectos eGaaS. Por lo tanto, la necesidad por tokens EGS crecerá inevitablemente, lo que aumentará su tasa de intercambio porque los EGS serán emitidos solo una vez.",
+            "TEXT2": "Es inevitable que las formas obsoletas de gobierno desaparezcan, mientras que los gobiernos se transformarán en servicios electrónicos para los ciudadanos. No pierdas la oportunidad de participar en este proyecto revolucionario en las primeras etapas de su desarrollo."
+        },
+        "DONE": {
+            "HEAD": "Que se ha realizado hasta la fecha?",
+            "TEXT1": "Hemos creado dos versiones de la aplicación eGaaS:",
+            "TEXT2": "Estable; para tokens EGS; disponible tanto en versión Lite como en modo de control de nodos; la versión Lite también está disponible para iOS e Android.",
+            "TEXT3": "Inestable y por lo tanto es impulsado por blockchains privados; puede ser usado en tu PC o en una red local; permite crear nodos eGaaS, etc.",
+            "TEXT4": "En la v 0.x, a través de la creación y modificación de tablas, paginas, menús, y contratos inteligentes de eGaaS, podrás configurar un estado o comunidad que más se ajuste a tus gustos.",
+            "TEXT5": " En un futuro cercano, agregaremos aplicaciones embebidas (grupos de contratos inteligentes, leyes inteligentes, tablas, paginas, menús) en la versión 0.x, después de lo cual será posible –en pocos clicks- crear uniones interestatales, uniones monetarias, bancos centrales, registros, bolsas de valores y así sucesivamente.",
+            "TEXT6": "En el futuro, las versiones 0.x y 1.x se fusionarán, después de lo cual la versión 1.x tendrá todas las características de la versión 0.x – en vez de blockchains privados, habrá un blockchain en común. Todos los países y comunidades podrán interactuar entre sí, y usarán tokens EGS para la protección de la red."
+        },
+        "FUNDS": {
+            "HEAD": "Distribución de los fondos de la ICO",
+            "TEXT": "Principales gastos de los fondos de la ICO",
+            "PIE": {
+                "TEXT1": "Finalizar la versión actual y comenzar desde cero una nueva versión de eGaaS estable.",
+                "TEXT2": "Servicios Jurídicos.",
+                "TEXT3": "Negociación con Estados, creación de grupos internacionales para acordar reglas y regulaciones por los cuales los Estados podrían unirse a la  plataforma.",
+                "TEXT4": "Pago a inversionistas que financiaron eGaaS antes de la ICO. ",
+                "TEXT5": " Otros."
+            }
+        }
+    },
+    "DOCS": {
+        "MANIFESTO": {
+            "TEXT": " Manifestó eGaaS",
+            "FILE": "./docs/eGaaS_Manifest.pdf"
+        },
+        "WHITEPAPER": {
+            "TEXT": " White Paper eGaaS ",
+            "FILE": "./docs/eGaaS_White_Paper.pdf"
+        }
+    }
+}

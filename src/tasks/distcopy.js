@@ -21,7 +21,8 @@ module.exports = function (gulp, modules, dir) {
 			'!' + dir.folder + '/uploads/**',
 			'!' + dir.folder + '/maket.jpg',
 			'!' + dir.folder + '/*.html',
-			'!' + dir.folder + '/*.cfg'
+			'!' + dir.folder + '/*.cfg',
+			'!' + dir.folder + '/test.json'
 		])
 		.pipe(gulp.dest(dir.dist));
 	};

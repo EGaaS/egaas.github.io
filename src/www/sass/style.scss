@@ -450,7 +450,7 @@ header {
 				font-size:0px;
 				text-align:center;
 				padding-top:26px;
-				padding-left:240px;
+				padding-left:225px;
 				padding-right:175px;
 				z-index:1;
 				.nav-item {
@@ -537,8 +537,8 @@ header {
 				a {
 					display:inline-block;
 					@include text($reg, 18px, $white, 20px, none);
-					margin-left:15px;
-					margin-right:15px;
+					margin-left:13px;
+					margin-right:13px;
 				}
 				.soc {
 					position:absolute;
@@ -2099,6 +2099,7 @@ header {
 						align-items:center;
 						align-content:center;
 						min-width:132px;
+						max-width:132px;
 						border-right:1px solid #cccccc;
 						@include text($reg, 18px, $blue, 24px, none);
 						text-align:center;
@@ -2106,6 +2107,10 @@ header {
 						padding-right:20px;
 					}
 					p {
+						display:flex;
+						justify-content:flex-start;
+						align-items:center;
+						align-content:stretch;
 						padding-left:27px;
 						padding-right:30px;
 						padding-bottom:0px;

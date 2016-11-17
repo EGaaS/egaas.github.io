@@ -54,6 +54,8 @@
 		
 		function countdownComplete(unit, value, total){
 			if(total < 0){
+				getICO();
+				
 				var next;
 				var server = moment(stages[n]).add(5, 'hours').format('YYYY-MM-D HH:mm:ss');
 				
@@ -77,6 +79,7 @@
 		function getICO() {
 			$http({
 				method : 'GET',
+				//url    : '/test.json'
 				url    : 'http://ico.egaas.org/ajax?json=ajax_ico_info'
 			})
 			.success(function(data){

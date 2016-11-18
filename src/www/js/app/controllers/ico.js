@@ -126,7 +126,6 @@
 		
 		$scope.stage = function (status) {
 			var id = status.replace(/\D/g,"");
-			console.log(id);
 			if (id < n) {
 				return 'past';
 			} else {

@@ -124,6 +124,10 @@
 			});
 		}
 		
+		$scope.stage = function (status) {
+			return status === "stage" + n ? 'active' : '';
+		};
+		
 		getICO();
 		
 		interval = setInterval(function() {

@@ -2124,6 +2124,17 @@ header {
 			}
 		}
 	}
+	.model {
+		text-align:center;
+		p {
+			text-align:left;
+			padding-bottom:0px;
+			@include max($bmobile) {
+				font-size:16px;
+				line-height:18px;
+			}
+		}
+	}
 	.release {
 		text-align:center;
 		p {

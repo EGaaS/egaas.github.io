@@ -13126,6 +13126,22 @@ header.on .menu .patty:before {
   padding-bottom: 0px;
 }
 
+.ico .model {
+  text-align: center;
+}
+
+.ico .model p {
+  text-align: left;
+  padding-bottom: 0px;
+}
+
+@media screen and (max-width: 767px) {
+  .ico .model p {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+
 .ico .release {
   text-align: center;
 }

@@ -125,7 +125,13 @@
 		}
 		
 		$scope.stage = function (status) {
-			return status === "stage" + n ? 'active' : '';
+			var id = status.replace(/\D/g,"");
+			console.log(id);
+			if (id < n) {
+				return 'past';
+			} else {
+				return status === "stage" + n ? 'active' : '';
+			}
 		};
 		
 		getICO();

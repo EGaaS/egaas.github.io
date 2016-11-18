@@ -2294,6 +2294,16 @@ header {
 					property:border, padding, margin;
 					duration:.2s;
 				}
+				&.past {
+					p {
+						b {
+							font-family:$reg;
+							i {
+								font-family:$reg;
+							}
+						}
+					}
+				}
 				&.active {
 					border:3px solid $blue;
 					padding-top:48px;
@@ -2426,6 +2436,11 @@ header {
 						em {
 							font-style:normal;
 							text-decoration:line-through;
+						}
+						i {
+							font-family:$bold;
+							font-size:20px;
+							font-style:normal;
 						}
 					}
 				}

@@ -98,4 +98,18 @@ $(function () {
                ]
        }]
     });
+	
+	jQuery("#nanoGallery").nanoGallery({
+		thumbnailWidth: '200 XS80 SM150 LA250 XL300',
+		thumbnailHeight: '200 XS80 SM150 LA250 XL300',
+		thumbnailLabel: {
+			display: false          
+		},
+		maxItemsPerLine: 3,
+		paginationMaxLinesPerPage: 1,
+		paginationDots: true,
+		locationHash: false,
+		thumbnailHoverEffect:'borderLighter,imageScaleIn80',
+		itemsBaseURL:'/images/'
+	});
 });

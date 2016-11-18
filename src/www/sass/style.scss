@@ -5,6 +5,7 @@
 @import "bootstrap/bootstrap";
 @import "font-awesome/font-awesome";
 @import "TimeCircles";
+@import "nanogallery";
 
 /* Main tags
 ----------------------------------------- */
@@ -2581,6 +2582,9 @@ header {
 			margin-top:100px;
 			margin-bottom:50px;
 		}
+	}
+	.prototypes {
+		text-align:center;
 	}
 }
 /* Animations

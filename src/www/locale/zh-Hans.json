@@ -293,6 +293,9 @@
 				"TEXT4": "Payments to investors who financed eGaaS before the ICO",
 				"TEXT5": "Other"
 			}
+		},
+		"PROTOTYPES": {
+			"HEAD": "Prototypes"
 		}
 	},
 	"DOCS": {

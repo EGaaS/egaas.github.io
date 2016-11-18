@@ -293,7 +293,10 @@
                 "TEXT4": "Pago a inversionistas que financiaron eGaaS antes de la ICO. ",
                 "TEXT5": " Otros."
             }
-        }
+        },
+		"PROTOTYPES": {
+			"HEAD": "Protótipos"
+		}
     },
     "DOCS": {
         "MANIFESTO": {

@@ -127,15 +127,15 @@
 /**************************************/
 
 .nanogallery_theme_default .nanoGalleryNavigationbarContainer {
-	margin:5px auto;
-	padding:5px 0;
+	margin:0px auto;
+	//padding:5px 0;
 	/*background-color:#f09;*/
 	display: block;
 }
 
 .nanogallery_theme_default .nanoGalleryNavigationbar {
-	border-top: 1px solid #555;
-	border-bottom: 1px solid #555;
+	border-top: 1px solid $black;
+	//border-bottom: 1px solid #555;
 	padding: 0px;
 	text-align: left;
 	display:table;
@@ -232,8 +232,9 @@
 .nanogallery_theme_default .nanoGalleryBreadcrumb {
 	/*background-color: #000;*/
 	/*border: 1px dotted #555;*/
-	margin: 1px;
-	padding: 4px;
+	//margin: 1px;
+	//padding: 4px;
+	//padding-bottom:8px;
 	text-align: left;
 	box-sizing: content-box;
 	-webkit-box-sizing: content-box;
@@ -249,11 +250,11 @@
 	white-space: nowrap;
 	cursor:pointer;
 	vertical-align: middle;
-	display: inline-block;
+	display: none;
 }
 .nanogallery_theme_default .nanoGalleryBreadcrumb .folder:hover,
 .nanogallery_theme_default .nanoGalleryBreadcrumb .folderHome:hover{
-	color: #fff;
+	color:$blue;
 }
 .nanogallery_theme_default .nanoGalleryBreadcrumb  .folder:before{
 	content: '\e815';	/* .icon-folder-empty */
@@ -286,14 +287,16 @@
 	text-transform: none;
 }
 .nanogallery_theme_default .nanoGalleryBreadcrumb .separator {
-	margin: 0px 5px;
+	//margin: 0px 5px;
+	margin-top:4px;
+	margin-bottom:8px;
 	display: inline;
 	cursor:pointer;
 	vertical-align: middle;
 	display: inline-block;
 }
 .nanogallery_theme_default .nanoGalleryBreadcrumb .separator:hover{
-	color: #fff;
+	color:$blue;
 }
 .nanogallery_theme_default .nanoGalleryBreadcrumb .separator:before {
 	content: '\e823';	/* .icon-left-big */
@@ -976,8 +979,8 @@
 	position:relative;
   width:100%;
   visibility: hidden;
-  height:2px;
-  margin:0 0 1px 0;
+  height:0px;
+  //margin:0 0 1px 0;
   background-color:#555;
 }
 .nanogallery_theme_default .nanoGalleryLBar {

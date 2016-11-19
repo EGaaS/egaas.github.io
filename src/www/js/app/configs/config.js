@@ -51,6 +51,18 @@
 			}
 		});
 		
+		$stateProvider.state('root.Prototypes', {
+			url: 'prototypes/',
+			views: {
+				'main@': {
+					templateUrl: '/view/prototypes.html'
+				},
+				'subscribe@root.Prototypes': {
+					templateUrl: '/view/subscribe.html'
+				}
+			}
+		});
+		
 	  
 		$stateProvider.state('404', {
 			views: {

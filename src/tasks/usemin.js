@@ -32,7 +32,8 @@ module.exports = function (gulp, modules, dir) {
 			js2: [modules.uglify() ],
 			js3: [modules.uglify() ],
 			js4: [modules.uglify() ],
-			js5: [modules.uglify() ]
+			js5: [modules.uglify() ],
+			js6: [modules.uglify() ]
 		})).pipe(modules.replaceTask({
 			patterns: [{
 				match: /\"\/?js\//g,

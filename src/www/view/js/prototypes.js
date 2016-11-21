@@ -2,9 +2,10 @@ $(function () {
 	'use strict';
 	
 	jQuery("#nanoGallery").nanoGallery({
-		breadcrumbAutoHideTopLevel: true,
+		//breadcrumbAutoHideTopLevel: true,
 		galleryToolbarHideIcons: true,
 		breakpointSizeSM : 720, breakpointSizeME : 960, breakpointSizeLA : 1000, breakpointSizeXL : 1200,
+		thumbnailAlbumDisplayImage: true,
 		thumbnailWidth: '85 SM220 ME220 LA300 XL300',
 		thumbnailHeight: '71 SM183 ME183 LA250 XL250',
 		thumbnailLabel: {

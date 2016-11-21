@@ -153,7 +153,7 @@
 		"PRIVATE": {
 			"HEAD": "eGaaS Node v0.1 beta <span>(private)</span>",
 			"TEXT1": "Smart contracts, smart laws, states, citizens, etc.",
-			"TEXT2": "This version contains bugs that we have not had time to fix yet, and there are some shortcomings. But we decided to make it publicly available to show what we're currently working on. To start work, you must install <a href='https://www.postgresql.org/' target='_blank'>PostgreSQL</a>. The documentation is in the process of writing. You can also watch the video showing a part of the functionality of this version",
+			"TEXT2": "<!--This version contains bugs that we have not had time to fix yet, and there are some shortcomings. But we decided to make it publicly available to show what we're currently working on. -->To start work, you must install <a href='https://www.postgresql.org/' target='_blank'>PostgreSQL</a>. The documentation is in the process of writing. You can also watch the video showing a part of the functionality of this version",
 			"TEXT3": "Play video"
 		},
 		"INSTRUCTION": {

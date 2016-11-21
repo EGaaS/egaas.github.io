@@ -153,7 +153,7 @@
 		"PRIVATE": {
 			"HEAD": "eGaaS 节点 v0.1 beta <span>(私密)</span>",
 			"TEXT1": "智能合约，智能法律，省级，市民",
-			"TEXT2": "这个版本包含我们没有时间修复的错误，并有一些缺点。 但我们决定公开展示我们目前正在开展的工作。 要开始工作，您必须安装 <a href='https://www.postgresql.org/' target='_blank'>PostgreSQL</a>。文档正在编写过程中。 您还可以观看显示此版本功能的一部分的视频",
+			"TEXT2": "<!--这个版本包含我们没有时间修复的错误，并有一些缺点。 但我们决定公开展示我们目前正在开展的工作。 -->要开始工作，您必须安装 <a href='https://www.postgresql.org/' target='_blank'>PostgreSQL</a>。文档正在编写过程中。 您还可以观看显示此版本功能的一部分的视频",
 			"TEXT3": "Play video"
 		},
 		"INSTRUCTION": {

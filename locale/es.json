@@ -153,7 +153,7 @@
         "PRIVATE": {
             "HEAD": "eGaaS Node v0.1 beta <span>(privado)</span>",
             "TEXT1": "Contratos inteligentes, leyes inteligentes, estados, ciudadanos ect.",
-            "TEXT2": "Esta versión contiene errores que no hemos podido arreglar todavía, y hay algunas deficiencias. Pero decidimos ponerlo a disposición pública para mostrar en que estamos trabajando actualmente. Para comenzar a trabajar necesitas tener instalado<a href='https://www.postgresql.org/' target='_blank'>PostgreSQL</a>. La documentación esta proceso de preparación. También puedes ver el video que muestra una parte de las funciones incluidas en esta versión.",
+            "TEXT2": "<!--Esta versión contiene errores que no hemos podido arreglar todavía, y hay algunas deficiencias. Pero decidimos ponerlo a disposición pública para mostrar en que estamos trabajando actualmente. -->Para comenzar a trabajar necesitas tener instalado <a href='https://www.postgresql.org/' target='_blank'>PostgreSQL</a>. La documentación esta proceso de preparación. También puedes ver el video que muestra una parte de las funciones incluidas en esta versión.",
             "TEXT3": "Ver el vídeo."
         },
         "INSTRUCTION": {

@@ -1168,7 +1168,7 @@ header {
 						top:0px;
 						width:100%;
 						height:100%;
-						background-image:url(../images/laptop_white.png);
+						background-image:url(../images/laptop_white.svg);
 						background-repeat:no-repeat;
 						background-position:0px 0px;
 						background-size:100% 100%;
@@ -1176,16 +1176,16 @@ header {
 					}
 					.bg {
 						position:absolute;
-						left:61px;
+						left:60px;
 						top:28px;
-						width:376px;
+						width:378px;
 						height:226px;
 						border-radius:5px;
 						z-index:1;
 						@include max($bmobile) {
 							left:36px;
 							top:17px;
-							width:225px;
+							width:226px;
 							height:135px;
 						}
 					}
@@ -1195,9 +1195,10 @@ header {
 						top:50%;
 						width:94px;
 						height:94px;
-						background-image:url(../images/play.png);
+						background-image:url(../images/play.svg);
 						background-repeat:no-repeat;
 						background-position:0px 0px;
+						background-size:100% 100%;
 						margin-left:-47px;
 						margin-top:-47px;
 						z-index:3;
@@ -1858,7 +1859,7 @@ header {
 			width:100%;
 			height:100%;
 			background-color:$blue;
-			background-image:url(../images/play.png);
+			background-image:url(../images/play.svg);
 			background-repeat:no-repeat;
 			background-position:center center;
 			background-size:80px 80px;
@@ -2141,9 +2142,9 @@ header {
 		text-align:center;
 		.scheme {
 			position:relative;
-			width:500px;
+			width:489px;
 			height:481px;
-			background-image:url(../images/bussines_model.png);
+			background-image:url(../images/bussines_model.svg);
 			background-repeat:no-repeat;
 			background-position:0px 0px;
 			background-size:100% 100%;
@@ -2259,20 +2260,20 @@ header {
 				font-family:$reg;
 				font-size:20px;
 				&_1 {
-					left:70px;
+					left:65px;
 					top:185px;
 				}
 				&_2 {
-					left:193px;
+					left:191px;
 					top:65px;
 				}
 				&_3 {
-					left:193px;
+					left:191px;
 					top:285px;
 				}
 				&_4 {
-					left:193px;
-					top:440px;
+					left:191px;
+					top:435px;
 				}
 			}
 			&.dollar {
@@ -2283,16 +2284,16 @@ header {
 					top:12px;
 				}
 				&_2 {
-					left:20px;
+					left:15px;
 					top:185px;
 				}
 				&_3 {
-					left:480px;
+					left:470px;
 					top:185px;
 				}
 				&_4 {
 					left:204px;
-					top:481px;
+					top:484px;
 				}
 			}
 			&.persent {

@@ -231,12 +231,17 @@
 			}
 		},
 		"MODEL": {
-			"HEAD": "Business model",
-			"TEXT1": "1. The investor buys EGS tokens from eGaaS.",
-			"TEXT2": "2. eGaaS develops and launches a blockchain platform using the proceeds.",
-			"TEXT3": "3. eGaaS clients (governments, corporations, individuals) pay for transactions and the use of smart contracts and smart laws with the EGS tokens, buying them from investors.",
-			"TEXT4": "4. eGaaS nodes sell EGS to maintenance and expansion of data centers.",
-			"TEXT5": "5. 1&nbsp;% of the clients’ payments for nodes's services goes to eGaaS development."
+			"HEAD": "Бизнес модель",
+			"TEXT1": "Инвестор выкупает у eGaaS текены EGS.",
+			"TEXT2": "eGaaS на полученные средства разрабатывает и запускает блокчейн платформу.",
+			"TEXT3": "Клиенты оплачивают транзакции и использование смарт-контрактов и смарт-законов токенами EGS, выкупая их у инвесторов.",
+			"TEXT4": "Узлы eGaaS продают EGS, чтобы обеспечить работоспособность и развитие датацентров.",
+			"TEXT5": "1&nbsp;% от оплаты клиентами услуг узлов идет на развитие eGaaS.",
+			"INVESTOR": "Инвестор",
+			"CLIENT": "Клиент",
+			"TEAM": "Команда eGaaS",
+			"PLATFORM": "Платформа eGaaS",
+			"SERVICES": "Услуги"
 		},
 		"RELEASE": {
 			"HEAD": "Выпуск EGS",

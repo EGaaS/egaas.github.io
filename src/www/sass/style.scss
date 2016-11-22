@@ -2133,12 +2133,168 @@ header {
 	}
 	.model {
 		text-align:center;
-		p {
+		.scheme {
+			position:relative;
+			width:500px;
+			height:481px;
+			background-image:url(../images/bussines_model.png);
+			background-repeat:no-repeat;
+			background-position:0px 0px;
+			background-size:100% 100%;
+			margin-left:260px;
+			margin-top:80px;
+			margin-bottom:120px;
+		}
+		.text {
+			position:absolute;
 			text-align:left;
 			padding-bottom:0px;
 			@include max($bmobile) {
 				font-size:16px;
 				line-height:18px;
+			}
+			&.list {
+				&:before {
+					content:attr(data-number);
+					position:absolute;
+					top:-10px;
+					width:45px;
+					height:45px;
+					border-radius:50%;
+					background-color:#939598;
+					@include text($med, 30px, $white, 45px, none);
+					text-align:center;
+				}
+			}
+			&.t1 {
+				left:75px;
+				top:-65px;
+				&.list {
+					&:before {
+						left:-65px;
+					}
+				}
+			}
+			&.t2 {
+				left:520px;
+				top:255px;
+				width:160px;
+				text-align:right;
+				text-indent:80px;
+				padding-left:15px;
+				&.list {
+					&:before {
+						left:0px;
+						text-indent:0;
+					}
+				}
+			}
+			&.t3 {
+				left:-260px;
+				top:115px;
+				width:160px;
+				&.list {
+					&:before {
+						left:195px;
+					}
+				}
+			}
+			&.t4 {
+				left:80px;
+				top:535px;
+				width:365px;
+				&.list {
+					&:before {
+						left:-65px;
+					}
+				}
+			}
+			&.t5 {
+				left:120px;
+				top:135px;
+				width:130px;
+				text-align:right;
+				&.list {
+					&:before {
+						left:135px;
+					}
+				}
+			}
+			&.investor {
+				width:140px;
+				left:-20px;
+				top:110px;
+				text-align:center;
+			}
+			&.client {
+				width:140px;
+				left:-20px;
+				top:380px;
+				text-align:center;
+			}
+			&.team_egaas {
+				width:140px;
+				left:300px;
+				top:110px;
+				text-align:center;
+			}
+			&.platform_egaas {
+				width:140px;
+				left:300px;
+				top:380px;
+				text-align:center;
+			}
+			&.services {
+				width:140px;
+				left:140px;
+				top:335px;
+				text-align:center;
+			}
+			&.egs {
+				font-family:$reg;
+				font-size:20px;
+				&_1 {
+					left:70px;
+					top:185px;
+				}
+				&_2 {
+					left:193px;
+					top:65px;
+				}
+				&_3 {
+					left:193px;
+					top:285px;
+				}
+				&_4 {
+					left:193px;
+					top:440px;
+				}
+			}
+			&.dollar {
+				font-family:$reg;
+				font-size:20px;
+				&_1 {
+					left:204px;
+					top:12px;
+				}
+				&_2 {
+					left:20px;
+					top:185px;
+				}
+				&_3 {
+					left:480px;
+					top:185px;
+				}
+				&_4 {
+					left:204px;
+					top:481px;
+				}
+			}
+			&.persent {
+				left:320px;
+				top:235px;
+				font-family:$reg;
+				font-size:20px;
 			}
 		}
 	}

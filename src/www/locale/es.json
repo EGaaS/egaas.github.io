@@ -232,11 +232,16 @@
         },
 		"MODEL": {
 			"HEAD": "Business model",
-			"TEXT1": "1. The investor buys EGS tokens from eGaaS.",
-			"TEXT2": "2. eGaaS develops and launches a blockchain platform using the proceeds.",
-			"TEXT3": "3. eGaaS clients (governments, corporations, individuals) pay for transactions and the use of smart contracts and smart laws with the EGS tokens, buying them from investors.",
-			"TEXT4": "4. eGaaS nodes sell EGS to maintenance and expansion of data centers.",
-			"TEXT5": "5. 1&nbsp;% of the clients’ payments for nodes's services goes to eGaaS development."
+			"TEXT1": "The investor buys EGS tokens from eGaaS.",
+			"TEXT2": "eGaaS develops and launches a blockchain platform using the proceeds.",
+			"TEXT3": "eGaaS clients (governments, corporations, individuals) pay for transactions and the use of smart contracts and smart laws with the EGS tokens, buying them from investors.",
+			"TEXT4": "eGaaS nodes sell EGS to maintenance and expansion of data centers.",
+			"TEXT5": "1&nbsp;% of the clients’ payments for nodes's services goes to eGaaS development.",
+			"INVESTOR": "Investor",
+			"CLIENT": "Client",
+			"TEAM": "eGaaS team",
+			"PLATFORM": "eGaaS platform",
+			"SERVICES": "Services"
 		},
         "RELEASE": {
             "HEAD": "Emisión de EGS",

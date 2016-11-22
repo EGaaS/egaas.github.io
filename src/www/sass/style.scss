@@ -2182,23 +2182,21 @@ header {
 				}
 			}
 			&.t2 {
-				left:520px;
-				top:255px;
-				width:160px;
-				text-align:right;
-				text-indent:80px;
-				padding-left:15px;
+				left:500px;
+				top:260px;
+				width:159px;
+				padding-left:55px;
 				&.list {
 					&:before {
 						left:0px;
-						text-indent:0;
 					}
 				}
 			}
 			&.t3 {
-				left:-260px;
-				top:115px;
-				width:160px;
+				left:-259px;
+				top:260px;
+				width:179px;
+				text-align:right;
 				&.list {
 					&:before {
 						left:195px;
@@ -2216,10 +2214,11 @@ header {
 				}
 			}
 			&.t5 {
-				left:120px;
-				top:135px;
-				width:130px;
+				left:138px;
+				top:131px;
+				width:175px;
 				text-align:right;
+				padding-right:47px;
 				&.list {
 					&:before {
 						left:135px;

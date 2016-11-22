@@ -71,6 +71,12 @@
 				$rootScope.bonus = bonus[n];
 				$rootScope.left = format(left[n], "");
 				TimerText();
+				
+				if (n === 2) {
+					$(".banner .inner .container .slogan p:first strong i").css({"text-decoration":"none"});
+					$(".banner .inner .container .slogan p:first strong span").hide();
+					$(".banner .inner .container .slogan p:last").hide();
+				}
 			} else {
 				TimerText();
 			}

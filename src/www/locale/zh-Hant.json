@@ -172,7 +172,7 @@
 		"BANNER": {
 			"SLOGAN": "Electronic Government as&nbsp;a&nbsp;Service",
 			"TEXT": "Hurry up to buy tokens on the 1st day of sales with a <strong>50&nbsp;% bonus</strong>, limited quantity",
-			"LEFT": "EGS with a <strong>bonus of <i>{{bonus}}%</i> 60%</strong> left: <b>{{left}}</b>"
+			"LEFT": "EGS with a <strong>bonus of <i>{{bonus}}%</i><span> 60%<span></strong> left: <b>{{left}}</b>"
 		},
 		"MISSION": {
 			"TEXT": "The main mission of eGaaS is to create a common international platform for full implementation of an electronic government as a service, which would free citizens and businesses from routine bureaucratic procedures, provide a tool for organizing all activities and exercising control over them without documents circulation.",

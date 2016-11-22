@@ -695,13 +695,19 @@ header {
 				font-size:16px;
 				line-height:18px;
 			}
-			i {
-				font-style:normal;
-				text-decoration:line-through;
-			}
 			b {
 				display:block;
 				padding-top:10px;
+			}
+			i {
+				font-style:normal;
+				/*text-decoration:line-through;*/
+			}
+			span {
+				display:none;
+			}
+			&:last-of-type {
+				display:none;
 			}
 		}
 		.btn {

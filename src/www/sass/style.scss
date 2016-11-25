@@ -806,6 +806,15 @@ header {
 						padding-top:15px;
 						padding-bottom:0px;
 					}
+					&:last-of-type {
+						padding-top:50px;
+						a {
+							color:$white;
+							&:hover {
+								color:$blue;
+							}
+						}
+					}
 				}
 				.start {
 					width:400px;
@@ -1296,7 +1305,6 @@ header {
 					}
 					@include max($btablet) {
 						filter: grayscale(0%);
-						opacity:1;
 					}
 					@include max($bmobile) {
 						max-width:140px;
@@ -1304,7 +1312,6 @@ header {
 					}
 					&:hover {
 						filter: grayscale(0%);
-						opacity:1;
 					}
 					img {
 						display:block;
@@ -1534,6 +1541,76 @@ header {
 		padding-bottom:0px;
 		@include max($bmobile) {
 			padding-bottom:24px;
+		}
+	}
+}
+.states {
+	position:relative;
+	clear:both;
+	overflow:hidden;
+	.container {
+		.inner {
+			padding-top:50px;
+			padding-bottom:35px;
+			@include max($bmobile) {
+				padding-top:15px;
+				padding-bottom:15px;
+			}
+			h2 + p {
+				font-family:$reg;
+				font-size:20px;
+				@include max($bmobile) {
+					font-size:16px;
+					line-height:18px;
+				}
+			}
+			.state {
+				@include max($bmobile) {
+					& + .state {
+						margin-top:15px;
+					}
+				}
+				&:hover {
+					.flag {
+						img {
+							filter:grayscale(0%);
+						}
+					}
+					
+				}
+				.flag {
+					display:flex;
+					flex-flow:row wrap;
+					justify-content:center;
+					align-items:center;
+					align-content:center;
+					height:300px;
+					margin-bottom:30px;
+					@include max($bmobile) {
+						height:auto;
+						margin-bottom:10px;
+					}
+					img {
+						display:inline-block;
+						max-width:400px;
+						max-height:300px;
+						filter:grayscale(100%);
+						transition: {
+							property:all;
+							duration:.2s;
+						}
+					}
+				}
+				h3 {
+					display:block;
+					font-family:$bold;
+					color:$black;
+					padding-bottom:15px;
+					@include max($bmobile) {
+						padding-bottom:5px;
+					}
+				}
+			}
 		}
 	}
 }

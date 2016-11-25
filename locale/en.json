@@ -139,11 +139,11 @@
 		},
 		"STATES": {
 			"HEAD": "States",
-			"TEXT": "Государства решившие воспользоваться или изучающие eGaaS для организации деятельности правительства и граждан",
-			"NAME1": "Arctic",
-			"TEXT1": "We are expanding our team!<br />If you are an expert in golang, please <a href='mailto:hello@egaas.org'>send us your CV</a>. Join the egaas team!",
-			"NAME2": "Liberland",
-			"TEXT2": "We are expanding our team!<br />If you are an expert in golang, please <a href='mailto:hello@egaas.org'>send us your CV</a>. Join the egaas team!"
+			"TEXT": "States engaged in beta test eGaaS platform.",
+			"NAME1": "Republic of Liberland",
+			"TEXT1": "<strong>Establishment</strong> - April 2015.<br /><strong>Location</strong> - Gornja Siga, a 7 square kilometers area between Croatia and Serbia.<br /><strong>President and founder</strong> - Vít Jedlička.<br /><strong>Population</strong> - around 350 thousand people have applied for citizenship.<br /><strong>Web</strong> - <a href='https://liberland.org/' target='_blank'>liberland.org</a>, <a href='https://en.wikipedia.org/wiki/Liberland' target='_blank'>wikipedia.org</a>.",
+			"NAME2": "Blockchain-state Arctida",
+			"TEXT2": "<strong>Proclaimed</strong> - 2015.<br /><strong>Location</strong> - Mobile state (no site).<br /><strong>Initiator</strong> - the UNESCO expedition leader, the traveler Sergey Soloviev (<a href='https://ru.wikipedia.org/wiki/%D0%A1%D0%BE%D0%BB%D0%BE%D0%B2%D1%8C%D1%91%D0%B2,_%D0%A1%D0%B5%D1%80%D0%B3%D0%B5%D0%B9_%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B0%D0%BD%D0%B4%D1%80%D0%BE%D0%B2%D0%B8%D1%87_(%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%B8%D0%BA)' target='_blank'>wikipedia</a>).<br /><strong>Population</strong> - Over 10 thousand people expressed their desire to obtain citizenship."
 		}
 	},
 	"DOWNLOAD": {

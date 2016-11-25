@@ -86,10 +86,12 @@
 			$http({
 				method : 'GET',
 				//url    : '/test.json'
-				url    : 'https://ico.egaas.org/ajax?json=ajax_ico_info'
+				url    : 'https://ico.egaas.org/ajax?json=ajax_ico_info',
+				//url    : 'http://1.1.1.1.1/',
+				timeout: 5000
 			})
 			.success(function(data){
-				console.log(data);
+				//console.log(data);
 				n = 0;
 				vm.ICO = {};
 				vm.limit = [];
@@ -121,6 +123,9 @@
 				$rootScope.left = format(left[n], "");
 				
 				Timer();
+			})
+			.error(function(){
+				stages = bonus = left = vm.summ = vm.limit = vm.sold = vm.total = $rootScope.bonus = $rootScope.left = 'Not Available';
 			});
 		}
 		

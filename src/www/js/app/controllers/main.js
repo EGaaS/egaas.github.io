@@ -74,7 +74,7 @@
 		function getICO() {
 			$http({
 				method : 'GET',
-				url    : 'http://ico.egaas.org/ajax?json=ajax_ico_info'
+				url    : 'https://ico.egaas.org/ajax?json=ajax_ico_info'
 			})
 			.success(function(data){
 				stages = data.stat[data.stat.length - 1].end;

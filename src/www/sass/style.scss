@@ -808,6 +808,9 @@ header {
 					}
 					&:last-of-type {
 						padding-top:50px;
+						@include max($bmobile) {
+							padding-top:30px;
+						}
 						a {
 							color:$white;
 							&:hover {

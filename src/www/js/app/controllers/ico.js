@@ -60,12 +60,9 @@
 				var server = moment(stages[n]).add(5, 'hours');
 				
 				if (Number(getTimeZone()) > 0) {
-					next = moment(server).add(Number(Math.abs(getTimeZone())), 'hours').format('YYYY-MM-D HH:mm:ss');
-					console.log(server);
-					console.log(next);
+					next = moment(server).add(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
 				} else {
 					next = moment(server).subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
-					console.log(next);
 				}
 				
 				$(".timer_text").appendTo($(".timer"));

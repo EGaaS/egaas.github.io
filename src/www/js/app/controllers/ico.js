@@ -84,12 +84,12 @@
 		
 		function getICO() {
 			$http({
-				method : 'GET',
+				method : 'POST',
 				//url    : '/test.json'
-				url    : 'http://ico.egaas.org/ajax?json=ajax_ico_info'
+				url    : 'https://ico.egaas.org/ajax?json=ajax_ico_info'
 			})
 			.success(function(data){
-				//console.log(data);
+				console.log(data);
 				n = 0;
 				vm.ICO = {};
 				vm.limit = [];

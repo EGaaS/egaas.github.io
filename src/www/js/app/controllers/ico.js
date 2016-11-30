@@ -58,6 +58,7 @@
 				
 				var next;
 				var server = moment(stages[n]).add(5, 'hours').format('YYYY-MM-D HH:mm:ss');
+				console.log(server);
 				
 				if (Number(getTimeZone()) > 0) {
 					next = moment(server).add(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
@@ -72,6 +73,8 @@
 				$rootScope.left = format(left[n], "");
 				TimerText();
 				
+				console.log(next);
+				
 				/*if (n === 2) {
 					$(".banner .inner .container .slogan p:first strong i").css({"text-decoration":"none"});
 					$(".banner .inner .container .slogan p:first strong span").hide();
@@ -84,12 +87,14 @@
 		
 		function getICO() {
 			$http({
-				method : 'POST',
+				method : 'GET',
 				//url    : '/test.json'
-				url    : 'https://ico.egaas.org/ajax?json=ajax_ico_info'
+				url    : 'https://ico.egaas.org/ajax?json=ajax_ico_info',
+				//url    : 'http://1.1.1.1.1/',
+				timeout: 5000
 			})
 			.success(function(data){
-				console.log(data);
+				//console.log(data);
 				n = 0;
 				vm.ICO = {};
 				vm.limit = [];

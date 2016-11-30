@@ -60,10 +60,11 @@
 				var server = moment(stages[n]).add(5, 'hours').format('YYYY-MM-D HH:mm:ss');
 				
 				if (Number(getTimeZone()) > 0) {
-					next = moment(server).add(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
-					console.log(next);
+					next = moment(server).add(Math.abs(getTimeZone()), 'h').format('YYYY-MM-D HH:mm:ss');
+					console.log(moment(server).add(Math.abs(getTimeZone()), 'h'));
+					console.log(moment(server).format('YYYY-MM-D HH:mm:ss'));
 				} else {
-					next = moment(server).subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
+					next = moment(server).subtract(Math.abs(getTimeZone()), 'h').format('YYYY-MM-D HH:mm:ss');
 					console.log(next);
 				}
 				

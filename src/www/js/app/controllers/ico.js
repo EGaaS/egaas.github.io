@@ -60,11 +60,11 @@
 				var server = moment(stages[n]).add(5, 'hours').format('YYYY-MM-D HH:mm:ss');
 				
 				if (Number(getTimeZone()) > 0) {
-					next = moment(server).add(Math.abs(getTimeZone()), 'h').format('YYYY-MM-D HH:mm:ss');
-					console.log(moment(server).add(Math.abs(getTimeZone()), 'h'));
-					console.log(moment(server).format('YYYY-MM-D HH:mm:ss'));
+					next = moment(server).add(Number(Math.abs(getTimeZone())), 'hours').format('YYYY-MM-D HH:mm:ss');
+					console.log(server);
+					console.log(next);
 				} else {
-					next = moment(server).subtract(Math.abs(getTimeZone()), 'h').format('YYYY-MM-D HH:mm:ss');
+					next = moment(server).subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
 					console.log(next);
 				}
 				
@@ -74,8 +74,6 @@
 				$rootScope.bonus = bonus[n];
 				$rootScope.left = format(left[n], "");
 				TimerText();
-				
-				console.log(next);
 				
 				/*if (n === 2) {
 					$(".banner .inner .container .slogan p:first strong i").css({"text-decoration":"none"});

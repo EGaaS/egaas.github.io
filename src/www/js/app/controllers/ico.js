@@ -62,6 +62,7 @@
 				if (Number(getTimeZone()) > 0) {
 					next = moment(server).add(Number(Math.abs(getTimeZone())), 'hours').format('YYYY-MM-D HH:mm:ss');
 					console.log(server);
+					console.log(moment(server));
 					console.log(next);
 				} else {
 					next = moment(server).subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');

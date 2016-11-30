@@ -56,16 +56,15 @@
 			if(total < 0){
 				getICO();
 				
-				var next = "";
+				var next;
 				var server = moment(stages[n]).add(5, 'hours').format('YYYY-MM-D HH:mm:ss');
-				
-				console.log(Number(getTimeZone()));
-				console.log(Math.abs(getTimeZone()));
 				
 				if (Number(getTimeZone()) > 0) {
 					next = moment(server).add(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
+					console.log(next);
 				} else {
 					next = moment(server).subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');
+					console.log(next);
 				}
 				
 				$(".timer_text").appendTo($(".timer"));

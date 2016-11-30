@@ -57,12 +57,11 @@
 				getICO();
 				
 				var next;
-				var server = moment(stages[n]).add(5, 'hours').format('YYYY-MM-D HH:mm:ss');
+				var server = moment(stages[n]).add(5, 'hours');
 				
 				if (Number(getTimeZone()) > 0) {
 					next = moment(server).add(Number(Math.abs(getTimeZone())), 'hours').format('YYYY-MM-D HH:mm:ss');
 					console.log(server);
-					console.log(moment());
 					console.log(next);
 				} else {
 					next = moment(server).subtract(Math.abs(getTimeZone()), 'hours').format('YYYY-MM-D HH:mm:ss');

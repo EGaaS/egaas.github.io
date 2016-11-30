@@ -86,9 +86,7 @@
 			$http({
 				method : 'GET',
 				//url    : '/test.json'
-				url    : 'https://ico.egaas.org/ajax?json=ajax_ico_info',
-				//url    : 'http://1.1.1.1.1/',
-				timeout: 5000
+				url    : 'http://ico.egaas.org/ajax?json=ajax_ico_info'
 			})
 			.success(function(data){
 				//console.log(data);

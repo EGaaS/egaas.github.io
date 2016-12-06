@@ -1588,12 +1588,13 @@ header {
 				.flag {
 					display:flex;
 					flex-flow:row wrap;
-					justify-content:center;
+					justify-content:flex-start;
 					align-items:center;
 					align-content:center;
 					height:300px;
 					margin-bottom:30px;
 					@include max($bmobile) {
+						justify-content:center;
 						height:auto;
 						margin-bottom:10px;
 					}
@@ -1610,11 +1611,19 @@ header {
 				}
 				h3 {
 					display:block;
+					max-width:400px;
 					font-family:$bold;
 					color:$black;
 					padding-bottom:15px;
 					@include max($bmobile) {
+						max-width:none;
 						padding-bottom:5px;
+					}
+				}
+				p {
+					max-width:400px;
+					@include max($bmobile) {
+						max-width:none;
 					}
 				}
 			}

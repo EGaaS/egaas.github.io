@@ -55,6 +55,10 @@ h3 {
 	font-weight:normal;
 	margin-top:0px;
 	margin-bottom:0px;
+	@include max($bmobile) {
+		font-size:18px;
+		line-height:18px;
+	}
 }
 p {
 	@include text($light, 16px, $black, 24px, none);

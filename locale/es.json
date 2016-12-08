@@ -177,7 +177,7 @@
         "BANNER": {
             "SLOGAN": "Gobierno Electrónico como&nbsp;Servicio",
             "TEXT": "Date prisa comprar fichas en el primer día de ventas te dara un bono de <strong>50&nbsp;%</strong>, cantidad limitada ",
-            "LEFT": "EGS con  un <strong> bono de <i>{{bonus}}%</i><span> 60%<span></strong> restante: <b>{{left}}</b>"
+            "LEFT": "<!--EGS con  un <strong> bono de <i>{{bonus}}%</i><span> 60%<span></strong> restante: --><b>{{left}}</b>"
         },
         "MISSION": {
             "TEXT": " La misión  principal de eGaaS es crear una plataforma común internacional para una implementación plena de un gobierno electrónico, la cual  liberaría a los ciudadanos y las empresas de procedimientos burocráticos, sería un instrumento  para organizar todas las actividades y ejercer el control de ellas sin circulación de documentos.",

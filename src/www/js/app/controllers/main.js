@@ -4,7 +4,7 @@
 	angular.module('app').controller('MainCtrl', MainCtrl);
 	
 	function MainCtrl($rootScope, $scope, $http){
-		var start;
+		/*var start;
 		var stages;
 		
 		if (Number(getTimeZone()) > 0) {
@@ -83,6 +83,6 @@
 			});
 		}
 		
-		getICO();
+		getICO();*/
 	}
 })();

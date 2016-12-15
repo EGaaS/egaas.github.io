@@ -23,7 +23,7 @@
 			return (offset < 0 ? "+" : "-") + (o / 60);
 		}
 		
-		function Timer() {
+		/*function Timer() {
 			$(".start").data('date', start).TimeCircles({
 				time: {
 					Days: {
@@ -72,15 +72,10 @@
 				$rootScope.left = format(left[n], "");
 				TimerText();
 				
-				/*if (n === 2) {
-					$(".banner .inner .container .slogan p:first strong i").css({"text-decoration":"none"});
-					$(".banner .inner .container .slogan p:first strong span").hide();
-					$(".banner .inner .container .slogan p:last").hide();
-				}*/
 			} else {
 				TimerText();
 			}
-		}
+		}*/
 		
 		function getICO() {
 			$http({
@@ -122,7 +117,7 @@
 				$rootScope.bonus = bonus[n];
 				$rootScope.left = format(left[n], "");
 				
-				Timer();
+				//Timer();
 			})
 			.error(function(){
 				stages = bonus = left = vm.summ = vm.limit = vm.sold = vm.total = $rootScope.bonus = $rootScope.left = 'Not Available';
@@ -146,12 +141,12 @@
 		
 		getICO();
 		
-		interval = setInterval(function() {
+		/*interval = setInterval(function() {
 			getICO();
 		}, 180000);
 		
 		$scope.$on('$destroy', function() {
 			clearInterval(interval);
-		});
+		});*/
 	}
 })();

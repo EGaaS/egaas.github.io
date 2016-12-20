@@ -11,7 +11,9 @@
 				<li class="nav-item" ng-show="!pageClass('subpage')"><a class="nav-link" href="#team" ng-click="scroll('team')" translate="MENU.TEAM"></a></li>
 				<li class="nav-item" ng-show="pageClass('subpage')"><a class="nav-link" href="#team" ng-click="scroll('team', 'root')" translate="MENU.TEAM"></a></li>
 				<li class="nav-item"><a class="nav-link" href="http://forum.egaas.org/" target="_blank" translate="MENU.FORUM"></a></li>
-				<li class="nav-item" ng-show="!showClass('download')"><a class="nav-link" ui-sref="root.Download" translate="MENU.DOWNLOAD.NAME"></a></li>
+				
+				<li class="nav-item"><a class="nav-link" ng-class="navClass('download')" ui-sref="root.Download" translate="MENU.DOWNLOAD.NAME"></a></li>
+				<!--<li class="nav-item" ng-show="!showClass('download')"><a class="nav-link" ui-sref="root.Download" translate="MENU.DOWNLOAD.NAME"></a></li>
 				<li class="nav-item dropdown" ng-show="showClass('download')">
 					<a class="nav-link dropdown-toggle" ng-class="navClass('download')" href="" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" translate="MENU.DOWNLOAD.NAME"></a>
 					<div class="dropdown-menu">
@@ -19,7 +21,7 @@
 						<a class="dropdown-item nav-link" href="#wallet" ng-click="scroll('wallet')" translate="MENU.DOWNLOAD.FULL"></a>
 						<a class="dropdown-item nav-link" href="#private" ng-click="scroll('private')" translate="MENU.DOWNLOAD.PRIVATE"></a>
 					</div>
-				</li>
+				</li>-->
 				<li class="nav-item"><a class="nav-link" ng-class="navClass('ico')" ui-sref="root.ICO">ICO</a></li>
 				<li class="nav-item">
 					<div class="soc">

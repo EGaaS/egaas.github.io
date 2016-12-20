@@ -19,5 +19,20 @@
 		}
 		
 		vm.getVersion();
+		
+		$(".for_hide").on('click', function(){
+			var psevdo = $(this);
+			var el = $(this).parent().next();
+			
+			if (psevdo.hasClass("on")) {
+				psevdo.removeClass("on");
+				el.slideUp();
+			} else {
+				psevdo.addClass("on");
+				el.slideDown();
+			}
+			
+			return false;
+		});
 	}
 })();

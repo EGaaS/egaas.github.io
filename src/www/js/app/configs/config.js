@@ -51,6 +51,15 @@
 			}
 		});
 		
+		$stateProvider.state('root.Progress', {
+			url: 'progress/',
+			views: {
+				'main@': {
+					templateUrl: '/view/progress.html'
+				}
+			}
+		});
+		
 		$stateProvider.state('root.Prototypes', {
 			url: 'prototypes/',
 			views: {

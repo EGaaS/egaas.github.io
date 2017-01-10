@@ -93,15 +93,15 @@ function showVideo(elem){
 	
 	var video = document.createElement("div");
 	var close = document.createElement("div");
-	var link = elem.getAttribute("data-link");
+	var link = elem.attr("data-link");
 	
 	video.setAttribute("id", "video");
 	video.innerHTML = link;
 	close.setAttribute("data-player-close", true);
 	close.innerHTML = '<span>&times;</span>';
 	
-	video.prepend(close);
-	document.body.append(video);
+	document.body.appendChild(video);
+	video.appendChild(close);
 	
 	$("#video").bind('touchmove', function(e) {
 		e.preventDefault();

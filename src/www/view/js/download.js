@@ -2,7 +2,7 @@ $(document).ready(function(){
 	'use strict';
 	
 	$("[data-player]").on('click', function(){
-		showVideo(this);
+		showVideo($(this));
 		return false;
 	});
 });

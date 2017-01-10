@@ -1,1 +1,1 @@
-$(document).ready(function(){"use strict";$("[data-player]").on("click",function(){return showVideo(this),!1})});
+$(document).ready(function(){"use strict";$("[data-player]").on("click",function(){return showVideo($(this)),!1})});

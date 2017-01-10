@@ -5,7 +5,7 @@
 	
 	function MainCtrl($rootScope, $scope, $http){
 		$("[data-player]").on('click', function(){
-			showVideo(this);
+			showVideo($(this));
 			return false;
 		});
 		/*var start;

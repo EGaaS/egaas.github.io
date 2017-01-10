@@ -4,6 +4,11 @@
 	angular.module('app').controller('DownloadCtrl', DownloadCtrl);
 	
 	function DownloadCtrl($rootScope, $scope, $http, $location, $state){
+		$("[data-player]").on('click', function(){
+			showVideo($(this));
+			return false;
+		});
+		
 		var vm = this;
 		vm.version = {};
 		vm.getVersion = getVersion;

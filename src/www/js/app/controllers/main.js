@@ -4,6 +4,10 @@
 	angular.module('app').controller('MainCtrl', MainCtrl);
 	
 	function MainCtrl($rootScope, $scope, $http){
+		$("[data-player]").on('click', function(){
+			showVideo(this);
+			return false;
+		});
 		/*var start;
 		var stages;
 		

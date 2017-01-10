@@ -6,11 +6,6 @@ $(document).ready(function(){
 	
 	particlesJS.load('team_particles', './api/team_particles.json');
 	
-	$("[data-player]").on('click', function(){
-		showVideo(this);
-		return false;
-	});
-	
 	if (jQuery.os.name === "iphone" || jQuery.os.name === "ipad") {
 		$(".team article").on('click', function () {
 			z += 1;

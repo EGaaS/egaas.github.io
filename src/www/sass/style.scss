@@ -206,7 +206,7 @@ input, textarea, button {
 	background-color:$red;
 	&#mission {
 		@include max($btablet) {
-			margin-top:0px;
+			//margin-top:0px;
 		}
 	}
 	&#about {
@@ -931,6 +931,10 @@ header {
 	.platform {
 		padding-top:50px;
 		padding-bottom:50px;
+		@include max($bmobile) {
+			padding-top:15px;
+			padding-bottom:15px;
+		}
 	}
 }
 .mission {
@@ -1125,6 +1129,18 @@ header {
 		background-size:460px 342px;
 		margin-top:20px;
 		margin-right:20px;
+		@include max($btablet) {
+			float:none;
+			margin-left:auto;
+			margin-right:auto;
+			margin-bottom:30px;
+		}
+		@include max($bmobile) {
+			width:290px;
+			height:216px;
+			background-size:290px 216px;
+			margin-bottom:15px;
+		}
 		p {
 			position:absolute;
 			font-family:$reg;
@@ -1134,26 +1150,45 @@ header {
 				left:0px;
 				top:44px;
 				width:165px;
+				@include max($bmobile) {
+					top:27px;
+					width:105px;
+				}
 			}
 			&:nth-of-type(2) {
 				left:325px;
 				top:44px;
 				width:125px;
+				@include max($bmobile) {
+					left:205px;
+					top:27px;
+					width:80px;
+				}
 			}
 			&:nth-of-type(3) {
 				left:0px;
 				top:315px;
 				width:120px;
+				@include max($bmobile) {
+					top:200px;
+					width:75px;
+				}
 			}
 			&:nth-of-type(4) {
 				left:295px;
 				top:315px;
 				width:150px;
+				@include max($bmobile) {
+					left:185px;
+					top:200px;
+					width:100px;
+				}
 			}
 		}
 	}
 	p {
 		overflow:hidden;
+		padding-bottom:0px;
 	}
 }
 .about {

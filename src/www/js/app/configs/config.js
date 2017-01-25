@@ -18,7 +18,8 @@
 					templateUrl: '/view/subscription.html'
 				},
 				'footer': {
-					templateUrl: '/view/footer.html'
+					templateUrl: '/view/footer.html',
+					controller: 'FooterCtrl'
 				},
 				'subscribe@root': {
 					templateUrl: '/view/subscribe.html'

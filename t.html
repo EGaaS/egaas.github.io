@@ -3,8 +3,9 @@
 $(function() {
 	'use strict';
 	
-	var key = window.location.search.replace("?key=", "");
+	var key = location.search.replace("?key=", "");
 	$("#key").attr("href", "referendapartij://registration?key=" + key);
+	location.replace("referendapartij://registration?key=" + key);
 });
 </script>
 

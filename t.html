@@ -1,2 +1,12 @@
-<a href="referendapartij://registration?key=111111">Open android app</a> / 
+<script type="text/javascript" src="src/www/js/jquery-3.1.0.min.js"></script>
+<script>
+$(function() {
+	'use strict';
+	
+	var key = window.location.search.replace("?key=", "");
+	$("#key").attr("href", "referendapartij://registration?key=" + key);
+});
+</script>
+
+<a id="key" href="#">Open android app</a> / 
 <a href="navigon://">Open Navigon</a>

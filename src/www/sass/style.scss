@@ -1639,7 +1639,7 @@ header {
 	overflow:hidden;
 	.container {
 		.inner {
-			padding-top:50px;
+			padding-top:35px;
 			padding-bottom:35px;
 			@include max($bmobile) {
 				padding-top:15px;
@@ -1688,6 +1688,89 @@ header {
 						transition: {
 							property:all;
 							duration:.2s;
+						}
+					}
+				}
+				h3 {
+					display:block;
+					max-width:400px;
+					font-family:$bold;
+					color:$black;
+					padding-bottom:15px;
+					@include max($bmobile) {
+						max-width:none;
+						padding-bottom:5px;
+					}
+				}
+				p {
+					max-width:400px;
+					@include max($bmobile) {
+						max-width:none;
+					}
+				}
+			}
+		}
+	}
+}
+.news {
+	position:relative;
+	clear:both;
+	overflow:hidden;
+	background-color:$dgray;
+	.container {
+		.inner {
+			padding-top:35px;
+			padding-bottom:35px;
+			@include max($bmobile) {
+				padding-top:15px;
+				padding-bottom:15px;
+			}
+			h2 + p {
+				font-family:$reg;
+				font-size:20px;
+				@include max($bmobile) {
+					font-size:16px;
+					line-height:18px;
+				}
+			}
+			.item {
+				@include max($bmobile) {
+					& + .item {
+						margin-top:15px;
+					}
+				}
+				&:hover {
+					.img {
+						img {
+							filter:grayscale(0%);
+						}
+					}
+					
+				}
+				.img {
+					display:flex;
+					flex-flow:row wrap;
+					justify-content:flex-start;
+					align-items:center;
+					align-content:center;
+					margin-bottom:30px;
+					@include max($bmobile) {
+						justify-content:center;
+						height:auto;
+						margin-bottom:10px;
+					}
+					a {
+						display:block;
+						max-width:400px;
+						img {
+							display:inline-block;
+							max-width:100%;
+							max-height:300px;
+							filter:grayscale(100%);
+							transition: {
+								property:all;
+								duration:.2s;
+							}
 						}
 					}
 				}

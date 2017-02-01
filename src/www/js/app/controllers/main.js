@@ -8,6 +8,25 @@
 			showVideo($(this));
 			return false;
 		});
+		
+		var swiper = new Swiper (".swiper-container", {
+			loop: false,
+			pagination: '.swiper-pagination',
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			slidesPerView: 3,
+			paginationClickable: true,
+			spaceBetween: 40,
+			breakpoints: {
+				767: {
+					slidesPerView: 1,
+					spaceBetween: 15
+				},
+				1000: {
+					slidesPerView: 2
+				}
+			}
+		});
 		/*var start;
 		var stages;
 		

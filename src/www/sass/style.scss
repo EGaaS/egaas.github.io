@@ -4,6 +4,7 @@
 @import "mixins";
 @import "bootstrap/bootstrap";
 @import "font-awesome/font-awesome";
+@import "swiper";
 @import "TimeCircles";
 @import "nanogallery";
 
@@ -1653,12 +1654,32 @@ header {
 					line-height:18px;
 				}
 			}
-			.state {
-				@include max($bmobile) {
-					& + .state {
-						margin-top:15px;
-					}
+			.swiper-container {
+				padding-bottom:10px;
+				@include min($btablet) {
+					padding-left:39px;
+					padding-right:39px;
+					padding-bottom:10px;
+					margin-left:-39px;
+					margin-right:-39px;
 				}
+			}
+			.swiper-button-prev {
+				left:0px;
+				@include max($btablet) {
+					display:none;
+				}
+			}
+			.swiper-button-next {
+				right:0px;
+				@include max($btablet) {
+					display:none;
+				}
+			}
+			.swiper-pagination {
+				bottom:0px;
+			}
+			.state {
 				&:hover {
 					.flag {
 						img {

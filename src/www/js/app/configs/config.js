@@ -73,9 +73,20 @@
 			}
 		});
 		
-	  
+		$stateProvider.state('IE', {
+			views: {
+				'main@': {
+					templateUrl: '/view/ie.html'
+				}
+			}
+		});
+		
 		$stateProvider.state('404', {
 			views: {
+				'header@': {
+					templateUrl: '/view/header.html',
+					controller: 'HeaderCtrl'
+				},
 				'main@': {
 					templateUrl: '/view/404.html'
 				}
@@ -116,7 +127,8 @@
 		$urlRouterProvider.when('', '/');
 		$urlRouterProvider.otherwise(function ($injector) {
 			var $state = $injector.get("$state");
-			$state.go("root");
+			$state.go("404");
+			angular.element("body").addClass("page_404");
 		});
 		
 		$urlMatcherFactoryProvider.strictMode(false);

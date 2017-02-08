@@ -17,6 +17,10 @@
 			}
 		}
 		
+		$rootScope.$on('$stateChangeStart', function(){
+			angular.element("body").removeClass("page_404");
+		});
+		
 		$rootScope.$on('$viewContentLoading', function(){
 			$("header .nav .nav-link").each(function() {
 				if (!$(this).hasClass("dropdown-item")) {
@@ -73,11 +77,14 @@
 			}, time);
 		}
 		
-		navigator.sayswho = (function(){
-			var ua = navigator.userAgent, tem, 
-			M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*([\d\.]+)/i) || [];
-			console.log(M);
-			if(/trident/i.test(M[1])){
+		navigator.detectIE = (function(){
+			var ua = navigator.userAgent/*, tem*/, 
+			M = ua.match(/(opera|chrome|safari|firefox|msie|trident|edge(?=\/))\/?\s*([\d\.]+)/i) || [];
+			//console.log(M);
+			if (M[1].toLowerCase() === "msie" || M[1].toLowerCase() === "trident") {
+				return true;
+			}
+			/*if(/trident/i.test(M[1])){
 				tem = /\brv[ :]+(\d+(\.\d+)?)/g.exec(ua) || [];
 				return 'IE '+(tem[1] || '');
 			}
@@ -85,10 +92,15 @@
 			if((tem = ua.match(/version\/([\.\d]+)/i)) !== null) {
 				M[2] = tem[1];
 				return M.join(' ');
-			}
+			}*/
 		})();
 		
-		//console.log(navigator.sayswho);
+		if (navigator.detectIE) {
+			$timeout(function() {
+				$state.go('IE');
+				document.body.className += "IE";
+			});
+		}
 	});
 	
 })();

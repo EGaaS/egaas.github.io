@@ -349,6 +349,9 @@ header {
 		property:border, box-shadow;
 		duration:.2s;
 	}
+	.IE & {
+		display:none;
+	}
 	@include max($btablet) {
 		height:50px;
 	}
@@ -3254,6 +3257,9 @@ header {
 		padding-top:20px;
 		padding-bottom:20px;
 	}
+	.IE & {
+		display:none;
+	}
 	.logo {
 		float:left;
 		display:block;
@@ -3294,6 +3300,9 @@ footer {
 	z-index:2;
 	@include max($bmobile) {
 		height:auto;
+	}
+	.IE & {
+		display:none;
 	}
 	.copyright {
 		position:relative;
@@ -3354,7 +3363,64 @@ footer {
 		}
 	}
 }
-
+/* Page 404
+----------------------------------------- */
+.page_404 {
+	display:flex;
+	flex-flow:column wrap;
+	justify-content:flex-start;
+	background-color:$blue;
+	header {
+		position:relative !important;
+	}
+	#pages {
+		flex:1;
+		display:flex;
+		flex-flow:column wrap;
+		justify-content:center;
+		align-items:center;
+		h1 {
+			font-size:100px;
+			color:$white;
+			line-height:normal;
+			@include min($bmobile) {
+				font-size:200px;
+			}
+		}
+		p {
+			font-size:16px;
+			color:$white;
+			line-height:normal;
+			@include min($bmobile) {
+				font-size:20px;
+			}
+		}
+	}
+	.subscription {
+		display:none;
+	}
+	footer {
+		display:none;
+	}
+}
+/* IE
+----------------------------------------- */
+.IE {
+	display:table;
+	background-color:$dblue;
+	width:100%;
+	#pages {
+		display:table-row;
+		.alertIE {
+			display:table-cell;
+			text-align:center;
+			vertical-align:middle;
+			h1 {
+				text-transform:none;
+			}
+		}
+	}
+}
 
 
 

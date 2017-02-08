@@ -4,7 +4,6 @@
 	angular.module('app', ['ui.router', 'pascalprecht.translate', 'ngCookies']);
 	
 	angular.module('app').run(function($rootScope, $location, $window, $timeout, $state, $cookies){
-		console.log(navigator.sayswho);
 		var time;
 		$rootScope.ref = $cookies.get('EGAAS') ? $cookies.get('EGAAS') : '';
 		
@@ -87,6 +86,8 @@
 				return M.join(' ');
 			}
 		})();
+		
+		console.log(navigator.sayswho);
 	});
 	
 })();

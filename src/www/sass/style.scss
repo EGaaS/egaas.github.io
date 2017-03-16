@@ -3309,7 +3309,7 @@ footer {
 		float:left;
 		@include text($arial, 14px, $white, 14px, none);
 		padding-top:30px;
-		z-index:2;
+		z-index:1;
 		@include max($bmobile) {
 			float:none;
 			text-align:center;
@@ -3330,12 +3330,16 @@ footer {
 		width:100%;
 		text-align:center;
 		padding-top:38px;
-		z-index:1;
+		z-index:2;
 		@include max($bmobile) {
 			padding-top:18px;
 		}
 		a {
 			@include text($arial, 14px, $white, 14px, none);
+		}
+		em {
+			display:inline-block;
+			width:50px;
 		}
 	}
 	.soc {

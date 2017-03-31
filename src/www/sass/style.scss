@@ -1462,11 +1462,6 @@ header {
 	.row {
 		display:flex;
 		flex-flow:row wrap;
-		justify-content:flex-start;
-		align-content:flex-start;
-		align-items:flex-start;
-		-webkit-box-orient:horizontal; 
-		-webkit-box-direction:normal;
 		font-size:0px;
 		background-color:$dgray;
 	}
@@ -1482,41 +1477,37 @@ header {
 		}
 		html:not([lang="ru"]) & {
 			&:nth-of-type(1) {
-				order:4;
-			}
-			&:nth-of-type(2) {
-				order:5;
-			}
-			&:nth-of-type(3) {
-				order:6;
-			}
-			&:nth-of-type(4) {
-				order:7;
-			}
-			&:nth-of-type(5) {
-				order:8;
-			}
-			&:nth-of-type(6) {
-				order:9;
-			}
-			&:nth-of-type(7) {
-				order:10;
-				margin-left:0px;
-				margin-right:0px;
-			}
-			&:nth-of-type(8) {
-				order:11;
-				margin-left:0px;
-				margin-right:0px;
-			}
-			&:nth-of-type(9) {
-				order:3;
-			}
-			&:nth-of-type(10) {
 				order:1;
 			}
-			&:nth-of-type(11) {
+			&:nth-of-type(2) {
 				order:2;
+			}
+			&:nth-of-type(3) {
+				order:3;
+			}
+			&:nth-of-type(4) {
+				order:4;
+			}
+			&:nth-of-type(5) {
+				order:5;
+			}
+			&:nth-of-type(6) {
+				order:6;
+			}
+			&:nth-of-type(7) {
+				order:7;
+			}
+			&:nth-of-type(8) {
+				order:8;
+			}
+			&:nth-of-type(9) {
+				order:9;
+			}
+			&:nth-of-type(10) {
+				order:10;
+			}
+			&:nth-of-type(11) {
+				order:11;
 			}
 		}
 		/*@include max($bmobile) {

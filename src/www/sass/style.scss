@@ -1462,18 +1462,23 @@ header {
 	.row {
 		display:flex;
 		flex-flow:row wrap;
+		justify-content:flex-start;
+		align-content:flex-start;
+		align-items:flex-start;
 		font-size:0px;
 		background-color:$dgray;
 	}
 	article {
 		position:relative;
-		&:nth-of-type(10) {
-			margin-left:0px;
-			margin-right:0px;
+		margin:0px !important;
+		&:nth-of-type(1) {
+			order:13;
 		}
-		&:nth-of-type(11) {
-			margin-left:0px;
-			margin-right:0px;
+		&:nth-of-type(2) {
+			order:14;
+		}
+		&:nth-of-type(3) {
+			order:12;
 		}
 		html:not([lang="ru"]) & {
 			&:nth-of-type(1) {
@@ -1519,9 +1524,10 @@ header {
 			}
 		}*/
 		@include min($bmobile) {
+			flex:1 0 auto;
 			left:0px;
-			float:left;
-			width:33.33%;
+			//float:left;
+			max-width:33.33%;
 			perspective:640px;
 			background-color:$dgray;
 			margin:auto;

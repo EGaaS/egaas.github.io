@@ -1518,8 +1518,7 @@ header {
 		@include min($bmobile) {
 			left:0px;
 			//float:left;
-			min-width:33.33%;
-			max-width:33.33%;
+			max-width:320px;
 			perspective:640px;
 			background-color:$dgray;
 			z-index:2;
@@ -1529,6 +1528,7 @@ header {
 			}
 			@include max($btablet) {
 				perspective:480px;
+				max-width:240px;
 			}
 		}
 		img {

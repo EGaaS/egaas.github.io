@@ -1514,10 +1514,11 @@ header {
 			}
 		}*/
 		@include min($bmobile) {
-			flex:0 0 33.33%;
+			flex:1 0 auto;
 			left:0px;
 			//float:left;
-			width:33.33%;
+			width:100%;
+			max-width:33.33%;
 			perspective:640px;
 			background-color:$dgray;
 			z-index:2;

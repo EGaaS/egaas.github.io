@@ -7,6 +7,7 @@
 @import "swiper";
 @import "TimeCircles";
 @import "nanogallery";
+@import "flags/flag-icon";
 
 /* Main tags
 ----------------------------------------- */
@@ -1462,8 +1463,8 @@ header {
 		background-color:$dgray;
 	}
 	article {
+		position:relative;
 		@include min($bmobile) {
-			position:relative;
 			left:0px;
 			float:left;
 			width:33.33%;
@@ -1490,6 +1491,17 @@ header {
 					property:all;
 					duration:.2s;
 				}
+			}
+		}
+		.flag-icon {
+			position:relative;
+			top:2px;
+			display:inline-block;
+			margin-left:15px;
+			@include max($bmobile) {
+				top:1px;
+				transform:scale(0.7);
+				transform-origin:left center;
 			}
 		}
 		div {

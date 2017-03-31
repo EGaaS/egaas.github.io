@@ -11,7 +11,7 @@ var modules = require('gulp-load-plugins')({
 	}
 });
 
-
+modules.uncache = require('gulp-uncache');
 modules.cssAdjuster = require('gulp-css-url-adjuster');
 modules.beep = require('beepbeep');
 

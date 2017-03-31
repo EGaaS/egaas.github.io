@@ -4,7 +4,9 @@ module.exports = function (gulp, modules, dir) {
 		.pipe(modules.usemin({
 			css: ['concat'/*, modules.cssMinify(),modules.rev()*/ ],
 			js: [modules.ngAnnotate(), modules.uglify()/*, modules.rev()*/ ]
-		})).pipe(modules.replaceTask({
+		}))
+		.pipe(modules.uncache())
+		.pipe(modules.replaceTask({
 			patterns: [{
 				match: /\"\/?js\//g,
 				replacement: '"./js/'

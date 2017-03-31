@@ -1529,7 +1529,7 @@ header {
 		}*/
 		@include min($bmobile) {
 			left:0px;
-			//float:left;
+			float:left;
 			width:33.33%;
 			perspective:640px;
 			background-color:$dgray;

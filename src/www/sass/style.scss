@@ -1462,6 +1462,9 @@ header {
 	.row {
 		display:flex;
 		flex-flow:row wrap;
+		justify-content:flex-start;
+		align-content:flex-start;
+		align-items:flex-start;
 		background-color:$dgray;
 	}
 	article {
@@ -1488,7 +1491,7 @@ header {
 		}*/
 		@include min($bmobile) {
 			left:0px;
-			float:left;
+			//float:left;
 			width:33.33%;
 			perspective:640px;
 			background-color:$dgray;

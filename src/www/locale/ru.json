@@ -76,54 +76,54 @@
 		"TEAM": {
 			"HEAD": "Команда",
 			"PEOPLE1": {
-				"NAME": "Oleg Strelenko",
-				"PROFESSION": "Founder, CEO, Blockchain developer",
-				"TEXT": "Blockchain developer with 5 years of work experience. Developed decentralized electronic currency DCoin (80k lines of Go code) from scratch. He is known in the Russian IT community as Dmitry Kharitonov. For over 10 years, he has developed his own projects and managed IT teams."
+				"NAME": "Олег Стреленко",
+				"PROFESSION": "Основатель и генеральный директор eGaaS, блокчейн-разработчик",
+				"TEXT": "Блокчейн-разработчик с 5-летним опытом. Предприниматель, программист. Основатель и бывший руководитель агентства кибер-безопасности DDOSExpert. Известен в русскоязычном Интернет-сообществе как Дмитрий Харитонов. В течение 10 лет разрабатывает собственные проекты и руководит IT-командами."
 			},
 			"PEOPLE2": {
-				"NAME": "Artur Pakhomov",
-				"PROFESSION": "Science Advisor",
-				"TEXT": "Member of the Presidium of the Council of St. Petersburg Chamber of Commerce and Industry. Ph.D. in Economics. Author of a number of reports and papers on modernization and restructuring of real estate management. For over 30 years, he has implemented own projects, including international ones."
+				"NAME": "Артур Пахомов",
+				"PROFESSION": "Научный советник",
+				"TEXT": "Член Президиума Совета Торгово-промышленной палаты Санкт-Петербурга. Кандидат наук в области экономики. Автор ряда докладов и статей о модернизации и реструктуризации управления недвижимостью. Более 30 лет реализует собственные проекты, в том числе международные."
 			},
 			"PEOPLE3": {
-				"NAME": "Yuriy Lomakin",
-				"PROFESSION": "Frontend Developer",
-				"TEXT": "Front-end developer with 10-years experience. Worked in the team charmerstudio.com, developing major news portal lenta.ru."
+				"NAME": "Юрий Ломакин",
+				"PROFESSION": "Front-end разработчик",
+				"TEXT": "Front-end разработчик с опытом 10 лет. Работал в составе команды charmerstudio.com над новостным порталом lenta.ru"
 			},
 			"PEOPLE4": {
-				"NAME": "Aleksandr Boldachev",
-				"PROFESSION": "Advisor/Analyst",
-				"TEXT": "Philosopher, analyst, member of the Association of Russian Futurologists. Main research areas: global evolutionism, temporal ontology, philosophy of artificial intelligence, futurology. In recent years, he worked on creation of subject-event approach to complex systems modeling."
+				"NAME": "Александр Болдачев",
+				"PROFESSION": "Советник/аналитик",
+				"TEXT": "Философ, аналитик, член ассоциации Футурологов России. Основные сферы исследований: глобальный эволюционизм, темпоральная онтология, искусственный интеллект. В последние годы работает над созданием субъектно-событийного подхода в моделировании сложных систем."
 			},
 			"PEOPLE5": {
-				"NAME": "Ruben Pombuhchan",
-				"PROFESSION": "Advisor at IPE Lab",
-				"TEXT": "Expert in development and implementation of innovative technologies. An investment analyst. Head of Sapsan Consulting Group. He has extensive experience in project management in major corporations. He took part in implementing large projects in major companies and groups such as Gazprom, Magnit, and Basic Element. He is the head of the project office of the Institutional Project Engineering Laboratory (IPE Lab)."
+				"NAME": "Робен Помбухчан",
+				"PROFESSION": "Советник в ИПИ-Лаб",
+				"TEXT": "Эксперт в области разработки и внедрения инновационных технологий. Инвестиционный аналитик. Руководитель консалтинговой группы «Сапсан». Имеет большой опыт управления проектами в крупных корпорациях. Принимал участие в реализации масштабных проектов в различных компаниях и группах, таких как «Газпром», «Магнит», «Базовый Элемент». Является руководителем проектного направления в Лаборатории институциональной проектной инженерии (ИПИ-Лаб)."
 			},
 			"PEOPLE6": {
-				"NAME": "Sergey Chernyshev",
-				"PROFESSION": "Science Advisor at IPE Lab",
-				"TEXT": "Philosopher, lecturer and expert in the area of organization and management. Professor at National Research University - Higher School of Economics. Member of the Expert Council of the Russian Government. Author of 8 monographs and 150 papers. Head of the Research Council of the Institutional Project Engineering Laboratory (IPE Lab)."
+				"NAME": "Сергей Чернышев",
+				"PROFESSION": "Научный советник ИПИ-Лаб",
+				"TEXT": "Философ, лектор и эксперт в сфере организации и управления. Профессор Национального исследовательского университета - Высшей школы экономики. Член Экспертного совета при Правительстве РФ. Автор 8 монографий и 150 статей. Руководитель Научного совета Лаборатории институциональной проектной инженерии (ИПИ-Лаб)."
 			},
 			"PEOPLE7": {
-				"NAME": "Alexey Krivonogov",
-				"PROFESSION": "Core developer",
-				"TEXT": "A professional C/C++ programmer with 24 years of experience. Graduated from Novosibirsk State University in 1992 with a degree in mathematics and applied mathematics. Developed programming language Gentee from scratch. Developed personal data store Eonza."
+				"NAME": "Алексей Кривоногов",
+				"PROFESSION": "Основной разработчик",
+				"TEXT": "Профессиональный программист C/C++ с опытом 24 года. Закончил Новосибирский государственный университет в 1992 году по специальности математика и прикладная математика. Разработал язык программирования Gentee с нуля. Разработал персональное хранилище данных Eonza."
 			},
 			"PEOPLE8": {
-				"NAME": "Dmitry Eliseev",
-				"PROFESSION": "Advisor at IPE Lab",
-				"TEXT": "Ph.D. in Technical Sciences, economist, a professional management consultant, associate professor. Author of over 70 publications and manuals. For 15 years, has successfully implemented 46 consulting projects on strategic planning and organizational design at major national and international companies such as Oreltekmash. Senior methodologist, Member of the Research Council of the Institutional Project Engineering Laboratory (IPE Lab)."
+				"NAME": "Дмитрий Елисеев",
+				"PROFESSION": "Советник в ИПИ-Лаб",
+				"TEXT": "Кандидат  технических наук, экономист, профессиональный консультант по управлению, доцент. Автор более 70 публикаций и руководств. В течение 15 лет успешно реализовал 46 консалтинговых проектов по стратегическому планированию и организационному проектированию в крупных национальных и международных компаниях, таких как «Орелтекмаш». Главный методолог, член Научного совета Лаборатории институциональной проектной инженерии (ИПИ-Лаб)."
 			},
 			"PEOPLE9": {
-				"NAME": "Andrey Nechaev",
-				"PROFESSION": "Mobile developer",
-				"TEXT": "More than 5 years of experience in Software development. Excellent understanding of Web stack, mostly backend (Erlang, Java and Python). Developed applications on both front-end and high-loaded back-end sides. Experience with the most popular mobile platforms, cross-compilation for all popular desktop and mobile platforms. Focused on fault-tolerant distributed services and UX."
+				"NAME": "Андрей Нечаев",
+				"PROFESSION": "Разработчик мобильных приложений",
+				"TEXT": "Более 5 лет опыта в разработке программного обеспечения.  Совершенное знание веб-стека, преимущественно backend (Erlang, Java and Python). Разрабатывал приложения, используя как front-end, так и высоконагруженный back-end. Имеет опыт  работы с мобильными платформами, опыт кросс-компиляции для всех популярных рабочих столов и мобильных платформ. В работе фокусировался преимущественно на отказоустойчивых распределенных службах и UX."
 			},
 			"PEOPLE11": {
-				"NAME": "Nosova Anna",
-				"PROFESSION": "Business Development Assistant",
-				"TEXT": "Psychologist. 4 years of experience in the field of project promotion. 2 years of experience in the organization and management of social projects. Cooperated with international environmental and volunteer organizations: Peace Corp, Spare, Biomass Project, United Nations Development Programme. Is the author of the educational program and a number of scientific articles."
+				"NAME": "Анна Носова",
+				"PROFESSION": "Ассистент по развитию бизнеса",
+				"TEXT": "Психолог по образованию, опыт - 4 года  в сфере продвижения проектов, 2 года – в организации и управлении социальными проектами. Сотрудничала с международными экологическими и волонтерскими организациями: Peace Corp, Spare, Biomass Project United Nations Development Program. Является автором образовательной программы и ряда научных статей."
 			},
 			"PEOPLE12": {
 				"NAME": "Виталий Бондарь",

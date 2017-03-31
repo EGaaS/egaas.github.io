@@ -1504,9 +1504,6 @@ header {
 			&:nth-of-type(11) {
 				order:2;
 			}
-			&:nth-of-type(12) {
-				order:12;
-			}
 		}
 		/*@include max($bmobile) {
 			flex-direction:row;

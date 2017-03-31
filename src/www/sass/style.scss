@@ -1472,6 +1472,14 @@ header {
 	}
 	article {
 		position:relative;
+		&:nth-of-type(10) {
+			margin-left:0px;
+			margin-right:0px;
+		}
+		&:nth-of-type(11) {
+			margin-left:0px;
+			margin-right:0px;
+		}
 		html:not([lang="ru"]) & {
 			&:nth-of-type(1) {
 				order:4;
@@ -1493,9 +1501,13 @@ header {
 			}
 			&:nth-of-type(7) {
 				order:10;
+				margin-left:0px;
+				margin-right:0px;
 			}
 			&:nth-of-type(8) {
 				order:11;
+				margin-left:0px;
+				margin-right:0px;
 			}
 			&:nth-of-type(9) {
 				order:3;
@@ -1518,9 +1530,10 @@ header {
 		@include min($bmobile) {
 			left:0px;
 			//float:left;
-			max-width:320px;
+			width:33.33%;
 			perspective:640px;
 			background-color:$dgray;
+			margin:auto;
 			z-index:2;
 			transition: {
 				property:left;

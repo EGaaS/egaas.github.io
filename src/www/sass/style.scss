@@ -1460,10 +1460,32 @@ header {
 		}
 	}
 	.row {
+		display:flex;
+		flex-flow:row wrap;
 		background-color:$dgray;
 	}
 	article {
 		position:relative;
+		order:4;
+		html:not([lang="ru"]) & {
+			&:nth-of-type(9) {
+				order:3;
+			}
+			&:nth-of-type(10) {
+				order:1;
+			}
+			&:nth-of-type(11) {
+				order:2;
+			}
+		}
+		/*@include max($bmobile) {
+			flex-direction:row;
+			flex-wrap:wrap;
+			& > * {
+				flex:1 100%;
+				width:100%;
+			}
+		}*/
 		@include min($bmobile) {
 			left:0px;
 			float:left;
@@ -1553,7 +1575,7 @@ header {
 					font-size:20px;
 					line-height:24px;
 					padding-left:10px;
-					padding-right:100px;
+					padding-right:80px;
 				}
 				span {
 					display:block;

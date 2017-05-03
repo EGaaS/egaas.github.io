@@ -1,3 +1,4 @@
 src/www/vendor
 src/node_modules
 src/www/prepros.cfg
+src/www/prepros-6.config

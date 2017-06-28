@@ -82,7 +82,7 @@ gulp.task('build', function() {
 	modules.sequence(
 		'distcopy',
 		'sprite',
-		/*'images',*/
+		//'images',
 		'hbs',
 		'styles',
 		'coffee',
